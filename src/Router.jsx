@@ -1,3 +1,4 @@
+import 'antd/dist/antd.css'
 import './assets/styles/index.css'
 
 import React from 'react'
@@ -7,26 +8,33 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom'
+import { Layout } from 'antd'
 
-import Footer from './components/Footer'
+import University from './components/Footer'
 import Start from './components/Start'
+import Media from './components/Media'
 import NoMatch from './components/NoMatch'
+
+const { Footer } = Layout
 
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/">
-          <Start />
-        </Route>
-        <Route path="/404">
-          <NoMatch />
-        </Route>
-        <Route path="*">
-          <Redirect to="/404" />
-        </Route>
-      </Switch>
-      <Footer />
+      <Layout className="main-wrapper">
+        <Layout className="page-wrapper">
+          <Switch>
+            <Route exact path="/" component={Start} />
+            <Route path="/media/:id" component={Media} />
+            <Route path="/404" component={NoMatch} />
+            <Route path="*">
+              <Redirect to="/404" />
+            </Route>
+          </Switch>
+        </Layout>
+        <Footer>
+          <University />
+        </Footer>
+      </Layout>
     </Router>
   )
 }

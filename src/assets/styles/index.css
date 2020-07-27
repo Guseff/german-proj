@@ -1,0 +1,64 @@
+.main-wrapper {
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.page-wrapper {
+  flex: 1 0 auto;
+}
+
+.start-page, .centered {
+  text-align: center;
+}
+
+.start-page--university {
+  font-size: 14px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.start-page--author {
+  font-size: 28px;
+}
+
+.start-page--title {
+  font-size: 44px;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.start-page--intro {
+  background-color: bisque;
+  padding: 30px 0;
+}
+
+.start-page--intro--title {
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+
+.start-page--intro--description,
+.start-page--intro--boss {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.start-page--intro--description {
+  margin: 50px 0;
+}
+
+.no-match-num {
+  margin: 50px 0;
+  font-size: 44px;
+}
+
+.no-match-num span {
+  font-size: 24px;
+}
+
+.footer {
+  text-align: center;
+  flex-shrink: 0;
+}

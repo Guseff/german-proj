@@ -1,14 +1,15 @@
 import React from 'react'
+import { Row, Col } from 'antd'
 
 const NoMatch = () => {
   return (
-    <div className="no-match-page">
-      404
-      <br />
-      There is no such page.
-      <br />
-      Please, start with main page.
-    </div>
+    <Row justify="center" className="media-page">
+      <Col className="centered no-match-num">
+        404
+        <br />
+        <span>Page not found</span>
+      </Col>
+    </Row>
   )
 }
 
