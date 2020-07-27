@@ -8,6 +8,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom'
+
 import { Layout } from 'antd'
 
 import University from './components/Footer'
@@ -21,7 +22,7 @@ const App = () => {
   return (
     <Router>
       <Layout className="main-wrapper">
-        <Layout className="page-wrapper">
+        <Layout className="page-wrapper light">
           <Switch>
             <Route exact path="/" component={Start} />
             <Route path="/media/:id" component={Media} />
@@ -31,7 +32,7 @@ const App = () => {
             </Route>
           </Switch>
         </Layout>
-        <Footer>
+        <Footer className="light">
           <University />
         </Footer>
       </Layout>

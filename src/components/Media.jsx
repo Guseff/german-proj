@@ -1,21 +1,22 @@
 import React from 'react'
-import { Row, Col } from 'antd'
+import { Layout } from 'antd'
 import { useParams } from 'react-router-dom'
+import SideMenu from './SideMenu'
+import PageTitle from './PageTitle'
+
+const { Content } = Layout
 
 const Media = () => {
   const { id } = useParams()
+  const title = 'Media'
   return (
-    <Row className="media-page">
-      <Col span={20} offset={2}>
-        <Row justify="center">
-          <Col>
-            Media
-            <br />
-            {id}
-          </Col>
-        </Row>
-      </Col>
-    </Row>
+    <>
+      <PageTitle className="light" title={title} />
+      <Layout className="media-page light">
+        <SideMenu className="light" />
+        <Content>{id}</Content>
+      </Layout>
+    </>
   )
 }
 

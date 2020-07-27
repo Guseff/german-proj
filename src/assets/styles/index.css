@@ -1,3 +1,7 @@
+.light {
+  background-color: #ffffff;
+}
+
 .main-wrapper {
   max-width: 1400px;
   min-height: 100vh;
@@ -7,6 +11,13 @@
 
 .page-wrapper {
   flex: 1 0 auto;
+}
+
+.page-title {
+  margin: 50px 0;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .start-page, .centered {
@@ -30,7 +41,7 @@
 }
 
 .start-page--intro {
-  background-color: bisque;
+  background-color: #bae7ff;
   padding: 30px 0;
 }
 

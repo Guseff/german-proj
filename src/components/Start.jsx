@@ -1,6 +1,6 @@
 import React from 'react'
-import { Row, Col } from 'antd'
-import { Link } from 'react-router-dom'
+import { Row, Col, Button } from 'antd'
+// import { Link } from 'react-router-dom'
 
 const Start = () => {
   return (
@@ -28,14 +28,14 @@ const Start = () => {
             </Row>
             <Row justify="center">
               <Col>
-                <Link
+                <Button
                   type="primary"
                   size="large"
                   className="start-page--intro--button"
-                  to="/media/1"
+                  href="/media/1"
                 >
                   СТАРТ
-                </Link>
+                </Button>
               </Col>
             </Row>
 
