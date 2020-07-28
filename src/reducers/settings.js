@@ -1,7 +1,7 @@
 import { SET_LANGUAGE, LANGUAGES } from '../constants'
 
 const initialState = {
-  language: LANGUAGES.RU,
+  language: LANGUAGES.EN,
 }
 
 const settings = (state = initialState, action) => {

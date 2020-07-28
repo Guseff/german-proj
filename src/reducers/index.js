@@ -1,4 +1,4 @@
-import { combineReducers } from '@reduxjs/toolkit'
+import { combineReducers } from 'redux'
 import settings from './settings'
 
 const allReducers = () => combineReducers({ settings })
