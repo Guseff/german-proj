@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import SideMenu from './SideMenu'
 import PageTitle from './PageTitle'
 
-const { Content } = Layout
+const { Content, Sider } = Layout
 
 const Media = () => {
   const { id } = useParams()
@@ -13,8 +13,9 @@ const Media = () => {
     <>
       <PageTitle className="light" title={title} />
       <Layout className="media-page light">
-        <SideMenu className="light" />
+        <SideMenu />
         <Content>{id}</Content>
+        <Sider />
       </Layout>
     </>
   )

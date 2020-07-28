@@ -6,8 +6,8 @@ const { Sider } = Layout
 
 const SideMenu = () => {
   return (
-    <Sider className="light">
-      <Menu>
+    <Sider theme="light">
+      <Menu className="page--side-menu">
         <Menu.Item key="pres">Presence</Menu.Item>
         <Menu.Item key="prat">Pratter</Menu.Item>
         <Menu.Item key="perf">Perfect</Menu.Item>

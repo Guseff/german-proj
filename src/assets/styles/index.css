@@ -20,6 +20,11 @@
   text-transform: uppercase;
 }
 
+.page--side-menu {
+  font-size: 24px;
+  color: #096dd9;
+}
+
 .start-page, .centered {
   text-align: center;
 }
