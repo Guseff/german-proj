@@ -4,7 +4,7 @@ import { Layout, Menu } from 'antd'
 
 const { Sider } = Layout
 
-const SideMenu = () => {
+const LeftSider = () => {
   return (
     <Sider theme="light">
       <Menu className="page--side-menu">
@@ -17,4 +17,4 @@ const SideMenu = () => {
   )
 }
 
-export default SideMenu
+export default LeftSider

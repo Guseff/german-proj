@@ -22,7 +22,16 @@
 
 .page--side-menu {
   font-size: 24px;
-  color: #096dd9;
+  color: #1890ff;
+}
+
+.lang-btn,
+.lang-btn:last-child,
+.lang-btn:first-child {
+  height: 48px;
+  margin-right: 15px;
+  line-height: 48px;
+  /* border-radius: 50%; */
 }
 
 .start-page, .centered {
