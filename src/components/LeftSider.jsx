@@ -12,6 +12,7 @@ const LeftSider = () => {
         <Menu.Item key="prat">Pratter</Menu.Item>
         <Menu.Item key="perf">Perfect</Menu.Item>
         <Menu.Item key="media">Media</Menu.Item>
+        <Menu.Item key="tasks">Tasks</Menu.Item>
       </Menu>
     </Sider>
   )

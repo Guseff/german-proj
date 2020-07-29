@@ -14,7 +14,7 @@
 }
 
 .page-title {
-  margin: 50px 0;
+  margin: 30px 0;
   font-size: 36px;
   text-align: center;
   text-transform: uppercase;
@@ -23,6 +23,7 @@
 .page--side-menu {
   font-size: 24px;
   color: #1890ff;
+  border-right: 0;
 }
 
 .lang-btn,
