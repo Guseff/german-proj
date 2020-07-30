@@ -1,0 +1,32 @@
+{
+  "ru": {
+    "translation": {
+      "use": "Употребление",
+      "1": "1. Для обозначения настоящего;",
+      "2": "2. Для обозначения будущего (обычно – с указанием на точное время);",
+      "3": "3. Präsens Historicum (чтобы создать напряжение, динамику при рассказе, пересказе);",
+      "4": "4. В качестве императива (повелительного наклонения: приказ, просьба) + предположение (с wohl, sicher, doch);",
+      "howto": "Образование"
+    }
+  },
+  "en": {
+    "translation": {
+      "use": "Use",
+      "1": "1. To talk about the present;",
+      "2": "2. To talk about the future (usually – with time indicators);",
+      "3": "3. Präsens Historicum (to create tension, dynamics; when retelling);",
+      "4": "4. As imperative form (command, request) + guess (mit wohl, sicher, doch);",
+      "howto": "How to Form"
+    }
+  },
+  "de": {
+    "translation": {
+      "use": "Gebrauch",
+      "1": "1. Für Bezeichnung der Gegenwart;",
+      "2": "2. Für Bezeichnung der Zukunft (meist – mit Zeitangaben);",
+      "3": "3. Präsens Historicum (um Spannung zu schaffen, Dynamik. Beim Nacherzählen);",
+      "4": "4. Als Imperativform (Befehl, Bitte) + Vermutung (mit wohl, sicher, doch);",
+      "howto": "Bildung"
+    }
+  }
+}

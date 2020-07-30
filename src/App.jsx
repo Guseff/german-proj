@@ -16,6 +16,7 @@ import Start from './components/Start'
 import Media from './components/Media'
 import NoMatch from './components/NoMatch'
 import PageTemplate from './components/PageTemplate'
+import Prasence from './components/Prasence'
 
 const { Footer } = Layout
 
@@ -29,6 +30,11 @@ const App = () => {
             <Route path="/media/:id">
               <PageTemplate>
                 <Media />
+              </PageTemplate>
+            </Route>
+            <Route path="/prasence">
+              <PageTemplate>
+                <Prasence />
               </PageTemplate>
             </Route>
             <Route path="/404" component={NoMatch} />
