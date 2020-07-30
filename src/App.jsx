@@ -15,6 +15,7 @@ import University from './components/Footer'
 import Start from './components/Start'
 import Media from './components/Media'
 import NoMatch from './components/NoMatch'
+import PageTemplate from './components/PageTemplate'
 
 const { Footer } = Layout
 
@@ -25,7 +26,11 @@ const App = () => {
         <Router>
           <Switch>
             <Route exact path="/" component={Start} />
-            <Route path="/media/:id" component={Media} />
+            <Route path="/media/:id">
+              <PageTemplate>
+                <Media />
+              </PageTemplate>
+            </Route>
             <Route path="/404" component={NoMatch} />
             <Route path="*">
               <Redirect to="/404" />
