@@ -1,6 +1,9 @@
 {
   "ru": {
     "translation": {
+      "prasence": "präsens",
+      "prater": "präteritum",
+      "tasks": "задания",
       "use": "Употребление",
       "1": "1. Для обозначения настоящего;",
       "2": "2. Для обозначения будущего (обычно – с указанием на точное время);",
@@ -11,6 +14,9 @@
   },
   "en": {
     "translation": {
+      "prasence": "präsens",
+      "prater": "präteritum",
+      "tasks": "tasks",
       "use": "Use",
       "1": "1. To talk about the present;",
       "2": "2. To talk about the future (usually – with time indicators);",
@@ -21,6 +27,9 @@
   },
   "de": {
     "translation": {
+      "prasence": "präsens",
+      "prater": "präteritum",
+      "tasks": "übungen",
       "use": "Gebrauch",
       "1": "1. Für Bezeichnung der Gegenwart;",
       "2": "2. Für Bezeichnung der Zukunft (meist – mit Zeitangaben);",

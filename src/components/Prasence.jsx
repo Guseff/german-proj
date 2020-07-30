@@ -7,14 +7,14 @@ const { Content } = Layout
 const Media = () => {
   const { t } = useTranslation()
   return (
-    <>
-      <Content>
-        <p>{t('1')}</p>
-        <p>{t('2')}</p>
-        <p>{t('3')}</p>
-        <p>{t('4')}</p>
-      </Content>
-    </>
+    <Content>
+      <h3>{t('use')}</h3>
+      <p>{t('1')}</p>
+      <p>{t('2')}</p>
+      <p>{t('3')}</p>
+      <p>{t('4')}</p>
+      <h3>{t('howto')}</h3>
+    </Content>
   )
 }
 

@@ -6,11 +6,10 @@ import RightSider from './RightSider'
 import PageTitle from './PageTitle'
 
 const PageTemplate = props => {
-  const title = 'Media'
   const { children } = props
   return (
     <>
-      <PageTitle className="light" title={title} />
+      <PageTitle className="light" />
       <Layout className="media-page light">
         <LeftSider />
         {children}

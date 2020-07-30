@@ -10,10 +10,10 @@ const LeftSider = () => {
     <Sider theme="light">
       <Menu className="page--side-menu" defaultSelectedKeys="pres">
         <Menu.Item key="pres">
-          <Link to="/prasence">Presence</Link>
+          <Link to="/prasence">Präsens</Link>
         </Menu.Item>
         <Menu.Item key="prat">
-          <Link to="/pratter">Pratter</Link>
+          <Link to="/pratter">Prätter</Link>
         </Menu.Item>
         <Menu.Item key="perf">
           <Link to="/perfect">Perfect</Link>

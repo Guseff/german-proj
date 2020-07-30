@@ -32,7 +32,7 @@ const Start = () => {
                   type="primary"
                   size="large"
                   className="start-page--intro--button"
-                  href="/media/1"
+                  href="/prasence"
                 >
                   СТАРТ
                 </Button>
