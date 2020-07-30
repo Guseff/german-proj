@@ -2,6 +2,10 @@
   background-color: #ffffff;
 }
 
+.capital {
+  text-transform: capitalize;
+}
+
 .main-wrapper {
   max-width: 1400px;
   min-height: 100vh;

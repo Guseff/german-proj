@@ -2,27 +2,39 @@ import React from 'react'
 
 import { Layout, Menu } from 'antd'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const { Sider } = Layout
 
 const LeftSider = () => {
+  const { t } = useTranslation()
   return (
     <Sider theme="light">
       <Menu className="page--side-menu" defaultSelectedKeys="pres">
         <Menu.Item key="pres">
-          <Link to="/prasence">Präsens</Link>
+          <Link className="capital" to="/prasence">
+            {t('prasence')}
+          </Link>
         </Menu.Item>
         <Menu.Item key="prat">
-          <Link to="/pratter">Prätter</Link>
+          <Link className="capital" to="/pratter">
+            {t('prater')}
+          </Link>
         </Menu.Item>
         <Menu.Item key="perf">
-          <Link to="/perfect">Perfect</Link>
+          <Link className="capital" to="/perfect">
+            Perfect
+          </Link>
         </Menu.Item>
         <Menu.Item key="media">
-          <Link to="/media/5">Media</Link>
+          <Link className="capital" to="/media/5">
+            Media
+          </Link>
         </Menu.Item>
         <Menu.Item key="tasks">
-          <Link to="/task/1">Tasks</Link>
+          <Link className="capital" to="/task/1">
+            {t('tasks')}
+          </Link>
         </Menu.Item>
       </Menu>
     </Sider>
