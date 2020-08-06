@@ -9,7 +9,11 @@
       "2": "2. Для обозначения будущего (обычно – с указанием на точное время);",
       "3": "3. Präsens Historicum (чтобы создать напряжение, динамику при рассказе, пересказе);",
       "4": "4. В качестве императива (повелительного наклонения: приказ, просьба) + предположение (с wohl, sicher, doch);",
-      "howto": "Образование"
+      "howto": "Образование",
+      "special": "Особое",
+      "spec-1-1": "Глаголы, которые заканчиваются на",
+      "spec-1-2": "получают во 2/3 лице единственного числа и втором лице множественного окончания",
+      "spec-1-3": ""
     }
   },
   "en": {
@@ -22,7 +26,11 @@
       "2": "2. To talk about the future (usually – with time indicators);",
       "3": "3. Präsens Historicum (to create tension, dynamics; when retelling);",
       "4": "4. As imperative form (command, request) + guess (mit wohl, sicher, doch);",
-      "howto": "How to Form"
+      "howto": "How to Form",
+      "special": "Special",
+      "spec-1-1": "Verbs that end with",
+      "spec-1-2": "get the endings",
+      "spec-1-3": "in the 2nd/3rd Person Singular and the 2nd Person Plural"
     }
   },
   "de": {
@@ -35,7 +43,11 @@
       "2": "2. Für Bezeichnung der Zukunft (meist – mit Zeitangaben);",
       "3": "3. Präsens Historicum (um Spannung zu schaffen, Dynamik. Beim Nacherzählen);",
       "4": "4. Als Imperativform (Befehl, Bitte) + Vermutung (mit wohl, sicher, doch);",
-      "howto": "Bildung"
+      "howto": "Bildung",
+      "special": "Besonderes",
+      "spec-1-1": "Verben, die auf",
+      "spec-1-2": "enden, bekommen in der 2./3. Person Singular und der 2. Person Plural die Endungen",
+      "spec-1-3": ""
     }
   }
 }
