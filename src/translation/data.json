@@ -13,7 +13,24 @@
       "special": "Особое",
       "spec-1-1": "Глаголы, которые заканчиваются на",
       "spec-1-2": "получают во 2/3 лице единственного числа и втором лице множественного окончания",
-      "spec-1-3": ""
+      "spec-2-2": "получают во втором лице единственного числа окончание",
+      "spec-1-3": "",
+      "spec-2-3": "",
+      "spec-3-1": "У сильных глаголов во 2/3 лице единственного числа – изменение корневой гласной (Vokalwechsel):",
+      "except": "кроме",
+      "but": "но",
+      "spec-4-1": "Глаголы на",
+      "spec-4-2": "заканчиваются в первом лице единственного числа на",
+      "remember": "Запомните",
+      "prefixes": "Глаголы с приставками",
+      "spec-6-1": "НИКОГДА не отделяются! Всегда стоят вместе с основой:",
+      "spec-6-2": "Полуприставки, которые раньше были самостоятельными корнями, например:",
+      "spec-6-3": "Они отделяются от основы глагола и находятся в конце фразы, когда изменяемая часть стоит на 1/2 месте в предложении.",
+      "spec-6-4": "Обратите внимание на контекст! Отделяемость приставки может изменить значение глагола. Слова стоит учить наизусть:",
+      "inseparable": "неотделяемые",
+      "separable": "отделяемые",
+      "mixed group": "Mischgruppe (отделяемые и неотделяемые)",
+      "reflexiva": "Возвратные глаголы + Таблица сильных глаголов"
     }
   },
   "en": {
@@ -30,7 +47,24 @@
       "special": "Special",
       "spec-1-1": "Verbs that end with",
       "spec-1-2": "get the endings",
-      "spec-1-3": "in the 2nd/3rd Person Singular and the 2nd Person Plural"
+      "spec-2-2": "get the ending",
+      "spec-1-3": "in the 2nd/3rd Person Singular and the 2nd Person Plural",
+      "spec-2-3": "in the 2nd Person Singular",
+      "spec-3-1": "Irregular verbs in the 2nd and the 3rd Person Singular – Vokalwechsel (change of the root vowel):",
+      "except": "except",
+      "but": "but",
+      "spec-4-1": "Verbs that end with",
+      "spec-4-2": "get in the 1st Person Singular the ending",
+      "remember": "Remember",
+      "prefixes": "The verbs with prefixes",
+      "spec-6-1": "NEVER separable! They always go together with the root:",
+      "spec-6-2": "the semi-prefixes that are (or were earlier) independent, as:",
+      "spec-6-3": "The prefixes are separated from the root if the finite verb stays at the 1st or the 2nd place in the sentence, and the prefixes are placed at the end of the phrase themselves.",
+      "spec-6-4": "Pay attention to the context! The separability of the prefix can change the meaning of the verb. The words need to be learned by heart:",
+      "inseparable": "inseparable",
+      "separable": "separable",
+      "mixed group": "Mixed group (separable & inseparable)",
+      "reflexiva": "Reflexiva + Table of irregular verbs"
     }
   },
   "de": {
@@ -47,7 +81,24 @@
       "special": "Besonderes",
       "spec-1-1": "Verben, die auf",
       "spec-1-2": "enden, bekommen in der 2./3. Person Singular und der 2. Person Plural die Endungen",
-      "spec-1-3": ""
+      "spec-2-2": "enden, bekommen in der 2. Person Singular die Endung",
+      "spec-1-3": "",
+      "spec-2-3": "",
+      "spec-3-1": "Bei den starken Verben in der 2./3. Person Singular – Vokalwechsel:",
+      "except": "außer",
+      "but": "aber",
+      "spec-4-1": "Verben , die auf",
+      "spec-4-2": "enden, bekommen in der 1. Person Singular die Endung",
+      "remember": "Zum Merken",
+      "prefixes": "Die Verben mit Präfixen",
+      "spec-6-1": "Sind NIE trennbar! Sie stehen immer mit der Wurzel zusammen:",
+      "spec-6-2": "Halbpräfixe, die früher selbständig waren, wie in:",
+      "spec-6-3": "Sie werden von dem Stamm getrennt, wenn das finite Verb auf der 1./2. Stelle im Satz ist, und stehen dann am Ende des Satzes.",
+      "spec-6-4": "Beachten sie den Kontext! Trennbarkeit des Präfixes ändert die Bedeutung vom Verb. Die Wörter sind einfach zu lernen:",
+      "inseparable": "untrennbare",
+      "separable": "trennbare",
+      "mixed group": "Mischgruppe (trennbar & untrennbar)",
+      "reflexiva": "Reflexiva + Tabelle der starken Verben"
     }
   }
 }
