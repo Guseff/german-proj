@@ -2,8 +2,8 @@ import React from 'react'
 import { Layout, Radio } from 'antd'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { setLanguage } from '../actions'
-import i18n from '../translation'
+import { setLanguage } from '../../actions'
+import i18n from '../../translation'
 
 const { Sider } = Layout
 

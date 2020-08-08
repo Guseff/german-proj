@@ -51,9 +51,13 @@
   padding: 0 30px;
 }
 
-.page-content--img {
+.prasence-img {
   width: 148px;
   margin: 0 auto;
+}
+.prater-img {
+  width: 248px;
+  margin: 10px auto;
 }
 
 .page-content--table {

@@ -17,7 +17,7 @@ const LeftSider = () => {
           </Link>
         </Menu.Item>
         <Menu.Item key="prat">
-          <Link className="capital" to="/pratter">
+          <Link className="capital" to="/prater">
             {t('prater')}
           </Link>
         </Menu.Item>

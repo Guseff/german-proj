@@ -11,14 +11,12 @@ import {
 
 import { Layout } from 'antd'
 
-import University from './components/Footer'
-import Start from './components/Start'
-import Media from './components/Media'
-import NoMatch from './components/NoMatch'
-import PageTemplate from './components/PageTemplate'
-import Prasence from './components/Prasence'
-
-const { Footer } = Layout
+import Footer from './components/common/Footer'
+import Start from './views/Start'
+import Media from './views/Media'
+import NoMatch from './views/NoMatch'
+import Prasence from './views/Prasence'
+import Prater from './views/Prater'
 
 const App = () => {
   return (
@@ -27,16 +25,9 @@ const App = () => {
         <Router>
           <Switch>
             <Route exact path="/" component={Start} />
-            <Route path="/media/:id">
-              <PageTemplate>
-                <Media />
-              </PageTemplate>
-            </Route>
-            <Route path="/prasence">
-              <PageTemplate>
-                <Prasence />
-              </PageTemplate>
-            </Route>
+            <Route path="/media/:id" component={Media} />
+            <Route path="/prasence" component={Prasence} />
+            <Route path="/prater" component={Prater} />
             <Route path="/404" component={NoMatch} />
             <Route path="*">
               <Redirect to="/404" />
@@ -44,9 +35,9 @@ const App = () => {
           </Switch>
         </Router>
       </Layout>
-      <Footer className="light">
-        <University />
-      </Footer>
+      <Layout.Footer className="light">
+        <Footer />
+      </Layout.Footer>
     </Layout>
   )
 }

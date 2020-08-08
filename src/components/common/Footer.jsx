@@ -1,6 +1,6 @@
 import React from 'react'
 
-const University = () => {
+const Footer = () => {
   return (
     <div className="footer">
       БРЕСТСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМЕНИ A.C. ПУШКИНА
@@ -10,4 +10,4 @@ const University = () => {
   )
 }
 
-export default University
+export default Footer
