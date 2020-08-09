@@ -44,7 +44,7 @@ const Prasence = () => {
             <tr>
               <td className="low-cell bold-cell">ich</td>
               <td className="mid-cell">e</td>
-              <td className="low-cell">wir</td>
+              <td className="low-cell bold-cell">wir</td>
               <td className="mid-cell">en</td>
               <td className="gap-cell" />
               <td>machen</td>
@@ -53,7 +53,7 @@ const Prasence = () => {
             <tr>
               <td className="low-cell bold-cell">du</td>
               <td className="mid-cell">(e)st</td>
-              <td className="low-cell">ihr</td>
+              <td className="low-cell bold-cell">ihr</td>
               <td className="mid-cell">(e)t</td>
               <td className="gap-cell" />
               <td>schauen</td>
@@ -62,7 +62,7 @@ const Prasence = () => {
             <tr>
               <td className="low-cell bold-cell">er/sie/es</td>
               <td className="mid-cell">(e)t</td>
-              <td className="low-cell">sie/Sie</td>
+              <td className="low-cell bold-cell">sie/Sie</td>
               <td className="mid-cell">en</td>
               <td className="gap-cell" />
               <td>leben</td>
@@ -90,9 +90,9 @@ const Prasence = () => {
           &#44;&nbsp;
           <u>dn</u>
           &#44;&nbsp;
-          {`${t('get the endings')} `}
+          {`${t('prasence.special.1.3')} `}
           -est, -et&nbsp;
-          {`${t('in the 2nd/3rd Person Singular and the 2nd Person Plural')} `}
+          {`${t('prasence.special.1.4')} `}
         </p>
         <p className="centered cursive">
           ret
@@ -147,7 +147,7 @@ const Prasence = () => {
         </p>
         <p>
           3)&nbsp;
-          {`${t('prasence-3-1')} `}
+          {`${t('prasence.special.3.1')} `}
         </p>
         <p>
           au ➤ äu (saufen, laufen)&nbsp;
@@ -239,7 +239,7 @@ const Prasence = () => {
         </table>
         <p>
           6)&nbsp;
-          {`${t('prefixes')}`}
+          {`${t('prefixes-verbs')}`}
         </p>
         <table className="page-content--table">
           <tbody>

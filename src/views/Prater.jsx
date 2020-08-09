@@ -179,7 +179,7 @@ const Prater = () => {
         </table>
         <p>
           8)&nbsp;
-          {`${t('prefixes')}`}
+          {`${t('prefixes-verbs')}`}
         </p>
         <table className="page-content--table">
           <tbody>
