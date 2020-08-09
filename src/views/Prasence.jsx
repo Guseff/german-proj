@@ -16,23 +16,19 @@ const Prasence = () => {
         <h3 className="centered">{t('use')}</h3>
         <p>
           1.&nbsp;
-          {`${t('To talk about the present')};`}
+          {`${t('prasence.use.1')};`}
         </p>
         <p>
           2.&nbsp;
-          {`${t('To talk about the future (usually – with time indicators)')};`}
+          {`${t('prasence.use.2')};`}
         </p>
         <p>
           3.&nbsp;
-          {`${t(
-            'Präsens Historicum (to create tension, dynamics; when retelling)'
-          )};`}
+          {`${t('prasence.use.3')};`}
         </p>
         <p>
           4.&nbsp;
-          {`${t(
-            'As imperative form (command, request) + guess (mit wohl, sicher, doch)'
-          )};`}
+          {`${t('prasence.use.4')};`}
         </p>
         <h3 className="centered">{t('howto')}</h3>
         <p className="centered">
@@ -77,7 +73,7 @@ const Prasence = () => {
         <h3 className="centered">{`${t('special')}:`}</h3>
         <p>
           1)&nbsp;
-          {`${t('Verbs')} ${t('that end with')} `}
+          {`${t('prasence.special.1.1')} ${t('prasence.special.1.2')} `}
           <u>d</u>
           &#44;&nbsp;
           <u>t</u>
@@ -119,7 +115,7 @@ const Prasence = () => {
         </p>
         <p>
           2)&nbsp;
-          {`${t('Verbs')} ${t('that end with')} `}
+          {`${t('prasence.special.2.1')} ${t('prasence.special.2.2')} `}
           <u>s</u>
           &#44;&nbsp;
           <u>ss</u>
@@ -132,9 +128,9 @@ const Prasence = () => {
           &#44;&nbsp;
           <u>tz</u>
           &#44;&nbsp;
-          {`${t('get the ending')} `}
+          {`${t('prasence.special.2.3')} `}
           -t&nbsp;
-          {`${t('prasence-2-3')} `}
+          {`${t('prasence.special.2.4')} `}
         </p>
         <p className="centered cursive">
           lö
@@ -209,9 +205,9 @@ const Prasence = () => {
         </table>
         <p>
           4)&nbsp;
-          {`${t('prasence-4-1')} `}
+          {`${t('prasence.special.4.1')} `}
           -eln/-ern&nbsp;
-          {`${t('prasence-4-2')} `}
+          {`${t('prasence.special.4.2')} `}
           -(e)le
         </p>
         <p className="centered cursive">sammle, bastle, bedau(e)re, ändere</p>
@@ -250,7 +246,7 @@ const Prasence = () => {
             <tr>
               <th>{`${t('inseparable')}`}</th>
               <th>{`${t('separable')}`}</th>
-              <th>{`${t('mixed group')}`}</th>
+              <th>{`${t('mixed-group')}`}</th>
             </tr>
             <tr>
               <td className="top-cell centered-cell">
@@ -259,7 +255,7 @@ const Prasence = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('prasence-6-1')}`}</span>
+                <span>{`${t('prasence.special.6.1')}`}</span>
                 <br />
                 <br />
                 <span className="cursive">
@@ -278,7 +274,7 @@ const Prasence = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('prasence-6-2')}`}</span>
+                <span>{`${t('prasence.special.6.2')}`}</span>
                 <br />
                 <span className="cursive">
                   <u>kennen</u>
@@ -288,7 +284,7 @@ const Prasence = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('prasence-6-3')}`}</span>
+                <span>{`${t('prasence.special.6.3')}`}</span>
                 <br />
                 <span className="cursive">
                   Er&nbsp;
@@ -304,7 +300,7 @@ const Prasence = () => {
                 <span className="bold">durch- über- unter- um- wieder-</span>
                 <br />
                 <br />
-                <span>{`${t('prasence-6-4')}`}</span>
+                <span>{`${t('prasence.special.6.4')}`}</span>
                 <br />
                 <span className="cursive">
                   Ich&nbsp;

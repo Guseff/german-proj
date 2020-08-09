@@ -15,26 +15,22 @@ const Prater = () => {
         <h3 className="centered">{t('use')}</h3>
         <p>
           1.&nbsp;
-          {`${t(
-            'To talk about the past (usually - in the written language)'
-          )};`}
+          {`${t('prater.use.1')};`}
         </p>
         <p>
           2.&nbsp;
-          {`${t('Narrative form')};`}
+          {`${t('prater.use.2')};`}
         </p>
         <p>
           3.&nbsp;
-          {`${t(
-            'When events happen in the past simultaneously or immediately after each other'
-          )};`}
+          {`${t('prater.use.3')};`}
         </p>
         <h3 className="centered">{t('howto')}</h3>
         <table className="page-content--table">
           <tbody>
             <tr>
               <td className="centered">
-                {t('regular verbs')}
+                {t('regular-verbs')}
                 <br />
                 <img alt="" src={schem} className="prater-img" />
                 <br />
@@ -43,7 +39,7 @@ const Prater = () => {
                 {quattro}
               </td>
               <td className="centered">
-                {t('irregular verbs')}
+                {t('irregular-verbs')}
                 <br />
                 <br />
                 (2. Form in der Tabelle)&nbsp;
@@ -56,7 +52,7 @@ const Prater = () => {
         <h3 className="centered">{`${t('special')}:`}</h3>
         <p>
           1)&nbsp;
-          {`${t('regular verbs')} ${t('that end with')} `}
+          {`${t('prater.special.1.1')} `}
           <u>d</u>
           &#44;&nbsp;
           <u>t</u>
@@ -73,32 +69,31 @@ const Prater = () => {
           &#44;&nbsp;
           <u>dn</u>
           &#44;&nbsp;
-          {`${t('spec-1-2')} `}
-          -est, -et&nbsp;
-          {`${t('spec-1-3')} `}
+          {`${t('prater.special.1.2')} `}
+          -ete-
         </p>
         <p className="centered cursive">
           ret
           <u>t</u>
-          en, re
+          ete, re
           <u>d</u>
-          en, zei
+          ete, zei
           <u>chn</u>
-          en,&nbsp;ö
+          ete,&nbsp;ö
           <u>ffn</u>
-          en, ei
+          ete, ei
           <u>gn</u>
-          en,&nbsp;a
+          ete,&nbsp;a
           <u>tm</u>
-          en, wi
+          ete, wi
           <u>dm</u>
-          en, or
+          ete, or
           <u>dn</u>
-          en
+          ete
         </p>
         <p>
           2)&nbsp;
-          {`${t('spec-1-1')} `}
+          {`${t('prater.special.2.1')} `}
           <u>s</u>
           &#44;&nbsp;
           <u>ss</u>
@@ -111,117 +106,79 @@ const Prater = () => {
           &#44;&nbsp;
           <u>tz</u>
           &#44;&nbsp;
-          {`${t('spec-2-2')} `}
-          -t&nbsp;
-          {`${t('spec-2-3')} `}
+          {`${t('prater.special.2.2')} `}
+          -est&nbsp;
+          {`${t('prater.special.2.3')} `}
         </p>
         <p className="centered cursive">
-          lö
-          <u>s</u>
-          en, ha
-          <u>ss</u>
-          en, grü
-          <u>ß</u>
-          en, tan
-          <u>z</u>
-          en, se
-          <u>t</u>
-          zen
+          aßest, lasest, batest, fandest, glittest, schlossest, rissest,
+          schmolzest, hieltest
         </p>
         <p>
           3)&nbsp;
-          {`${t('spec-3-1')} `}
+          {`${t('prater.special.3.1')} `}
+          <u>t</u>
+          &#44;&nbsp;
+          <u>d</u>
+          &#44;&nbsp;
+          <u>tt</u>
+          &#44;&nbsp;
+          {`${t('prater.special.3.2')} `}
+          -et&nbsp;
+          {`${t('prater.special.3.3')} `}
         </p>
-        <p>
-          au ➤ äu (saufen, laufen)&nbsp;
-          <span className="strong">{`${t('except')}`}</span>
-          :&nbsp;hauen, saugen, schnauben
+        <p className="centered cursive">
+          batet, ludet, littet, galtet, rittet, fandet, hieltet
         </p>
-        <p>
-          a ➤ ä (backen, blasen, braten)&nbsp;
-          <span className="strong">{`${t('except')}`}</span>
-          :&nbsp;mahlen, spalten, schaffen, (er)schallen
-        </p>
-        <p>
-          e ➤ i (essen, geben, helfen)&nbsp;
-          <span className="strong">{`${t('except')}`}</span>
-          :&nbsp;bewegen, genesen, weben, gehen, heben, stehen + brennen,
-          kennen, rennen, stecken, denken, nennen, senden, wenden
-        </p>
-        <p>
-          <span className="strong">{`${t('but')}`}</span>
-          :&nbsp;e ➤ ie (befehlen, empfehlen, geschehen, lesen, sehen, stehlen)
-        </p>
-        <table className="page-content--table">
-          <tbody>
-            <tr>
-              <td>
-                kommen –&nbsp;k
-                <u>o</u>
-                mmst/t
-              </td>
-              <td>
-                nehmen – ni
-                <u>mm</u>
-                st/t
-              </td>
-              <td className="red">
-                erlöschen – erl
-                <u>i</u>
-                schst/t
-              </td>
-            </tr>
-            <tr>
-              <td>
-                stoßen – st
-                <u>ö</u>
-                ßt
-              </td>
-              <td>
-                treten – tri
-                <u>tt</u>
-                st/_
-              </td>
-              <td> </td>
-            </tr>
-          </tbody>
-        </table>
         <p>
           4)&nbsp;
-          {`${t('spec-4-1')} `}
+          {`${t('prater.special.4.1')} `}
           -eln/-ern&nbsp;
-          {`${t('spec-4-2')} `}
+          {`${t('prater.special.4.2')} `}
           -(e)le
         </p>
-        <p className="centered cursive">sammle, bastle, bedau(e)re, ändere</p>
+        <p className="centered cursive">aßen, wuschen, sahen</p>
         <p>
           5)&nbsp;
+          {`${t('prater.special.5.1')} `}
+        </p>
+        <p className="centered cursive">
+          bringen, nennen, denken, brennen, wissen, kennen + MODALE
+        </p>
+        <p>
+          6)&nbsp;
+          {`${t('prater.special.6.1')} `}
+        </p>
+        <p className="centered cursive">
+          bewegen, schaffen, schleifen, senden, wiegen, wenden, hängen,
+          erschrecken
+        </p>
+        <p>
+          7)&nbsp;
           {`${t('remember')}!`}
         </p>
         <table className="page-content--table">
           <tbody>
             <tr>
-              <td>können</td>
-              <td>müssen</td>
               <td>sein</td>
-              <td> </td>
+              <td>war</td>
             </tr>
             <tr>
-              <td>mögen</td>
-              <td>dürfen</td>
               <td>haben</td>
-              <td>tun</td>
+              <td>hatte</td>
             </tr>
             <tr>
-              <td>sollen</td>
-              <td>wissen</td>
               <td>werden</td>
-              <td> </td>
+              <td>wurde</td>
+            </tr>
+            <tr>
+              <td>tun</td>
+              <td>tat</td>
             </tr>
           </tbody>
         </table>
         <p>
-          6)&nbsp;
+          8)&nbsp;
           {`${t('prefixes')}`}
         </p>
         <table className="page-content--table">
@@ -229,7 +186,7 @@ const Prater = () => {
             <tr>
               <th>{`${t('inseparable')}`}</th>
               <th>{`${t('separable')}`}</th>
-              <th>{`${t('mixed group')}`}</th>
+              <th>{`${t('mixed-group')}`}</th>
             </tr>
             <tr>
               <td className="top-cell centered-cell">
@@ -238,7 +195,7 @@ const Prater = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('spec-6-1')}`}</span>
+                <span>{`${t('prasence.special.6.1')}`}</span>
                 <br />
                 <br />
                 <span className="cursive">
@@ -246,9 +203,9 @@ const Prater = () => {
                   <u>be</u>
                   komme eine Note. Er&nbsp;
                   <u>er</u>
-                  zählt eine Geschichte. Wie&nbsp;
+                  zählte eine Geschichte. Wie&nbsp;
                   <u>ver</u>
-                  stehen den Inhalt.
+                  standen den Inhalt.
                 </span>
               </td>
               <td className="top-cell centered-cell">
@@ -257,7 +214,7 @@ const Prater = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('spec-6-2')}`}</span>
+                <span>{`${t('prasence.special.6.2')}`}</span>
                 <br />
                 <span className="cursive">
                   <u>kennen</u>
@@ -267,13 +224,13 @@ const Prater = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('spec-6-3')}`}</span>
+                <span>{`${t('prasence.special.6.3')}`}</span>
                 <br />
                 <span className="cursive">
                   Er&nbsp;
-                  <u>kommt mit</u>
+                  <u>kam mit</u>
                   ;&nbsp;sie&nbsp;
-                  <u>sehen</u>
+                  <u>sahen</u>
                   &nbsp;gut&nbsp;
                   <u>aus</u>
                   .&nbsp;
@@ -283,13 +240,13 @@ const Prater = () => {
                 <span className="bold">durch- über- unter- um- wieder-</span>
                 <br />
                 <br />
-                <span>{`${t('spec-6-4')}`}</span>
+                <span>{`${t('prasence.special.6.4')}`}</span>
                 <br />
                 <span className="cursive">
                   Ich&nbsp;
-                  <u>wiederhole</u>
+                  <u>wiederholte</u>
                   &nbsp;den Stoff; Der Hund&nbsp;
-                  <u>holt</u>
+                  <u>holte</u>
                   &nbsp;den Stock&nbsp;
                   <u>wieder</u>
                   .&nbsp;
@@ -299,7 +256,7 @@ const Prater = () => {
           </tbody>
         </table>
         <p>
-          7)&nbsp;
+          9)&nbsp;
           {`${t('reflexiva')}`}
         </p>
       </Content>
