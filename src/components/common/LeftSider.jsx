@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { Layout, Menu } from 'antd'
 import { Link } from 'react-router-dom'
@@ -6,22 +7,23 @@ import { useTranslation } from 'react-i18next'
 
 const { Sider } = Layout
 
-const LeftSider = () => {
+const LeftSider = props => {
+  const { pageTitle } = props
   const { t } = useTranslation()
   return (
     <Sider theme="light">
-      <Menu className="page--side-menu" defaultSelectedKeys="pres">
-        <Menu.Item key="pres">
+      <Menu className="page--side-menu" selectedKeys={pageTitle}>
+        <Menu.Item key="prasence">
           <Link className="capital" to="/prasence">
             {t('prasence')}
           </Link>
         </Menu.Item>
-        <Menu.Item key="prat">
+        <Menu.Item key="prater">
           <Link className="capital" to="/prater">
             {t('prater')}
           </Link>
         </Menu.Item>
-        <Menu.Item key="perf">
+        <Menu.Item key="perfect">
           <Link className="capital" to="/perfect">
             Perfect
           </Link>
@@ -32,13 +34,17 @@ const LeftSider = () => {
           </Link>
         </Menu.Item>
         <Menu.Item key="tasks">
-          <Link className="capital" to="/task/1">
+          <Link className="capital" to="/tasks/1">
             {t('tasks')}
           </Link>
         </Menu.Item>
       </Menu>
     </Sider>
   )
+}
+
+LeftSider.propTypes = {
+  pageTitle: PropTypes.string.isRequired,
 }
 
 export default LeftSider

@@ -42,6 +42,7 @@
 }
 
 .page--side-menu {
+  position: fixed;
   font-size: 24px;
   color: #1890ff;
   border-right: 0;
@@ -90,6 +91,10 @@
 }
 .page-content--table .centered-cell {
   text-align: center;
+}
+
+.lang-btn--wrap {
+  position: fixed;
 }
 
 .lang-btn,
