@@ -23,6 +23,12 @@
   color: red;
 }
 
+.attention-red {
+  color: red;
+  border: 1px solid red;
+  padding: 10px 0;
+}
+
 .main-wrapper {
   max-width: 1400px;
   min-height: 100vh;
@@ -60,6 +66,21 @@
   width: 248px;
   margin: 10px auto;
 }
+.perfect-img-1 {
+  width: 248px;
+  margin: 10px auto;
+}
+.perfect-img-2 {
+  width: 160px;
+  height: 24px;
+}
+.perfect-img-3 {
+  width: 230px;
+  height: 35px;
+}
+.perfect-img-4 {
+  margin: 0 auto;
+}
 
 .page-content--table {
   width: 100%;
@@ -92,6 +113,10 @@
 .page-content--table .centered-cell {
   text-align: center;
 }
+.page-content--table .cell-45 {
+  width: 45%;
+}
+
 
 .lang-btn--wrap {
   position: fixed;

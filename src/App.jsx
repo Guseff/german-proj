@@ -17,6 +17,7 @@ import Media from './views/Media'
 import NoMatch from './views/NoMatch'
 import Prasence from './views/Prasence'
 import Prater from './views/Prater'
+import Perfect from './views/Perfect'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
             <Route path="/media/:id" component={Media} />
             <Route path="/prasence" component={Prasence} />
             <Route path="/prater" component={Prater} />
+            <Route path="/perfect" component={Perfect} />
             <Route path="/404" component={NoMatch} />
             <Route path="*">
               <Redirect to="/404" />
