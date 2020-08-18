@@ -4,12 +4,14 @@ import PropTypes from 'prop-types'
 import { Layout, Menu } from 'antd'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { useSelector } from 'react-redux'
 
 const { Sider } = Layout
 
 const LeftSider = props => {
   const { pageTitle } = props
   const { t } = useTranslation()
+  const { tense, id } = useSelector(state => state.media)
   return (
     <Sider theme="light">
       <Menu className="page--side-menu" selectedKeys={pageTitle}>
@@ -29,7 +31,7 @@ const LeftSider = props => {
           </Link>
         </Menu.Item>
         <Menu.Item key="media">
-          <Link className="capital" to="/media/5">
+          <Link className="capital" to={`/media/${tense}/${id}`}>
             Media
           </Link>
         </Menu.Item>

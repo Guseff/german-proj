@@ -1,4 +1,5 @@
 import 'antd/dist/antd.css'
+import 'video-react/dist/video-react.css'
 import './assets/styles/index.css'
 
 import React from 'react'
@@ -26,7 +27,8 @@ const App = () => {
         <Router>
           <Switch>
             <Route exact path="/" component={Start} />
-            <Route path="/media/:id" component={Media} />
+            <Route path="/media/:tense/:id" component={Media} />
+            <Route path="/media/:tense" component={Media} />
             <Route path="/prasence" component={Prasence} />
             <Route path="/prater" component={Prater} />
             <Route path="/perfect" component={Perfect} />
