@@ -6,7 +6,7 @@ import { Player } from 'video-react'
 import PageTemplate from '../components/common/PageTemplate'
 import { TENSES } from '../constants'
 
-import poster from '../assets/posters/de-perfect-vid1.png'
+// import poster from '../assets/posters/de-perfect-vid1.png'
 
 const Media = () => {
   const { tense, id } = useParams()
@@ -22,8 +22,8 @@ const Media = () => {
       <Layout.Content>
         {`tense: ${tense}, id: ${id}`}
         <Player
-          source="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-          poster={poster}
+          source="video/de-perfect-vid1.mp4"
+          poster="posters/de-perfect-vid1.png"
         />
       </Layout.Content>
     </PageTemplate>
