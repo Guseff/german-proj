@@ -1,6 +1,7 @@
 import React from 'react'
 import { Layout } from 'antd'
 import { useParams, Redirect } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 import { Player, BigPlayButton } from 'video-react'
 
 import PageTemplate from '../components/common/PageTemplate'
@@ -9,6 +10,7 @@ import TenseMenu from '../components/common/TenseMenu'
 import IdMenu from '../components/common/IdMenu'
 
 const Media = () => {
+  const lang = useSelector(store => store.settings.language)
   const { tense, id } = useParams()
   if (
     tense !== TENSES.PERFECT &&
@@ -17,7 +19,7 @@ const Media = () => {
   )
     return <Redirect to="/404" />
 
-  const src = `/video/de-${tense}-vid${id}.mp4`
+  const src = `/video/${lang}-${tense}-vid${id}.mp4`
   const poster = `/posters/de-${tense}-vid${id}.png`
 
   return (

@@ -13,7 +13,7 @@ const TenseMenu = props => {
   const setVideoId = () => setId(1)
 
   return (
-    <Menu mode="horizontal" defaultSelectedKeys={tense}>
+    <Menu mode="horizontal" selectedKeys={tense}>
       <Menu.Item key={TENSES.PRASENCE}>
         <Link to={`/media/${TENSES.PRASENCE}/1`} onClick={setVideoId}>
           {t(TENSES.PRASENCE)}

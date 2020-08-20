@@ -17,7 +17,7 @@ const IdMenu = props => {
   const setVideoId = num => setId(num)
 
   return (
-    <Menu mode="horizontal" defaultSelectedKeys={id}>
+    <Menu mode="horizontal" selectedKeys={id}>
       {media[tense].map(el => (
         <Menu.Item key={el}>
           <Link to={`/media/${tense}/${el}`} onClick={() => setVideoId(el)}>
