@@ -1,12 +1,12 @@
 import React from 'react'
 import { Layout } from 'antd'
 import { useParams, Redirect } from 'react-router-dom'
-import { Player } from 'video-react'
+import { Player, BigPlayButton } from 'video-react'
 
 import PageTemplate from '../components/common/PageTemplate'
 import { TENSES } from '../constants'
-
-// import poster from '../assets/posters/de-perfect-vid1.png'
+import TenseMenu from '../components/common/TenseMenu'
+import IdMenu from '../components/common/IdMenu'
 
 const Media = () => {
   const { tense, id } = useParams()
@@ -17,14 +17,17 @@ const Media = () => {
   )
     return <Redirect to="/404" />
 
+  const src = `/video/de-${tense}-vid${id}.mp4`
+  const poster = `/posters/de-${tense}-vid${id}.png`
+
   return (
     <PageTemplate>
-      <Layout.Content>
-        {`tense: ${tense}, id: ${id}`}
-        <Player
-          source="video/de-perfect-vid1.mp4"
-          poster="posters/de-perfect-vid1.png"
-        />
+      <Layout.Content className="page-content">
+        <TenseMenu tense={tense} />
+        <IdMenu tense={tense} id={id} />
+        <Player src={src} poster={poster} className="page-player">
+          <BigPlayButton position="center" />
+        </Player>
       </Layout.Content>
     </PageTemplate>
   )

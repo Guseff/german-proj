@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -13,18 +13,17 @@ module.exports = {
     hot: true,
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: './index.html',
       favicon: './src/assets/icons/favicon.ico',
       template: './src/index.html',
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: './src/assets/video', to: './dist/video' },
-        { from: './src/assets/posters', to: './dist/posters' },
-      ],
-    }),
+    // new CopyPlugin({
+    //   patterns: [
+    //     { from: './src/assets/posters', to: './dist/posters' },
+    //   ],
+    // }),
   ],
   output: {
     filename: 'bundle.js',
