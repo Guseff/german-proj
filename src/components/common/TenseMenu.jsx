@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 import PropTypes from 'prop-types'
 import { Menu } from 'antd'
 import { useTranslation } from 'react-i18next'
@@ -7,10 +8,11 @@ import { TENSES } from '../../constants'
 import { setId } from '../../actions'
 
 const TenseMenu = props => {
+  const dispatch = useDispatch()
   const { t } = useTranslation()
   const { tense } = props
 
-  const setVideoId = () => setId(1)
+  const setVideoId = () => dispatch(setId(1))
 
   return (
     <Menu mode="horizontal" selectedKeys={tense}>
