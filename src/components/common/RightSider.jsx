@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Layout, Radio } from 'antd'
 
 import i18n from '../../translation'
-import LangContext from '../../context/language'
+import { LangContext } from '../../context/language'
 
 const { Sider } = Layout
 

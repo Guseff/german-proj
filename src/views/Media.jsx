@@ -7,7 +7,7 @@ import PageTemplate from '../components/common/PageTemplate'
 import { TENSES } from '../constants'
 import TenseMenu from '../components/common/TenseMenu'
 import IdMenu from '../components/common/IdMenu'
-import LangContext from '../context/language'
+import { LangContext } from '../context'
 
 const Media = () => {
   const { tense, id } = useParams()

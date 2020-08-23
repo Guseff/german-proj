@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom'
 import { Layout } from 'antd'
 
-import LangContext from './context/language'
+import { LangContext } from './context/language'
 
 import Footer from './components/common/Footer'
 import Start from './views/Start'
