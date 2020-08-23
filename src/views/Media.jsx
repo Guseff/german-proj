@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Layout } from 'antd'
 import { useParams, Redirect } from 'react-router-dom'
 import { Player, BigPlayButton } from 'video-react'
@@ -7,9 +7,12 @@ import PageTemplate from '../components/common/PageTemplate'
 import { TENSES } from '../constants'
 import TenseMenu from '../components/common/TenseMenu'
 import IdMenu from '../components/common/IdMenu'
+import LangContext from '../context/language'
 
 const Media = () => {
   const { tense, id } = useParams()
+  const { lang } = useContext(LangContext)
+
   if (
     tense !== TENSES.PERFECT &&
     tense !== TENSES.PRASENCE &&
@@ -17,7 +20,6 @@ const Media = () => {
   )
     return <Redirect to="/404" />
 
-  const lang = 'de'
   const src = `/video/${lang}-${tense}-vid${id}.mp4`
   const poster = `/posters/de-${tense}-vid${id}.png`
 
