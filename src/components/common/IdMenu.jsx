@@ -1,13 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
 import PropTypes from 'prop-types'
 import { Menu } from 'antd'
 import { useTranslation } from 'react-i18next'
-import { setId } from '../../actions'
 
 const IdMenu = props => {
-  const dispatch = useDispatch()
   const { t } = useTranslation()
   const { tense, id } = props
   const media = {
@@ -16,15 +13,11 @@ const IdMenu = props => {
     perfect: [1, 2, 3, 4],
   }
 
-  const setVideoId = num => dispatch(setId(num))
-
   return (
     <Menu mode="horizontal" selectedKeys={id}>
       {media[tense].map(el => (
         <Menu.Item key={el}>
-          <Link to={`/media/${tense}/${el}`} onClick={() => setVideoId(el)}>
-            {`${t('video')} ${el}`}
-          </Link>
+          <Link to={`/media/${tense}/${el}`}>{`${t('video')} ${el}`}</Link>
         </Menu.Item>
       ))}
     </Menu>

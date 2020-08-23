@@ -1,7 +1,3 @@
-import 'antd/dist/antd.css'
-import 'video-react/dist/video-react.css'
-import './assets/styles/index.css'
-
 import React from 'react'
 import {
   BrowserRouter as Router,
