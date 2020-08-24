@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,8 +7,7 @@ import {
 } from 'react-router-dom'
 import { Layout } from 'antd'
 
-import { LangContext } from './context/language'
-
+import LanguageProvider from './components/providers/LanguageProvider'
 import Footer from './components/common/Footer'
 import Start from './views/Start'
 import Media from './views/Media'
@@ -16,13 +15,10 @@ import NoMatch from './views/NoMatch'
 import Prasence from './views/Prasence'
 import Prater from './views/Prater'
 import Perfect from './views/Perfect'
-import { LANGUAGES } from './constants'
 
 const App = () => {
-  const [lang, changeLang] = useState(LANGUAGES.RU)
-
   return (
-    <LangContext.Provider value={{ lang, changeLang }}>
+    <LanguageProvider>
       <Layout className="main-wrapper">
         <Layout className="page-wrapper light">
           <Router>
@@ -44,7 +40,7 @@ const App = () => {
           <Footer />
         </Layout.Footer>
       </Layout>
-    </LangContext.Provider>
+    </LanguageProvider>
   )
 }
 

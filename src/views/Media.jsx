@@ -17,8 +17,9 @@ const Media = () => {
     tense !== TENSES.PERFECT &&
     tense !== TENSES.PRASENCE &&
     tense !== TENSES.PRATER
-  )
+  ) {
     return <Redirect to="/404" />
+  }
 
   const src = `/video/${lang}-${tense}-vid${id}.mp4`
   const poster = `/posters/de-${tense}-vid${id}.png`
