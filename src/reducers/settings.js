@@ -1,17 +1,17 @@
-import { SET_LANGUAGE, LANGUAGES } from '../constants'
+import { SET_LANGUAGE, LANGUAGES } from '../constants';
 
 const initialState = {
   language: LANGUAGES.EN,
-}
+};
 
 const settings = (state = initialState, action) => {
   switch (action.type) {
     case SET_LANGUAGE:
-      return { ...state, language: action.payload }
+      return { ...state, language: action.payload };
 
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default settings
+export default settings;

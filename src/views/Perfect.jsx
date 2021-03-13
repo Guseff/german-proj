@@ -35,7 +35,7 @@ const Perfect = () => {
           &nbsp;+ Partizip II (=PII)
         </p>
         <p className="centered attention-red">
-          <strong>{`Sic! ${t('perfect.howto.attn')}`}</strong>
+          <strong>{`${t('perfect.howto.attn')}`}</strong>
           <br />
           <br />
           {`${t('perfect.howto.1')}`}

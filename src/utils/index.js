@@ -1,4 +1,4 @@
-import { LANGUAGES, TENSES } from '../constants'
+import { LANGUAGES, TENSES } from '../constants';
 
 const getInitialState = () => {
   return {
@@ -9,7 +9,7 @@ const getInitialState = () => {
       tense: TENSES.PRASENS,
       id: 1,
     },
-  }
-}
+  };
+};
 
-export default getInitialState
+export default getInitialState;

@@ -12,7 +12,7 @@ const IdMenu = props => {
     prasens: [1, 2, 3, 4, 5],
     preter: [1, 2, 3, 4],
     perfect: [1, 2, 3, 4],
-    decl: [1, 2, 3, 4, 5, 6],
+    deklination: [1, 2, 3, 4, 5, 6],
   };
 
   const setVideoId = num => setId(num);
