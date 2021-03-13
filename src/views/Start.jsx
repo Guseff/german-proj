@@ -1,5 +1,5 @@
-import React from 'react'
-import { Row, Col, Button } from 'antd'
+import React from 'react';
+import { Row, Col, Button } from 'antd';
 
 const Start = () => {
   return (
@@ -31,7 +31,7 @@ const Start = () => {
                   type="primary"
                   size="large"
                   className="start-page--intro--button"
-                  href="/prasence"
+                  href="/prasens"
                 >
                   СТАРТ
                 </Button>
@@ -59,7 +59,7 @@ const Start = () => {
         </Row>
       </Col>
     </Row>
-  )
-}
+  );
+};
 
-export default Start
+export default Start;

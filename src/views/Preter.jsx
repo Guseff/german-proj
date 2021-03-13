@@ -1,29 +1,29 @@
-import React from 'react'
-import { Layout } from 'antd'
-import { useTranslation } from 'react-i18next'
-import schem from '../assets/images/sh5.jpg'
-import PageTemplate from '../components/common/PageTemplate'
+import React from 'react';
+import { Layout } from 'antd';
+import { useTranslation } from 'react-i18next';
+import schem from '../assets/images/sh5.jpg';
+import PageTemplate from '../components/common/PageTemplate';
 
-const { Content } = Layout
+const { Content } = Layout;
 
-const Prater = () => {
-  const { t } = useTranslation()
-  const quattro = ' + ❑'
+const Preter = () => {
+  const { t } = useTranslation();
+  const quattro = ' + ❑';
   return (
     <PageTemplate>
       <Content className="page-content">
         <h3 className="centered">{t('use')}</h3>
         <p>
           1.&nbsp;
-          {`${t('prater.use.1')};`}
+          {`${t('preter.use.1')};`}
         </p>
         <p>
           2.&nbsp;
-          {`${t('prater.use.2')};`}
+          {`${t('preter.use.2')};`}
         </p>
         <p>
           3.&nbsp;
-          {`${t('prater.use.3')};`}
+          {`${t('preter.use.3')};`}
         </p>
         <h3 className="centered">{t('howto')}</h3>
         <table className="page-content--table">
@@ -32,7 +32,7 @@ const Prater = () => {
               <td className="centered">
                 {t('regular-verbs')}
                 <br />
-                <img alt="" src={schem} className="prater-img" />
+                <img alt="" src={schem} className="preter-img" />
                 <br />
                 mach
                 <del>en</del>
@@ -52,7 +52,7 @@ const Prater = () => {
         <h3 className="centered">{`${t('special')}:`}</h3>
         <p>
           1)&nbsp;
-          {`${t('prater.special.1.1')} `}
+          {`${t('preter.special.1.1')} `}
           <u>d</u>
           &#44;&nbsp;
           <u>t</u>
@@ -69,7 +69,7 @@ const Prater = () => {
           &#44;&nbsp;
           <u>dn</u>
           &#44;&nbsp;
-          {`${t('prater.special.1.2')} `}
+          {`${t('preter.special.1.2')} `}
           -ete-
         </p>
         <p className="centered cursive">
@@ -93,7 +93,7 @@ const Prater = () => {
         </p>
         <p>
           2)&nbsp;
-          {`${t('prater.special.2.1')} `}
+          {`${t('preter.special.2.1')} `}
           <u>s</u>
           &#44;&nbsp;
           <u>ss</u>
@@ -106,9 +106,9 @@ const Prater = () => {
           &#44;&nbsp;
           <u>tz</u>
           &#44;&nbsp;
-          {`${t('prater.special.2.2')} `}
+          {`${t('preter.special.2.2')} `}
           -est&nbsp;
-          {`${t('prater.special.2.3')} `}
+          {`${t('preter.special.2.3')} `}
         </p>
         <p className="centered cursive">
           aßest, lasest, batest, fandest, glittest, schlossest, rissest,
@@ -116,38 +116,38 @@ const Prater = () => {
         </p>
         <p>
           3)&nbsp;
-          {`${t('prater.special.3.1')} `}
+          {`${t('preter.special.3.1')} `}
           <u>t</u>
           &#44;&nbsp;
           <u>d</u>
           &#44;&nbsp;
           <u>tt</u>
           &#44;&nbsp;
-          {`${t('prater.special.3.2')} `}
+          {`${t('preter.special.3.2')} `}
           -et&nbsp;
-          {`${t('prater.special.3.3')} `}
+          {`${t('preter.special.3.3')} `}
         </p>
         <p className="centered cursive">
           batet, ludet, littet, galtet, rittet, fandet, hieltet
         </p>
         <p>
           4)&nbsp;
-          {`${t('prater.special.4.1')} `}
+          {`${t('preter.special.4.1')} `}
           -eln/-ern&nbsp;
-          {`${t('prater.special.4.2')} `}
+          {`${t('preter.special.4.2')} `}
           -(e)le
         </p>
         <p className="centered cursive">aßen, wuschen, sahen</p>
         <p>
           5)&nbsp;
-          {`${t('prater.special.5.1')} `}
+          {`${t('preter.special.5.1')} `}
         </p>
         <p className="centered cursive">
           bringen, nennen, denken, brennen, wissen, kennen + MODALE
         </p>
         <p>
           6)&nbsp;
-          {`${t('prater.special.6.1')} `}
+          {`${t('preter.special.6.1')} `}
         </p>
         <p className="centered cursive">
           bewegen, schaffen, schleifen, senden, wiegen, wenden, hängen,
@@ -195,7 +195,7 @@ const Prater = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('prasence.special.6.1')}`}</span>
+                <span>{`${t('prasens.special.6.1')}`}</span>
                 <br />
                 <br />
                 <span className="cursive">
@@ -214,7 +214,7 @@ const Prater = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('prasence.special.6.2')}`}</span>
+                <span>{`${t('prasens.special.6.2')}`}</span>
                 <br />
                 <span className="cursive">
                   <u>kennen</u>
@@ -224,7 +224,7 @@ const Prater = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('prasence.special.6.3')}`}</span>
+                <span>{`${t('prasens.special.6.3')}`}</span>
                 <br />
                 <span className="cursive">
                   Er&nbsp;
@@ -240,7 +240,7 @@ const Prater = () => {
                 <span className="bold">durch- über- unter- um- wieder-</span>
                 <br />
                 <br />
-                <span>{`${t('prasence.special.6.4')}`}</span>
+                <span>{`${t('prasens.special.6.4')}`}</span>
                 <br />
                 <span className="cursive">
                   Ich&nbsp;
@@ -261,7 +261,7 @@ const Prater = () => {
         </p>
       </Content>
     </PageTemplate>
-  )
-}
+  );
+};
 
-export default Prater
+export default Preter;

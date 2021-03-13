@@ -1,28 +1,28 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { Layout, Menu } from 'antd'
-import { Link } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
-import { useSelector } from 'react-redux'
+import { Layout, Menu } from 'antd';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
 
-const { Sider } = Layout
+const { Sider } = Layout;
 
 const LeftSider = props => {
-  const { pageTitle } = props
-  const { t } = useTranslation()
-  const { tense, id } = useSelector(state => state.media)
+  const { pageTitle } = props;
+  const { t } = useTranslation();
+  const { tense, id } = useSelector(state => state.media);
   return (
     <Sider theme="light">
       <Menu className="page--side-menu" selectedKeys={pageTitle}>
-        <Menu.Item key="prasence">
-          <Link className="capital" to="/prasence">
-            {t('prasence')}
+        <Menu.Item key="prasens">
+          <Link className="capital" to="/prasens">
+            {t('prasens')}
           </Link>
         </Menu.Item>
-        <Menu.Item key="prater">
-          <Link className="capital" to="/prater">
-            {t('prater')}
+        <Menu.Item key="preter">
+          <Link className="capital" to="/preter">
+            {t('preter')}
           </Link>
         </Menu.Item>
         <Menu.Item key="perfect">
@@ -42,11 +42,11 @@ const LeftSider = props => {
         </Menu.Item>
       </Menu>
     </Sider>
-  )
-}
+  );
+};
 
 LeftSider.propTypes = {
   pageTitle: PropTypes.string.isRequired,
-}
+};
 
-export default LeftSider
+export default LeftSider;

@@ -6,7 +6,7 @@ const getInitialState = () => {
       language: LANGUAGES.RU,
     },
     media: {
-      tense: TENSES.PRASENCE,
+      tense: TENSES.PRASENS,
       id: 1,
     },
   }

@@ -1,20 +1,20 @@
-import React from 'react'
-import { Layout, Radio } from 'antd'
-import { useSelector, useDispatch } from 'react-redux'
+import React from 'react';
+import { Layout, Radio } from 'antd';
+import { useSelector, useDispatch } from 'react-redux';
 
-import { setLanguage } from '../../actions'
-import i18n from '../../translation'
+import { setLanguage } from '../../actions';
+import i18n from '../../translation';
 
-const { Sider } = Layout
+const { Sider } = Layout;
 
 const RightSider = () => {
-  const dispatch = useDispatch()
-  const lang = useSelector(store => store.settings.language)
+  const dispatch = useDispatch();
+  const lang = useSelector(store => store.settings.language);
 
   const setLangHandle = e => {
-    dispatch(setLanguage(e.target.value))
-    i18n.changeLanguage(e.target.value)
-  }
+    dispatch(setLanguage(e.target.value));
+    i18n.changeLanguage(e.target.value);
+  };
 
   return (
     <Sider theme="light">
@@ -34,7 +34,7 @@ const RightSider = () => {
         </Radio.Button>
       </Radio.Group>
     </Sider>
-  )
-}
+  );
+};
 
-export default RightSider
+export default RightSider;

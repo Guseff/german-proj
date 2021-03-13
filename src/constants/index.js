@@ -8,6 +8,6 @@ export const LANGUAGES = {
 
 export const TENSES = {
   PERFECT: 'perfect',
-  PRASENCE: 'prasence',
-  PRATER: 'prater',
+  PRASENS: 'prasens',
+  PRETER: 'preter',
 }

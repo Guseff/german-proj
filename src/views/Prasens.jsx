@@ -1,38 +1,38 @@
-import React from 'react'
-import { Layout } from 'antd'
-import { useTranslation } from 'react-i18next'
+import React from 'react';
+import { Layout } from 'antd';
+import { useTranslation } from 'react-i18next';
 
-import schem from '../assets/images/schem.jpg'
-import PageTemplate from '../components/common/PageTemplate'
+import schem from '../assets/images/schem.jpg';
+import PageTemplate from '../components/common/PageTemplate';
 
-const { Content } = Layout
+const { Content } = Layout;
 
-const Prasence = () => {
-  const { t } = useTranslation()
-  const quattro = ' + ❑'
+const Prasens = () => {
+  const { t } = useTranslation();
+  const quattro = ' + ❑';
   return (
     <PageTemplate>
       <Content className="page-content">
         <h3 className="centered">{t('use')}</h3>
         <p>
           1.&nbsp;
-          {`${t('prasence.use.1')};`}
+          {`${t('prasens.use.1')};`}
         </p>
         <p>
           2.&nbsp;
-          {`${t('prasence.use.2')};`}
+          {`${t('prasens.use.2')};`}
         </p>
         <p>
           3.&nbsp;
-          {`${t('prasence.use.3')};`}
+          {`${t('prasens.use.3')};`}
         </p>
         <p>
           4.&nbsp;
-          {`${t('prasence.use.4')};`}
+          {`${t('prasens.use.4')};`}
         </p>
         <h3 className="centered">{t('howto')}</h3>
         <p className="centered">
-          <img alt="" src={schem} className="prasence-img" />
+          <img alt="" src={schem} className="prasens-img" />
         </p>
         <p className="centered">
           mach
@@ -73,7 +73,7 @@ const Prasence = () => {
         <h3 className="centered">{`${t('special')}:`}</h3>
         <p>
           1)&nbsp;
-          {`${t('prasence.special.1.1')} ${t('prasence.special.1.2')} `}
+          {`${t('prasens.special.1.1')} ${t('prasens.special.1.2')} `}
           <u>d</u>
           &#44;&nbsp;
           <u>t</u>
@@ -90,9 +90,9 @@ const Prasence = () => {
           &#44;&nbsp;
           <u>dn</u>
           &#44;&nbsp;
-          {`${t('prasence.special.1.3')} `}
+          {`${t('prasens.special.1.3')} `}
           -est, -et&nbsp;
-          {`${t('prasence.special.1.4')} `}
+          {`${t('prasens.special.1.4')} `}
         </p>
         <p className="centered cursive">
           ret
@@ -115,7 +115,7 @@ const Prasence = () => {
         </p>
         <p>
           2)&nbsp;
-          {`${t('prasence.special.2.1')} ${t('prasence.special.2.2')} `}
+          {`${t('prasens.special.2.1')} ${t('prasens.special.2.2')} `}
           <u>s</u>
           &#44;&nbsp;
           <u>ss</u>
@@ -128,9 +128,9 @@ const Prasence = () => {
           &#44;&nbsp;
           <u>tz</u>
           &#44;&nbsp;
-          {`${t('prasence.special.2.3')} `}
+          {`${t('prasens.special.2.3')} `}
           -t&nbsp;
-          {`${t('prasence.special.2.4')} `}
+          {`${t('prasens.special.2.4')} `}
         </p>
         <p className="centered cursive">
           lö
@@ -147,7 +147,7 @@ const Prasence = () => {
         </p>
         <p>
           3)&nbsp;
-          {`${t('prasence.special.3.1')} `}
+          {`${t('prasens.special.3.1')} `}
         </p>
         <p>
           au ➤ äu (saufen, laufen)&nbsp;
@@ -205,9 +205,9 @@ const Prasence = () => {
         </table>
         <p>
           4)&nbsp;
-          {`${t('prasence.special.4.1')} `}
+          {`${t('prasens.special.4.1')} `}
           -eln/-ern&nbsp;
-          {`${t('prasence.special.4.2')} `}
+          {`${t('prasens.special.4.2')} `}
           -(e)le
         </p>
         <p className="centered cursive">sammle, bastle, bedau(e)re, ändere</p>
@@ -255,7 +255,7 @@ const Prasence = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('prasence.special.6.1')}`}</span>
+                <span>{`${t('prasens.special.6.1')}`}</span>
                 <br />
                 <br />
                 <span className="cursive">
@@ -274,7 +274,7 @@ const Prasence = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('prasence.special.6.2')}`}</span>
+                <span>{`${t('prasens.special.6.2')}`}</span>
                 <br />
                 <span className="cursive">
                   <u>kennen</u>
@@ -284,7 +284,7 @@ const Prasence = () => {
                 </span>
                 <br />
                 <br />
-                <span>{`${t('prasence.special.6.3')}`}</span>
+                <span>{`${t('prasens.special.6.3')}`}</span>
                 <br />
                 <span className="cursive">
                   Er&nbsp;
@@ -300,7 +300,7 @@ const Prasence = () => {
                 <span className="bold">durch- über- unter- um- wieder-</span>
                 <br />
                 <br />
-                <span>{`${t('prasence.special.6.4')}`}</span>
+                <span>{`${t('prasens.special.6.4')}`}</span>
                 <br />
                 <span className="cursive">
                   Ich&nbsp;
@@ -321,7 +321,7 @@ const Prasence = () => {
         </p>
       </Content>
     </PageTemplate>
-  )
-}
+  );
+};
 
-export default Prasence
+export default Prasens;

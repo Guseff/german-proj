@@ -1,5 +1,5 @@
-import React from 'react'
-import { Row, Col } from 'antd'
+import React from 'react';
+import { Row, Col } from 'antd';
 
 const NoMatch = () => {
   return (
@@ -10,7 +10,7 @@ const NoMatch = () => {
         <span>Page not found</span>
       </Col>
     </Row>
-  )
-}
+  );
+};
 
-export default NoMatch
+export default NoMatch;
