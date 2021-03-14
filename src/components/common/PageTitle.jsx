@@ -5,9 +5,9 @@ import { useTranslation } from 'react-i18next';
 
 const { Header } = Layout;
 
-const PageTitle = props => {
+const PageTitle = ({ pageTitle }) => {
   const { t } = useTranslation();
-  const { pageTitle } = props;
+
   return <Header className="page-title light">{t(pageTitle)}</Header>;
 };
 

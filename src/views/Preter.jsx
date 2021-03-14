@@ -1,6 +1,7 @@
 import React from 'react';
 import { Layout } from 'antd';
 import { useTranslation } from 'react-i18next';
+
 import schem from '../assets/images/sh5.jpg';
 import PageTemplate from '../components/common/PageTemplate';
 
@@ -9,6 +10,7 @@ const { Content } = Layout;
 const Preter = () => {
   const { t } = useTranslation();
   const quattro = ' + ❑';
+
   return (
     <PageTemplate>
       <Content className="page-content">

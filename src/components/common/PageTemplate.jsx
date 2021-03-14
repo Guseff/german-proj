@@ -7,12 +7,12 @@ import LeftSider from './LeftSider';
 import RightSider from './RightSider';
 import PageTitle from './PageTitle';
 
-const PageTemplate = props => {
+const PageTemplate = ({ children }) => {
   const location = useLocation();
   const pageTitle = (location.pathname.match(/\/.+?\//) || [
     location.pathname.concat('/'),
   ])[0].slice(1, -1);
-  const { children } = props;
+
   return (
     <>
       <PageTitle className="light" pageTitle={pageTitle} />
