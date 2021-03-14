@@ -12,14 +12,20 @@ const TenseMenu = props => {
 
   return (
     <Menu mode="horizontal" selectedKeys={tense}>
-      <Menu.Item key={TENSES.PRASENCE}>
-        <Link to={`/media/${TENSES.PRASENCE}/1`}>{t(TENSES.PRASENCE)}</Link>
+      <Menu.Item key={TENSES.PRASENS}>
+        <Link to={`/media/${TENSES.PRASENS}/1`}>
+          {toStartWithCapital(t(TENSES.PRASENS))}
+        </Link>
       </Menu.Item>
-      <Menu.Item key={TENSES.PRATER}>
-        <Link to={`/media/${TENSES.PRATER}/1`}>{t(TENSES.PRATER)}</Link>
+      <Menu.Item key={TENSES.PRETER}>
+        <Link to={`/media/${TENSES.PRETER}/1`}>
+          {toStartWithCapital(t(TENSES.PRETER))}
+        </Link>
       </Menu.Item>
       <Menu.Item key={TENSES.PERFECT}>
-        <Link to={`/media/${TENSES.PERFECT}/1`}>{t(TENSES.PERFECT)}</Link>
+        <Link to={`/media/${TENSES.PERFECT}/1`}>
+          {toStartWithCapital(t(TENSES.PERFECT))}
+        </Link>
       </Menu.Item>
       <Menu.Item key={TENSES.DEKLINATION}>
         <Link to={`/media/${TENSES.DEKLINATION}/1`}>

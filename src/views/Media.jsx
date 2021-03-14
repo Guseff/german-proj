@@ -15,8 +15,8 @@ const Media = () => {
 
   if (
     tense !== TENSES.PERFECT &&
-    tense !== TENSES.PRASENCE &&
-    tense !== TENSES.PRATER &&
+    tense !== TENSES.PRASENS &&
+    tense !== TENSES.PRETER &&
     tense !== TENSES.DEKLINATION
   ) {
     return <Redirect to="/404" />;

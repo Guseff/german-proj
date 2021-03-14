@@ -7,9 +7,9 @@ import { useTranslation } from 'react-i18next';
 
 const { Sider } = Layout;
 
-const LeftSider = props => {
-  const { pageTitle } = props;
+const LeftSider = ({ pageTitle }) => {
   const { t } = useTranslation();
+
   return (
     <Sider theme="light">
       <Menu className="page--side-menu" selectedKeys={pageTitle}>
@@ -29,7 +29,7 @@ const LeftSider = props => {
           </Link>
         </Menu.Item>
         <Menu.Item key="media">
-          <Link className="capital" to="/media/prasence/1">
+          <Link className="capital" to="/media/prasens/1">
             Media
           </Link>
         </Menu.Item>

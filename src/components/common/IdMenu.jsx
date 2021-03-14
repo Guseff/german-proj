@@ -4,9 +4,8 @@ import PropTypes from 'prop-types';
 import { Menu } from 'antd';
 import { useTranslation } from 'react-i18next';
 
-const IdMenu = props => {
+const IdMenu = ({ tense, id }) => {
   const { t } = useTranslation();
-  const { tense, id } = props;
   const media = {
     prasens: [1, 2, 3, 4, 5],
     preter: [1, 2, 3, 4],
