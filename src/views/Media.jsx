@@ -1,24 +1,26 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Layout } from 'antd';
 import { useParams, Redirect } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import { Player, BigPlayButton } from 'video-react';
 
 import PageTemplate from '../components/common/PageTemplate';
 import { TENSES } from '../constants';
 import TenseMenu from '../components/common/TenseMenu';
 import IdMenu from '../components/common/IdMenu';
+import { LangContext } from '../context';
 
 const Media = () => {
-  const lang = useSelector(store => store.settings.language);
   const { tense, id } = useParams();
+  const { lang } = useContext(LangContext);
+
   if (
     tense !== TENSES.PERFECT &&
-    tense !== TENSES.PRASENS &&
-    tense !== TENSES.PRETER &&
+    tense !== TENSES.PRASENCE &&
+    tense !== TENSES.PRATER &&
     tense !== TENSES.DEKLINATION
-  )
+  ) {
     return <Redirect to="/404" />;
+  }
 
   const src = `/video/${lang}-${tense}-vid${id}.mp4`;
   const poster = `/posters/de-${tense}-vid${id}.png`;

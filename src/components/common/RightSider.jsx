@@ -1,18 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Layout, Radio } from 'antd';
-import { useSelector, useDispatch } from 'react-redux';
 
-import { setLanguage } from '../../actions';
 import i18n from '../../translation';
+import { LangContext } from '../../context/language';
 
 const { Sider } = Layout;
 
 const RightSider = () => {
-  const dispatch = useDispatch();
-  const lang = useSelector(store => store.settings.language);
+  const { lang, changeLang } = useContext(LangContext);
 
   const setLangHandle = e => {
-    dispatch(setLanguage(e.target.value));
+    changeLang(e.target.value);
     i18n.changeLanguage(e.target.value);
   };
 

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Menu } from 'antd';
 import { useTranslation } from 'react-i18next';
-import { setId } from '../../actions';
 
 const IdMenu = props => {
   const { t } = useTranslation();
@@ -15,15 +14,11 @@ const IdMenu = props => {
     deklination: [1, 2, 3, 4, 5, 6],
   };
 
-  const setVideoId = num => setId(num);
-
   return (
     <Menu mode="horizontal" selectedKeys={id}>
       {media[tense].map(el => (
         <Menu.Item key={el}>
-          <Link to={`/media/${tense}/${el}`} onClick={() => setVideoId(el)}>
-            {`${t('video')} ${el}`}
-          </Link>
+          <Link to={`/media/${tense}/${el}`}>{`${t('video')} ${el}`}</Link>
         </Menu.Item>
       ))}
     </Menu>
