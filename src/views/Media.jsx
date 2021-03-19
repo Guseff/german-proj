@@ -9,10 +9,16 @@ import IdMenu from '../components/common/IdMenu';
 import { LangContext } from '../context';
 import { TENSES } from '../constants';
 
+const srcMap = {
+  'ru-prasens-vid1': 'https://drive.google.com/file/d/1wUNfr8F0PCkHqR-S-ASUFMw5riTPoxa-/view?usp=sharing',
+  'de-prasens-vid1': 'https://drive.google.com/file/d/1dx4C_JF13loEKN3z0JlioOteAQUUazkE/view?usp=sharing',
+}
+
 const Media = () => {
   const { lang } = useContext(LangContext);
   const { tense, id } = useParams();
-  const src = `/video/${lang}-${tense}-vid${id}.mp4`;
+  const srcKey = `${lang}-${tense}-vid${id}`;
+  const src = srcMap[srcKey];
   const poster = `/posters/de-${tense}-vid${id}.png`;
 
   if (
