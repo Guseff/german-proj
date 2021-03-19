@@ -10,9 +10,11 @@ import { LangContext } from '../context';
 import { TENSES } from '../constants';
 
 const srcMap = {
-  'ru-prasens-vid1': 'https://drive.google.com/file/d/1wUNfr8F0PCkHqR-S-ASUFMw5riTPoxa-/view?usp=sharing',
-  'de-prasens-vid1': 'https://drive.google.com/file/d/1dx4C_JF13loEKN3z0JlioOteAQUUazkE/view?usp=sharing',
-}
+  'ru-prasens-vid1':
+    'https://drive.google.com/file/d/1wUNfr8F0PCkHqR-S-ASUFMw5riTPoxa-/view?usp=sharing',
+  'de-prasens-vid1':
+    'https://drive.google.com/file/d/1dx4C_JF13loEKN3z0JlioOteAQUUazkE/view?usp=sharing',
+};
 
 const Media = () => {
   const { lang } = useContext(LangContext);
