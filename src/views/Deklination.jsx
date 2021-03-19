@@ -12,7 +12,10 @@ const Deklination = () => {
   return (
     <PageTemplate>
       <Content className="page-content">
-        <h3 className="centered">{t('use')}</h3>
+        <h2 className="centered">{t('deklination.title')}</h2>
+        <h3 className="centered">{t('1.Feminine.title')}</h3>
+        <h3 className="centered">{t('2.S-declension.title')}</h3>
+        <h3 className="centered">{t('3.N-declension.title')}</h3>
       </Content>
     </PageTemplate>
   );

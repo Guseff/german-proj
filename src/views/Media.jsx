@@ -14,7 +14,7 @@ const Media = () => {
   const { tense, id } = useParams();
   const srcKey = `${lang}-${tense}-vid${id}`;
   const src = VIDEO_SRC[srcKey];
-  const poster = `/posters/de-${tense}-vid${id}.png`;
+  const poster = `../../posters/de-${tense}-vid${id}.png`;
 
   if (
     tense !== TENSES.PERFECT &&
@@ -33,7 +33,7 @@ const Media = () => {
           src={src}
           poster={poster}
           className="page-player"
-          type="video/mp4"
+          // type="video/mp4"
         >
           <BigPlayButton position="center" />
         </Player>
