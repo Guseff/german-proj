@@ -9,7 +9,7 @@ const IdMenu = props => {
   const { tense, id } = props;
   const media = {
     prasens: [1, 2, 3, 4, 5],
-    preter: [1, 2, 3, 4],
+    preter: [1, 2, 3, 4, 5],
     perfect: [1, 2, 3, 4],
     deklination: [1, 2, 3, 4, 5, 6],
   };

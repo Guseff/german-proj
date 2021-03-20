@@ -12,8 +12,7 @@ import { TENSES, VIDEO_SRC } from '../constants';
 const Media = () => {
   const { lang } = useContext(LangContext);
   const { tense, id } = useParams();
-  const srcKey = `${lang}-${tense}-vid${id}`;
-  const src = VIDEO_SRC[srcKey];
+  const src = VIDEO_SRC[lang][tense][id - 1];
   const poster = `../../posters/de-${tense}-vid${id}.png`;
 
   if (
@@ -33,7 +32,7 @@ const Media = () => {
           src={src}
           poster={poster}
           className="page-player"
-          // type="video/mp4"
+          type="video/mp4"
         >
           <BigPlayButton position="center" />
         </Player>
