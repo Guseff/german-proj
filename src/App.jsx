@@ -1,4 +1,4 @@
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.min.css';
 import 'video-react/dist/video-react.css';
 import './assets/styles/index.css';
 
