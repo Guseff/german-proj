@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 const rootDir = path.resolve(__dirname, '../../');
@@ -8,7 +8,7 @@ const rootDir = path.resolve(__dirname, '../../');
 module.exports = {
   entry: path.join(rootDir, 'src/index.jsx'),
   plugins: [
-    // new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: './index.html',
       favicon: './src/assets/icons/favicon.ico',
@@ -22,7 +22,8 @@ module.exports = {
     }),
   ],
   output: {
-    filename: 'bundle.js',
+    filename: '[name].[hash:8].bundle.js',
+    chunkFilename: '[name].[hash:8].bundle.js',
     path: path.join(rootDir, 'dist'),
     publicPath: '/',
   },

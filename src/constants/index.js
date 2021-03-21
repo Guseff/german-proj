@@ -20,7 +20,7 @@ export const VIDEO_SRC = {
       'https://drive.google.com/uc?export=download&id=1JAUYW6bKqTgjGcP8l_PFTIovK_Y_qIZ6',
       'https://drive.google.com/uc?export=download&id=1254ZmOW3QYAsidkGxYI7RT56zKtFaDw-',
       'https://drive.google.com/uc?export=download&id=1mSM1T9DJIaddTsjBGguLvrRVAl2lFEic',
-    ], // OK
+    ],
     [TENSES.PERFECT]: [
       'https://drive.google.com/uc?export=download&id=1oY39WfPwbfiNr3z9kLghrDH10zex8g-z',
       'https://drive.google.com/uc?export=download&id=12ynWaJpNIitEdLhUNgDuwCKUl0L1qoX0',
