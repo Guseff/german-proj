@@ -3,15 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
+const rootDir = path.resolve(__dirname, '../../');
+
 module.exports = {
-  mode: 'development',
-  entry: './src/index.jsx',
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist',
-    historyApiFallback: true,
-    hot: true,
-  },
+  entry: path.join(rootDir, 'src/index.jsx'),
   plugins: [
     // new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -21,14 +16,14 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: './src/configs', to: './' },
+        { from: './configs/netlify', to: './' },
         { from: './src/assets/posters', to: './posters' },
       ],
     }),
   ],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.join(rootDir, 'dist'),
     publicPath: '/',
   },
   module: {
