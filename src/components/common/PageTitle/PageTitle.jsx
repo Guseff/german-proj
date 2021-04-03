@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Layout } from 'antd';
 import { useTranslation } from 'react-i18next';
 
-const { Header } = Layout;
+import styles from './PageTitle.css';
 
 const PageTitle = ({ pageTitle }) => {
   const { t } = useTranslation();
 
-  return <Header className="page-title light">{t(pageTitle)}</Header>;
+  return (
+    <header className={styles.header}>
+      <h1>{t(pageTitle)}</h1>
+    </header>
+  );
 };
 
 PageTitle.propTypes = {

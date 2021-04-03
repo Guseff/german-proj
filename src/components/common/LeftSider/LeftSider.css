@@ -1,0 +1,15 @@
+.sideMenu {
+  position: fixed;
+  font-size: 24px;
+  color: #1890ff;
+  border-right: 0;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-transform: capitalize;
+  text-decoration: none;
+}

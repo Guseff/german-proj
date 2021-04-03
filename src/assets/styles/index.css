@@ -64,13 +64,6 @@ body {
   margin-top: 20px;
 }
 
-.page--side-menu {
-  position: fixed;
-  font-size: 24px;
-  color: #1890ff;
-  border-right: 0;
-}
-
 .page-content {
   padding: 0 20px;
 }

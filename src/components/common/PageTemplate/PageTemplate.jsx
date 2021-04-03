@@ -3,9 +3,9 @@ import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Layout } from 'antd';
 
-import LeftSider from './LeftSider';
-import RightSider from './RightSider';
-import PageTitle from './PageTitle';
+import LeftSider from '../LeftSider';
+import RightSider from '../RightSider';
+import PageTitle from '../PageTitle';
 
 const PageTemplate = ({ children }) => {
   const location = useLocation();

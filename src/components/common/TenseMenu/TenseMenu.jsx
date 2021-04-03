@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Menu } from 'antd';
 import { useTranslation } from 'react-i18next';
-import { TENSES } from '../../constants';
+import { TENSES } from '../../../constants';
 
 const TenseMenu = ({ tense, component }) => {
   const { t } = useTranslation();
