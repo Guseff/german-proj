@@ -1,6 +1,4 @@
-import 'antd/dist/antd.min.css';
-import 'video-react/dist/video-react.css';
-// import './assets/styles/index.css';
+// import 'video-react/dist/video-react.css';
 
 import React from 'react';
 import {
@@ -9,8 +7,6 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
-
-import { Layout } from 'antd';
 
 import LanguageProvider from './components/providers/LanguageProvider';
 import Footer from './components/common/Footer';
@@ -23,10 +19,12 @@ import Perfect from './views/Perfect/Perfect';
 import Deklination from './views/Deklination';
 import Tests from './views/Tests/Tests';
 
+import styles from './assets/styles/index.css';
+
 const App = () => (
   <LanguageProvider>
-    <Layout className="main-wrapper">
-      <Layout className="page-wrapper light">
+    <main className={styles.mainWrapper}>
+      <section className={styles.pageWrapper}>
         <Router>
           <Switch>
             <Route exact path="/" component={Start} />
@@ -43,11 +41,9 @@ const App = () => (
             </Route>
           </Switch>
         </Router>
-      </Layout>
-      <Layout.Footer className="light">
-        <Footer />
-      </Layout.Footer>
-    </Layout>
+      </section>
+      <Footer />
+    </main>
   </LanguageProvider>
 );
 

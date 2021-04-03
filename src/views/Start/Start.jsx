@@ -5,7 +5,7 @@ import { Row, Col } from 'antd';
 import styles from './Start.css';
 
 const Start = () => (
-  <Row className={styles.centered}>
+  <article className={styles.main}>
     <Col span={20} offset={2}>
       <Row justify="center" className={styles.university}>
         <Col>
@@ -22,14 +22,14 @@ const Start = () => (
       <Row justify="center" className={styles.title}>
         <Col>практическая грамматика</Col>
       </Row>
-      <Row className="intro">
+      <Row className={styles.intro}>
         <Col span={24}>
           <Row justify="center" className={styles.introTitle}>
             <Col>НЕМЕЦКИЙ ЯЗЫК</Col>
           </Row>
           <Row justify="center">
             <Col>
-              <Link to="/prasens" className={styles.button}>
+              <Link to="/prasens" className={styles.btn}>
                 СТАРТ
               </Link>
             </Col>
@@ -55,7 +55,7 @@ const Start = () => (
         </Col>
       </Row>
     </Col>
-  </Row>
+  </article>
 );
 
 export default Start;
