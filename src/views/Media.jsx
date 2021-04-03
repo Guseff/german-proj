@@ -26,7 +26,7 @@ const Media = () => {
   return (
     <PageTemplate>
       <Layout.Content className="page-content">
-        <TenseMenu tense={tense} />
+        <TenseMenu tense={tense} component="media" />
         <IdMenu tense={tense} id={id} />
         <Player
           src={src}

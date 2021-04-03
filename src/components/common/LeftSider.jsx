@@ -39,7 +39,7 @@ const LeftSider = ({ pageTitle }) => {
           </Link>
         </Menu.Item>
         <Menu.Item key="tasks">
-          <Link className="capital" to="/tasks/1">
+          <Link className="capital" to="/tests/prasens">
             {t('tasks')}
           </Link>
         </Menu.Item>

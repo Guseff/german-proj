@@ -21,6 +21,7 @@ import Prasens from './views/Prasens';
 import Preter from './views/Preter';
 import Perfect from './views/Perfect';
 import Deklination from './views/Deklination';
+import Tests from './views/Tests';
 
 const App = () => (
   <LanguageProvider>
@@ -31,6 +32,7 @@ const App = () => (
             <Route exact path="/" component={Start} />
             <Route path="/media/:tense/:id" component={Media} />
             <Route path="/media/:tense" component={Media} />
+            <Route path="/tests/:tense" component={Tests} />
             <Route path="/prasens" component={Prasens} />
             <Route path="/preter" component={Preter} />
             <Route path="/perfect" component={Perfect} />
