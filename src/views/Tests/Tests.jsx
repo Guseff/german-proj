@@ -1,5 +1,4 @@
 import React from 'react';
-import { Layout } from 'antd';
 import { useParams, Redirect } from 'react-router-dom';
 
 import PageTemplate from '../../components/common/PageTemplate';
@@ -11,6 +10,8 @@ import {
   PrasensTest,
   PreterTest,
 } from '../../components/common/tasks';
+
+import styles from './Tests.css';
 
 const Tests = () => {
   const { tense } = useParams();
@@ -43,10 +44,8 @@ const Tests = () => {
 
   return (
     <PageTemplate>
-      <Layout.Content className="page-content">
-        <TenseMenu tense={tense} component="tests" />
-        <TestComponent />
-      </Layout.Content>
+      <TenseMenu tense={tense} component="tests" />
+      <TestComponent styles={styles} />
     </PageTemplate>
   );
 };

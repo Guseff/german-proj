@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { Menu } from 'antd';
 import { useTranslation } from 'react-i18next';
+import cn from 'classnames';
 
-const IdMenu = props => {
+import 'video-react/dist/video-react.css';
+import styles from './IdMenu.css';
+
+const IdMenu = ({ tense, id }) => {
   const { t } = useTranslation();
-  const { tense, id } = props;
   const media = {
     prasens: [1, 2, 3, 4, 5],
     preter: [1, 2, 3, 4, 5],
@@ -15,13 +17,20 @@ const IdMenu = props => {
   };
 
   return (
-    <Menu mode="horizontal" selectedKeys={id}>
-      {media[tense].map(el => (
-        <Menu.Item key={el}>
-          <Link to={`/media/${tense}/${el}`}>{`${t('video')} ${el}`}</Link>
-        </Menu.Item>
+    <ul className={styles.list}>
+      {media[tense].map((el, i) => (
+        <li
+          className={cn(styles.element, {
+            [styles.active]: parseInt(id, 10) === i + 1,
+          })}
+          key={el}
+        >
+          <Link className={styles.link} to={`/media/${tense}/${el}`}>
+            {`${t('video')} ${el}`}
+          </Link>
+        </li>
       ))}
-    </Menu>
+    </ul>
   );
 };
 

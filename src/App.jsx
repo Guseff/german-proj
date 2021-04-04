@@ -17,7 +17,6 @@ import Perfect from './views/Perfect/Perfect';
 import Deklination from './views/Deklination';
 import Tests from './views/Tests/Tests';
 
-import 'video-react/dist/video-react.css';
 import styles from './assets/styles/index.css';
 
 const App = () => (
