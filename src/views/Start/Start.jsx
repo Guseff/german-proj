@@ -1,60 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Row, Col } from 'antd';
 
 import styles from './Start.css';
 
 const Start = () => (
   <article className={styles.main}>
-    <Col span={20} offset={2}>
-      <Row justify="center" className={styles.university}>
-        <Col>
-          Учреждение образования
-          <br />
-          “Брестский государственный университет имени А.С. Пушкина”
-          <br />
-          Кафедра немецкой филологии и лингводидактики
-        </Col>
-      </Row>
-      <Row justify="center" className={styles.author}>
-        <Col>А.В. Гусева</Col>
-      </Row>
-      <Row justify="center" className={styles.title}>
-        <Col>практическая грамматика</Col>
-      </Row>
-      <Row className={styles.intro}>
-        <Col span={24}>
-          <Row justify="center" className={styles.introTitle}>
-            <Col>НЕМЕЦКИЙ ЯЗЫК</Col>
-          </Row>
-          <Row justify="center">
-            <Col>
-              <Link to="/prasens" className={styles.btn}>
-                СТАРТ
-              </Link>
-            </Col>
-          </Row>
-
-          <Row justify="center" className={styles.introDescription}>
-            <Col>
-              Электронный интерактивный практикум
-              <br />
-              для студентов языковых специальностей
-              <br />
-              высших учебных заведений, изучающий немецкий язык как второй
-              иностранный
-            </Col>
-          </Row>
-          <Row justify="center" className={styles.introBoss}>
-            <Col>
-              Под редакцией кандидата педагогических наук, доцента
-              <br />
-              Е. Д. Осипова
-            </Col>
-          </Row>
-        </Col>
-      </Row>
-    </Col>
+    <div className={styles.university}>
+      Учреждение образования
+      <br />
+      “Брестский государственный университет имени А.С. Пушкина”
+      <br />
+      Кафедра немецкой филологии и лингводидактики
+    </div>
+    <div className={styles.author}>А.В. Гусева</div>
+    <div className={styles.title}>практическая грамматика</div>
+    <div className={styles.intro}>
+      <div justify="center" className={styles.introTitle}>
+        НЕМЕЦКИЙ ЯЗЫК
+      </div>
+      <Link to="/prasens" className={styles.btn}>
+        СТАРТ
+      </Link>
+      <div className={styles.introDescription}>
+        Электронный интерактивный практикум
+        <br />
+        для студентов языковых специальностей
+        <br />
+        высших учебных заведений, изучающий немецкий язык как второй иностранный
+      </div>
+      <div className={styles.introBoss}>
+        Под редакцией кандидата педагогических наук, доцента
+        <br />
+        Е. Д. Осипова
+      </div>
+    </div>
   </article>
 );
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import PropTypes, { element } from 'prop-types';
 
 import LeftSider from '../LeftSider';
 import RightSider from '../RightSider';
@@ -27,8 +27,15 @@ const PageTemplate = ({ children }) => {
   );
 };
 
+PageTemplate.defaultProps = {
+  children: undefined,
+};
+
 PageTemplate.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(element),
+  ]),
 };
 
 export default PageTemplate;

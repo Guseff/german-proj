@@ -12,7 +12,7 @@ const LeftSider = ({ pageTitle }) => {
   // ToDo: list from enum
   return (
     <aside className={styles.wrapper}>
-      <nav className={styles.sideMenu} selectedKeys={pageTitle}>
+      <nav className={styles.sideMenu}>
         <ul className={styles.list}>
           <li
             className={cn(styles.element, {

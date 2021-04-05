@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes, { element } from 'prop-types';
 
 import styles from './Content.css';
 
@@ -7,8 +7,15 @@ const Content = ({ children }) => (
   <div className={styles.wrapper}>{children}</div>
 );
 
+Content.defaultProps = {
+  children: undefined,
+};
+
 Content.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(element),
+  ]),
 };
 
 export default Content;

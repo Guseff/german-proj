@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import { Layout, Radio } from 'antd';
 
 import i18n from '../../../translation';
 import { LangContext } from '../../../context';
 
-const { Sider } = Layout;
+import styles from './RightSider.css';
+import RadioBtn from './components/RadioBtn';
 
 const RightSider = () => {
   const { lang, changeLang } = useContext(LangContext);
@@ -14,23 +14,13 @@ const RightSider = () => {
   };
 
   return (
-    <Sider theme="light">
-      <Radio.Group
-        className="lang-btn--wrap"
-        onChange={setLangHandle}
-        value={lang}
-      >
-        <Radio.Button className="lang-btn" value="ru">
-          RU
-        </Radio.Button>
-        <Radio.Button className="lang-btn" value="en">
-          EN
-        </Radio.Button>
-        <Radio.Button className="lang-btn" value="de">
-          DE
-        </Radio.Button>
-      </Radio.Group>
-    </Sider>
+    <aside className={styles.wrapper}>
+      <form className={styles.list} onChange={setLangHandle} value={lang}>
+        <RadioBtn name="lang" lang="ru" value={lang} />
+        <RadioBtn name="lang" lang="en" value={lang} />
+        <RadioBtn name="lang" lang="de" value={lang} />
+      </form>
+    </aside>
   );
 };
 
