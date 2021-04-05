@@ -1,26 +1,28 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { Layout } from 'antd';
 
 import LeftSider from '../LeftSider';
 import RightSider from '../RightSider';
 import PageTitle from '../PageTitle';
+import Content from '../Content';
+
+import styles from './PageTemplate.css';
 
 const PageTemplate = ({ children }) => {
-  const location = useLocation();
-  const pageTitle = (location.pathname.match(/\/.+?\//) || [
-    location.pathname.concat('/'),
+  const { pathname } = useLocation();
+  const pageTitle = (pathname.match(/\/.+?\//) || [
+    pathname.concat('/'),
   ])[0].slice(1, -1);
 
   return (
     <>
       <PageTitle className="light" pageTitle={pageTitle} />
-      <Layout className="media-page light">
+      <article className={styles.wrapper}>
         <LeftSider pageTitle={pageTitle} />
-        {children}
+        <Content>{children}</Content>
         <RightSider />
-      </Layout>
+      </article>
     </>
   );
 };

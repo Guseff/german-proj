@@ -1,0 +1,43 @@
+.centered {
+  text-align: center;
+}
+
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.red {
+  color: red;
+  border: 1px solid red;
+  padding: 10px 0;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.img1 {
+  width: 248px;
+  margin: 10px auto;
+}
+.img2 {
+  width: 160px;
+  height: 24px;
+}
+.img3 {
+  width: 230px;
+  height: 35px;
+}
+.img4 {
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.strong {
+  font-weight: bold;
+  text-transform: uppercase;
+}

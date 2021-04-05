@@ -1,3 +1,10 @@
+.wrapper {
+  flex: 0 0 200px;
+  max-width: 200px;
+  min-width: 200px;
+  width: 200px;
+}
+
 .sideMenu {
   position: fixed;
   font-size: 24px;
@@ -7,9 +14,28 @@
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.element {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 16px;
+  margin-bottom: 8px;
 }
 
 .link {
   text-transform: capitalize;
   text-decoration: none;
+  color: rgba(0,0,0,.65);
+}
+
+.active .link,
+.link:hover {
+  color: #1890ff;
+}
+
+.active {
+  background-color: #e6f7ff;
 }
