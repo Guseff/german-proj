@@ -30,13 +30,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ],
-      },
-      {
         enforce: 'pre',
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,

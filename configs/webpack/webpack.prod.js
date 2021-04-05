@@ -8,4 +8,27 @@ module.exports = merge(common, {
       chunks: 'all',
     },
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              injectType: 'singletonStyleTag',
+            },
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                localIdentName: '[hash64:5]',
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
 });
