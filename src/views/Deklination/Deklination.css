@@ -10,3 +10,11 @@
 .cursive {
   font-style: italic;
 }
+
+.bold {
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}
