@@ -3,11 +3,11 @@ import { Layout } from 'antd';
 import { useParams, Redirect } from 'react-router-dom';
 import { Player, BigPlayButton } from 'video-react';
 
-import PageTemplate from '../components/common/PageTemplate';
-import TenseMenu from '../components/common/TenseMenu';
-import IdMenu from '../components/common/IdMenu';
-import { LangContext } from '../context';
-import { TENSES, VIDEO_SRC } from '../constants';
+import PageTemplate from '../../components/common/PageTemplate';
+import TenseMenu from '../../components/common/TenseMenu';
+import IdMenu from '../../components/common/IdMenu';
+import { LangContext } from '../../context';
+import { TENSES, VIDEO_SRC } from '../../constants';
 
 const Media = () => {
   const { lang } = useContext(LangContext);

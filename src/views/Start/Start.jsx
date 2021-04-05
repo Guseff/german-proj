@@ -1,10 +1,13 @@
 import React from 'react';
-import { Row, Col, Button } from 'antd';
+import { Link } from 'react-router-dom';
+import { Row, Col } from 'antd';
+
+import styles from './Start.css';
 
 const Start = () => (
-  <Row className="start-page">
+  <Row className={styles.centered}>
     <Col span={20} offset={2}>
-      <Row justify="center" className="start-page--university">
+      <Row justify="center" className={styles.university}>
         <Col>
           Учреждение образования
           <br />
@@ -13,31 +16,26 @@ const Start = () => (
           Кафедра немецкой филологии и лингводидактики
         </Col>
       </Row>
-      <Row justify="center" className="start-page--author">
+      <Row justify="center" className={styles.author}>
         <Col>А.В. Гусева</Col>
       </Row>
-      <Row justify="center" className="start-page--title">
+      <Row justify="center" className={styles.title}>
         <Col>практическая грамматика</Col>
       </Row>
-      <Row className="start-page--intro">
+      <Row className="intro">
         <Col span={24}>
-          <Row justify="center" className="start-page--intro--title">
+          <Row justify="center" className={styles.introTitle}>
             <Col>НЕМЕЦКИЙ ЯЗЫК</Col>
           </Row>
           <Row justify="center">
             <Col>
-              <Button
-                type="primary"
-                size="large"
-                className="start-page--intro--button"
-                href="/prasens"
-              >
+              <Link to="/prasens" className={styles.button}>
                 СТАРТ
-              </Button>
+              </Link>
             </Col>
           </Row>
 
-          <Row justify="center" className="start-page--intro--description">
+          <Row justify="center" className={styles.introDescription}>
             <Col>
               Электронный интерактивный практикум
               <br />
@@ -47,7 +45,7 @@ const Start = () => (
               иностранный
             </Col>
           </Row>
-          <Row justify="center" className="start-page--intro--boss">
+          <Row justify="center" className={styles.introBoss}>
             <Col>
               Под редакцией кандидата педагогических наук, доцента
               <br />

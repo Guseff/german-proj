@@ -2,15 +2,15 @@ import React from 'react';
 import { Layout } from 'antd';
 import { useParams, Redirect } from 'react-router-dom';
 
-import PageTemplate from '../components/common/PageTemplate';
-import TenseMenu from '../components/common/TenseMenu';
-import { TENSES } from '../constants';
+import PageTemplate from '../../components/common/PageTemplate';
+import TenseMenu from '../../components/common/TenseMenu';
+import { TENSES } from '../../constants';
 import {
   DeklinationTest,
   PerfectTest,
   PrasensTest,
   PreterTest,
-} from '../components/common/tasks';
+} from '../../components/common/tasks';
 
 const Tests = () => {
   const { tense } = useParams();

@@ -1,6 +1,6 @@
 import 'antd/dist/antd.min.css';
 import 'video-react/dist/video-react.css';
-import './assets/styles/index.css';
+// import './assets/styles/index.css';
 
 import React from 'react';
 import {
@@ -16,12 +16,12 @@ import LanguageProvider from './components/providers/LanguageProvider';
 import Footer from './components/common/Footer';
 import Start from './views/Start';
 import Media from './views/Media';
-import NoMatch from './views/NoMatch';
-import Prasens from './views/Prasens';
-import Preter from './views/Preter';
-import Perfect from './views/Perfect';
+import NoMatch from './views/NoMatch/NoMatch';
+import Prasens from './views/Prasens/Prasens';
+import Preter from './views/Preter/Preter';
+import Perfect from './views/Perfect/Perfect';
 import Deklination from './views/Deklination';
-import Tests from './views/Tests';
+import Tests from './views/Tests/Tests';
 
 const App = () => (
   <LanguageProvider>

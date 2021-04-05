@@ -1,12 +1,12 @@
 import React from 'react';
 import { Layout } from 'antd';
 import { useTranslation } from 'react-i18next';
-import schem1 from '../assets/images/perfi1.jpg';
-import schem2 from '../assets/images/perfi2.jpg';
-import schem3 from '../assets/images/perfi3.jpg';
-import schem4 from '../assets/images/perfi4.jpg';
-import schem5 from '../assets/images/habensein.png';
-import PageTemplate from '../components/common/PageTemplate';
+import schem1 from '../../assets/images/perfi1.jpg';
+import schem2 from '../../assets/images/perfi2.jpg';
+import schem3 from '../../assets/images/perfi3.jpg';
+import schem4 from '../../assets/images/perfi4.jpg';
+import schem5 from '../../assets/images/habensein.png';
+import PageTemplate from '../../components/common/PageTemplate';
 
 const { Content } = Layout;
 

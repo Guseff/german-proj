@@ -1,0 +1,39 @@
+.centered {
+  text-align: center;
+}
+
+.university {
+  font-size: 14px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.author {
+  font-size: 28px;
+}
+
+.title {
+  font-size: 44px;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.intro {
+  background-color: #bae7ff;
+  padding: 30px 0;
+}
+
+.introTitle {
+  font-size: 34px;
+  margin-bottom: 50px;
+}
+
+.introDescription,
+.introBoss {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.introDescription {
+  margin: 50px 0;
+}

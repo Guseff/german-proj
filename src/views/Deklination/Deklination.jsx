@@ -2,7 +2,7 @@ import React from 'react';
 import { Layout } from 'antd';
 import { useTranslation } from 'react-i18next';
 
-import PageTemplate from '../components/common/PageTemplate';
+import PageTemplate from '../../components/common/PageTemplate';
 
 const { Content } = Layout;
 
