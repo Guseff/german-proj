@@ -11,12 +11,12 @@ const Deklination = () => {
 
   return (
     <PageTemplate>
-      <h2 className={style.centered}>{t('deklination.title')}</h2>
-      <p className={style.bold}>{t('deklination.gens.1')}</p>
-      <p className={style.bold}>{t('deklination.gens.2')}</p>
-      <p className={style.bold}>{t('deklination.gens.3')}</p>
-      <h3 className={style.centered}>{t('1.Feminine.title')}</h3>
-      <p className={style.centered}>{t('deklination.fem.1')}</p>
+      <h2 className={styles.centered}>{t('deklination.title')}</h2>
+      <p className={styles.bold}>{t('deklination.gens.1')}</p>
+      <p className={styles.bold}>{t('deklination.gens.2')}</p>
+      <p className={styles.bold}>{t('deklination.gens.3')}</p>
+      <h3 className={styles.centered}>{t('1.Feminine.title')}</h3>
+      <p className={styles.centered}>{t('deklination.fem.1')}</p>
       <table className="page-content--table">
         <tbody>
           <tr>
@@ -44,8 +44,8 @@ const Deklination = () => {
           </tr>
         </tbody>
       </table>
-      <h3 className={style.centered}>{t('2.S-declension.title')}</h3>
-      <p className={style.centered}>{t('deklination.s.1')}</p>
+      <h3 className={styles.centered}>{t('2.S-declension.title')}</h3>
+      <p className={styles.centered}>{t('deklination.s.1')}</p>
       <table className="page-content--table">
         <tbody>
           <tr>
@@ -80,14 +80,16 @@ const Deklination = () => {
         <u>{t('deklination.s.4')}</u>
       </h4>
       <p>{t('deklination.s.5')}</p>
-      <p className={cn(style.centered, style.cursive)}>des Sitzes, des Tanzes, des Wunsches</p>
+      <p className={cn(styles.centered, styles.cursive)}>
+        des Sitzes, des Tanzes, des Wunsches
+      </p>
       <p>{t('deklination.s.6')}</p>
-      <p className={cn(style.centered, style.cursive)}>
+      <p className={cn(styles.centered, styles.cursive)}>
         des Modus, der Kosmos, des Mechanismus
       </p>
       <p />
-      <h3 className={style.centered}>{t('3.N-declension.title')}</h3>
-      <p className={style.centered}>{t('deklination.n.1')}</p>
+      <h3 className={styles.centered}>{t('3.N-declension.title')}</h3>
+      <p className={styles.centered}>{t('deklination.n.1')}</p>
       <table className="page-content--table">
         <tbody>
           <tr>
@@ -123,34 +125,32 @@ const Deklination = () => {
           </tr>
         </tbody>
       </table>
-      <h4 ClassName={style.centered}>
+      <h4 className={styles.centered}>
         <u>{t('deklination.n.5')}</u>
       </h4>
       <p>{t('deklination.n.6')}</p>
-      <p className={cn(style.centered, style.cursive)}>
+      <p className={cn(styles.centered, styles.cursive)}>
         der Löwe, der Zeuge, der Finne, der Schwede, der Pole, der Belarusse,
         der Grieche, der Ire, der Schotte, der Affe, der Hase, der Rabe, der
-        Matrose, der Kollege, der Experte, der Heide, der Junge, der Kunde,
-        der Neffe
+        Matrose, der Kollege, der Experte, der Heide, der Junge, der Kunde, der
+        Neffe
       </p>
       <p>{t('deklination.n.7')}</p>
-      <p className={cn(style.red, style.bold)}>{t('deklination.Leut')}</p>
+      <p className={cn(styles.red, styles.bold)}>{t('deklination.Leut')}</p>
       <p>{t('deklination.n.8')}</p>
-      <p className={cn(style.centered, style.cursive)}>
+      <p className={cn(styles.centered, styles.cursive)}>
         der Automat, der Brillant, der Diamant, der Foliant, der Koeffizient,
         der Komet, der Konsonant, der Paragraf, der Planet u.a.
       </p>
       <p>{t('deklination.n.9')}</p>
-      <p className={cn(style.centered, style.cursive)}>
+      <p className={cn(styles.centered, styles.cursive)}>
         der Bär. der Held, der Zar, der Narr, der Prinz, der Mensch, der Tor,
         der Graf
       </p>
-      <p>
-        + der Tyrann, der Barbar, der Bauer, der Kamerad, der Vorfahr u.a.
-      </p>
-      <h3 className={style.centered}>{t('4.declension.mix.title')}</h3>
-      <p className={style.centered}>{t('deklination.mix.1')}</p>
-      <p className={style.centered}>
+      <p>+ der Tyrann, der Barbar, der Bauer, der Kamerad, der Vorfahr u.a.</p>
+      <h3 className={styles.centered}>{t('4.declension.mix.title')}</h3>
+      <p className={styles.centered}>{t('deklination.mix.1')}</p>
+      <p className={styles.centered}>
         der Buchstabe, der Felse(n), der Frieden, der Funke, der Gedanke, der
         Glaube, der Haufen, der Name, der Samen, der Schaden, der Wille
       </p>
@@ -185,7 +185,7 @@ const Deklination = () => {
           </tr>
         </tbody>
       </table>
-      <h3 className={style.centered}>{t('deklination.name')}</h3>
+      <h3 className={styles.centered}>{t('deklination.name')}</h3>
       <table className="page-content--table">
         <tbody>
           <tr>
@@ -198,10 +198,11 @@ const Deklination = () => {
           </tr>
         </tbody>
       </table>
-      <p className={cn(style.centered, style.cursive)}>{t('deklination.name.3')}</p>
-
-      <h3 className={style.centered}>{t('deklination.pl.titel')}</h3>
-      <p className={style.centered}>{t('deklination.pl.1')}</p>
+      <p className={cn(styles.centered, styles.cursive)}>
+        {t('deklination.name.3')}
+      </p>
+      <h3 className={styles.centered}>{t('deklination.pl.titel')}</h3>
+      <p className={styles.centered}>{t('deklination.pl.1')}</p>
       <table className="page-content--table">
         <tbody>
           <tr>
@@ -209,11 +210,7 @@ const Deklination = () => {
             <td className="mid-cell">die Becher</td>
             <td className="mid-cell">die Flagen</td>
             <td className="mid-cell">die Fans</td>
-            <td
-              rowSpan="3"
-              colSpan="3"
-              className="low-cell bold-cell centered"
-            >
+            <td rowSpan="3" colSpan="3" className="low-cell bold-cell centered">
               {t('deklination.pl.2')}
             </td>
           </tr>
