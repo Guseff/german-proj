@@ -1,0 +1,17 @@
+.centered {
+  text-align: center;
+}
+
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.img {
+  width: 248px;
+  margin: 10px auto;
+}

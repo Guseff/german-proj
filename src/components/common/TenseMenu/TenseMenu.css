@@ -1,0 +1,40 @@
+.list {
+  line-height: 46px;
+  white-space: nowrap;
+  border: 0;
+  border-bottom: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+  outline: none;
+  transition: all .3s,width .3s cubic-bezier(.2,0,0,1) 0s;
+}
+
+.element {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: border-color .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.link {
+  font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: rgba(0,0,0,.65);
+  cursor: pointer;
+}
+
+.active .link,
+.link:hover {
+  color: #1890ff;
+}
+
+.element:hover,
+.active {
+  border-color: #1890ff;
+}
