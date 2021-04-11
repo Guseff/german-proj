@@ -23,7 +23,7 @@ module.exports = merge(common, {
             loader: 'css-loader',
             options: {
               modules: {
-                localIdentName: '[hash64:5]',
+                localIdentName: '[name]__[hash:8]',
               },
             },
           },
