@@ -1,0 +1,21 @@
+.lowCell {
+  width: 14%;
+}
+.midCell {
+  width: 16%;
+}
+.bigCell {
+  width: 45%;
+}
+.gapCell {
+  width: 10%;
+}
+.boldCell {
+  font-weight: bold;
+}
+.topCell {
+  vertical-align: top;
+}
+.centeredCell {
+  text-align: center;
+}

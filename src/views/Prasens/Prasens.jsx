@@ -4,6 +4,7 @@ import cn from 'classnames';
 
 import schem from '../../assets/images/schem.jpg';
 import PageTemplate from '../../components/common/PageTemplate';
+import Table, { Row, Cell, HeaderCell } from '../../components/common/Table';
 
 import styles from './Prasens.css';
 
@@ -38,37 +39,47 @@ const Prasens = () => {
         <del>en</del>
         {quattro}
       </p>
-      <table className="page-content--table">
-        <tbody>
-          <tr>
-            <td className="low-cell bold-cell">ich</td>
-            <td className="mid-cell">e</td>
-            <td className="low-cell bold-cell">wir</td>
-            <td className="mid-cell">en</td>
-            <td className="gap-cell" />
-            <td>machen</td>
-            <td>schenken</td>
-          </tr>
-          <tr>
-            <td className="low-cell bold-cell">du</td>
-            <td className="mid-cell">(e)st</td>
-            <td className="low-cell bold-cell">ihr</td>
-            <td className="mid-cell">(e)t</td>
-            <td className="gap-cell" />
-            <td>schauen</td>
-            <td>führen</td>
-          </tr>
-          <tr>
-            <td className="low-cell bold-cell">er/sie/es</td>
-            <td className="mid-cell">(e)t</td>
-            <td className="low-cell bold-cell">sie/Sie</td>
-            <td className="mid-cell">en</td>
-            <td className="gap-cell" />
-            <td>leben</td>
-            <td>wohnen</td>
-          </tr>
-        </tbody>
-      </table>
+      <Table>
+        <Row>
+          <Cell low bold>
+            ich
+          </Cell>
+          <Cell middle>e</Cell>
+          <Cell low bold>
+            wir
+          </Cell>
+          <Cell middle>en</Cell>
+          <Cell gap />
+          <Cell>machen</Cell>
+          <Cell>schenken</Cell>
+        </Row>
+        <Row>
+          <Cell low bold>
+            du
+          </Cell>
+          <Cell middle>(e)st</Cell>
+          <Cell low bold>
+            ihr
+          </Cell>
+          <Cell middle>(e)t</Cell>
+          <Cell gap />
+          <Cell>schauen</Cell>
+          <Cell>führen</Cell>
+        </Row>
+        <Row>
+          <Cell low bold>
+            er/sie/es
+          </Cell>
+          <Cell middle>(e)t</Cell>
+          <Cell low bold>
+            sie/Sie
+          </Cell>
+          <Cell middle>en</Cell>
+          <Cell gap />
+          <Cell>leben</Cell>
+          <Cell>wohnen</Cell>
+        </Row>
+      </Table>
       <h3 className={styles.centered}>{`${t('special')}:`}</h3>
       <p className={styles.paragraph}>
         1)&nbsp;
@@ -150,58 +161,56 @@ const Prasens = () => {
       </p>
       <p className={styles.paragraph}>
         au ➤ äu (saufen, laufen)&nbsp;
-        <span className="strong">{`${t('except')}`}</span>
+        <span className={styles.strong}>{`${t('except')}`}</span>
         :&nbsp;hauen, saugen, schnauben
       </p>
       <p className={styles.paragraph}>
         a ➤ ä (backen, blasen, braten)&nbsp;
-        <span className="strong">{`${t('except')}`}</span>
+        <span className={styles.strong}>{`${t('except')}`}</span>
         :&nbsp;mahlen, spalten, schaffen, (er)schallen
       </p>
       <p className={styles.paragraph}>
         e ➤ i (essen, geben, helfen)&nbsp;
-        <span className="strong">{`${t('except')}`}</span>
+        <span className={styles.strong}>{`${t('except')}`}</span>
         :&nbsp;bewegen, genesen, weben, gehen, heben, stehen + brennen, kennen,
         rennen, stecken, denken, nennen, senden, wenden
       </p>
       <p className={styles.paragraph}>
-        <span className="strong">{`${t('but')}`}</span>
+        <span className={styles.strong}>{`${t('but')}`}</span>
         :&nbsp;e ➤ ie (befehlen, empfehlen, geschehen, lesen, sehen, stehlen)
       </p>
-      <table className="page-content--table">
-        <tbody>
-          <tr>
-            <td>
-              kommen –&nbsp;k
-              <u>o</u>
-              mmst/t
-            </td>
-            <td>
-              nehmen – ni
-              <u>mm</u>
-              st/t
-            </td>
-            <td className="red">
-              erlöschen – erl
-              <u>i</u>
-              schst/t
-            </td>
-          </tr>
-          <tr>
-            <td>
-              stoßen – st
-              <u>ö</u>
-              ßt
-            </td>
-            <td>
-              treten – tri
-              <u>tt</u>
-              st/_
-            </td>
-            <td> </td>
-          </tr>
-        </tbody>
-      </table>
+      <Table>
+        <Row>
+          <Cell>
+            kommen –&nbsp;k
+            <u>o</u>
+            mmst/t
+          </Cell>
+          <Cell>
+            nehmen – ni
+            <u>mm</u>
+            st/t
+          </Cell>
+          <Cell className={styles.red}>
+            erlöschen – erl
+            <u>i</u>
+            schst/t
+          </Cell>
+        </Row>
+        <Row>
+          <Cell>
+            stoßen – st
+            <u>ö</u>
+            ßt
+          </Cell>
+          <Cell>
+            treten – tri
+            <u>tt</u>
+            st/_
+          </Cell>
+          <Cell> </Cell>
+        </Row>
+      </Table>
       <p className={styles.paragraph}>
         4)&nbsp;
         {`${t('prasens.special.4.1')} `}
@@ -216,106 +225,102 @@ const Prasens = () => {
         5)&nbsp;
         {`${t('remember')}!`}
       </p>
-      <table className="page-content--table">
-        <tbody>
-          <tr>
-            <td>können</td>
-            <td>müssen</td>
-            <td>sein</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>mögen</td>
-            <td>dürfen</td>
-            <td>haben</td>
-            <td>tun</td>
-          </tr>
-          <tr>
-            <td>sollen</td>
-            <td>wissen</td>
-            <td>werden</td>
-            <td> </td>
-          </tr>
-        </tbody>
-      </table>
+      <Table>
+        <Row>
+          <Cell>können</Cell>
+          <Cell>müssen</Cell>
+          <Cell>sein</Cell>
+          <Cell> </Cell>
+        </Row>
+        <Row>
+          <Cell>mögen</Cell>
+          <Cell>dürfen</Cell>
+          <Cell>haben</Cell>
+          <Cell>tun</Cell>
+        </Row>
+        <Row>
+          <Cell>sollen</Cell>
+          <Cell>wissen</Cell>
+          <Cell>werden</Cell>
+          <Cell> </Cell>
+        </Row>
+      </Table>
       <p className={styles.paragraph}>
         6)&nbsp;
         {`${t('prefixes-verbs')}`}
       </p>
-      <table className="page-content--table">
-        <tbody>
-          <tr>
-            <th>{`${t('inseparable')}`}</th>
-            <th>{`${t('separable')}`}</th>
-            <th>{`${t('mixed-group')}`}</th>
-          </tr>
-          <tr>
-            <td className="top-cell centered-cell">
-              <span className="bold">
-                be- ge- er- ver- zer- ent- emp- miss-
-              </span>
-              <br />
-              <br />
-              <span>{`${t('prasens.special.6.1')}`}</span>
-              <br />
-              <br />
-              <span className="cursive">
-                Ich&nbsp;
-                <u>be</u>
-                komme eine Note. Er&nbsp;
-                <u>er</u>
-                zählt eine Geschichte. Wie&nbsp;
-                <u>ver</u>
-                stehen den Inhalt.
-              </span>
-            </td>
-            <td className="top-cell centered-cell">
-              <span className="bold">
-                ab- an- auf- aus- bei- hin- her- mit- nach- vor- zu- usw.
-              </span>
-              <br />
-              <br />
-              <span>{`${t('prasens.special.6.2')}`}</span>
-              <br />
-              <span className="cursive">
-                <u>kennen</u>
-                lernen,&nbsp;
-                <u>spazieren</u>
-                gehen usw.
-              </span>
-              <br />
-              <br />
-              <span>{`${t('prasens.special.6.3')}`}</span>
-              <br />
-              <span className="cursive">
-                Er&nbsp;
-                <u>kommt mit</u>
-                ;&nbsp;sie&nbsp;
-                <u>sehen</u>
-                &nbsp;gut&nbsp;
-                <u>aus</u>
-                .&nbsp;
-              </span>
-            </td>
-            <td className="top-cell centered-cell">
-              <span className="bold">durch- über- unter- um- wieder-</span>
-              <br />
-              <br />
-              <span>{`${t('prasens.special.6.4')}`}</span>
-              <br />
-              <span className="cursive">
-                Ich&nbsp;
-                <u>wiederhole</u>
-                &nbsp;den Stoff; Der Hund&nbsp;
-                <u>holt</u>
-                &nbsp;den Stock&nbsp;
-                <u>wieder</u>
-                .&nbsp;
-              </span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <Table>
+        <Row>
+          <HeaderCell>{`${t('inseparable')}`}</HeaderCell>
+          <HeaderCell>{`${t('separable')}`}</HeaderCell>
+          <HeaderCell>{`${t('mixed-group')}`}</HeaderCell>
+        </Row>
+        <Row>
+          <Cell top centered>
+            <span className={styles.bold}>
+              be- ge- er- ver- zer- ent- emp- miss-
+            </span>
+            <br />
+            <br />
+            <span>{`${t('prasens.special.6.1')}`}</span>
+            <br />
+            <br />
+            <span className={styles.cursive}>
+              Ich&nbsp;
+              <u>be</u>
+              komme eine Note. Er&nbsp;
+              <u>er</u>
+              zählt eine Geschichte. Wie&nbsp;
+              <u>ver</u>
+              stehen den Inhalt.
+            </span>
+          </Cell>
+          <Cell top centered>
+            <span className={styles.bold}>
+              ab- an- auf- aus- bei- hin- her- mit- nach- vor- zu- usw.
+            </span>
+            <br />
+            <br />
+            <span>{`${t('prasens.special.6.2')}`}</span>
+            <br />
+            <span className={styles.cursive}>
+              <u>kennen</u>
+              lernen,&nbsp;
+              <u>spazieren</u>
+              gehen usw.
+            </span>
+            <br />
+            <br />
+            <span>{`${t('prasens.special.6.3')}`}</span>
+            <br />
+            <span className={styles.cursive}>
+              Er&nbsp;
+              <u>kommt mit</u>
+              ;&nbsp;sie&nbsp;
+              <u>sehen</u>
+              &nbsp;gut&nbsp;
+              <u>aus</u>
+              .&nbsp;
+            </span>
+          </Cell>
+          <Cell top centered>
+            <span className={styles.bold}>durch- über- unter- um- wieder-</span>
+            <br />
+            <br />
+            <span>{`${t('prasens.special.6.4')}`}</span>
+            <br />
+            <span className={styles.cursive}>
+              Ich&nbsp;
+              <u>wiederhole</u>
+              &nbsp;den Stoff; Der Hund&nbsp;
+              <u>holt</u>
+              &nbsp;den Stock&nbsp;
+              <u>wieder</u>
+              .&nbsp;
+            </span>
+          </Cell>
+        </Row>
+      </Table>
       <p className={styles.paragraph}>
         7)&nbsp;
         {`${t('reflexiva')}`}

@@ -15,3 +15,7 @@
   width: 248px;
   margin: 10px auto;
 }
+
+.bold {
+  font-weight: bold;
+}
