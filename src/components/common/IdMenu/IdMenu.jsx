@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 
-import 'video-react/dist/video-react.css';
 import styles from './IdMenu.css';
 
 const IdMenu = ({ tense, id }) => {
