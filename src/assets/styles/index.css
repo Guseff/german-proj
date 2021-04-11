@@ -1,3 +1,23 @@
+body {
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  color: rgba(0,0,0,.65);
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
 .light {
   background-color: #ffffff;
 }
@@ -29,14 +49,19 @@
   padding: 10px 0;
 }
 
-.main-wrapper {
+.mainWrapper {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
   max-width: 1400px;
   min-height: 100vh;
   margin: 0 auto;
   font-size: 16px;
 }
 
-.page-wrapper {
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
 }
 
@@ -49,41 +74,6 @@
 
 .page-player {
   margin-top: 20px;
-}
-
-.page--side-menu {
-  position: fixed;
-  font-size: 24px;
-  color: #1890ff;
-  border-right: 0;
-}
-
-.page-content {
-  padding: 0 20px;
-}
-
-.prasens-img {
-  width: 148px;
-  margin: 0 auto;
-}
-.preter-img {
-  width: 248px;
-  margin: 10px auto;
-}
-.perfect-img-1 {
-  width: 248px;
-  margin: 10px auto;
-}
-.perfect-img-2 {
-  width: 160px;
-  height: 24px;
-}
-.perfect-img-3 {
-  width: 230px;
-  height: 35px;
-}
-.perfect-img-4 {
-  margin: 0 auto;
 }
 
 .page-content--table {
@@ -119,71 +109,4 @@
 }
 .page-content--table .cell-45 {
   width: 45%;
-}
-
-
-.lang-btn--wrap {
-  position: fixed;
-}
-
-.lang-btn,
-.lang-btn:last-child,
-.lang-btn:first-child {
-  height: 48px;
-  margin-right: 15px;
-  line-height: 48px;
-}
-
-.start-page, .centered {
-  text-align: center;
-}
-
-.start-page--university {
-  font-size: 14px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-.start-page--author {
-  font-size: 28px;
-}
-
-.start-page--title {
-  font-size: 44px;
-  text-transform: uppercase;
-  margin: 30px 0;
-}
-
-.start-page--intro {
-  background-color: #bae7ff;
-  padding: 30px 0;
-}
-
-.start-page--intro--title {
-  font-size: 34px;
-  margin-bottom: 50px;
-}
-
-.start-page--intro--description,
-.start-page--intro--boss {
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.start-page--intro--description {
-  margin: 50px 0;
-}
-
-.no-match-num {
-  margin: 50px 0;
-  font-size: 44px;
-}
-
-.no-match-num span {
-  font-size: 24px;
-}
-
-.footer {
-  text-align: center;
-  flex-shrink: 0;
 }

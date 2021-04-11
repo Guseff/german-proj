@@ -11,7 +11,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: './index.html',
-      favicon: './src/assets/icons/favicon.ico',
+      favicon: './src/assets/icons/favicons.png',
       template: './src/index.html',
     }),
     new CopyPlugin({
@@ -29,13 +29,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-        ],
-      },
       {
         enforce: 'pre',
         test: /\.(js|jsx)$/,

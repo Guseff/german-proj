@@ -1,0 +1,20 @@
+.centered {
+  text-align: center;
+}
+
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.cursive {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.red {
+  color: red;
+}

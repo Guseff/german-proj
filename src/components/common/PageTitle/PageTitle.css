@@ -1,0 +1,12 @@
+.header {
+  text-transform: uppercase;
+}
+
+.header h1 {
+  height: 64px;
+  line-height: 64px;
+  margin: 30px 0;
+  font-size: 36px;
+  font-weight: normal;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+.wrapper {
+  flex: 0 0 200px;
+  max-width: 200px;
+  min-width: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list {
+  position: fixed;
+  display: flex;
+}
