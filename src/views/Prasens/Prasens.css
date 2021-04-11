@@ -15,3 +15,16 @@
   width: 148px;
   margin: 0 auto;
 }
+
+.bold {
+  font-weight: bold;
+}
+
+.strong {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.red {
+  color:red;
+}

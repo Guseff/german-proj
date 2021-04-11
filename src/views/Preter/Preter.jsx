@@ -4,6 +4,7 @@ import cn from 'classnames';
 
 import schem from '../../assets/images/sh5.jpg';
 import PageTemplate from '../../components/common/PageTemplate';
+import Table, { Row, Cell, HeaderCell } from '../../components/common/Table';
 
 import styles from './Preter.css';
 
@@ -27,28 +28,26 @@ const Preter = () => {
         {`${t('preter.use.3')};`}
       </p>
       <h3 className={styles.centered}>{t('howto')}</h3>
-      <table className="page-content--table">
-        <tbody>
-          <tr>
-            <td className={styles.centered}>
-              {t('regular-verbs')}
-              <br />
-              <img alt="" src={schem} className={styles.img} />
-              <br />
-              mach
-              <del>en</del>
-              {quattro}
-            </td>
-            <td className={styles.centered}>
-              {t('irregular-verbs')}
-              <br />
-              <br />
-              (2. Form in der Tabelle)&nbsp;
-              {quattro}
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <Table>
+        <Row>
+          <Cell centered>
+            {t('regular-verbs')}
+            <br />
+            <img alt="" src={schem} className={styles.img} />
+            <br />
+            mach
+            <del>en</del>
+            {quattro}
+          </Cell>
+          <Cell centered>
+            {t('irregular-verbs')}
+            <br />
+            <br />
+            (2. Form in der Tabelle)&nbsp;
+            {quattro}
+          </Cell>
+        </Row>
+      </Table>
 
       <h3 className={styles.centered}>{`${t('special')}:`}</h3>
       <p className={styles.paragraph}>
@@ -160,104 +159,100 @@ const Preter = () => {
         7)&nbsp;
         {`${t('remember')}!`}
       </p>
-      <table className="page-content--table">
-        <tbody>
-          <tr>
-            <td>sein</td>
-            <td>war</td>
-          </tr>
-          <tr>
-            <td>haben</td>
-            <td>hatte</td>
-          </tr>
-          <tr>
-            <td>werden</td>
-            <td>wurde</td>
-          </tr>
-          <tr>
-            <td>tun</td>
-            <td>tat</td>
-          </tr>
-        </tbody>
-      </table>
+      <Table>
+        <Row>
+          <Cell>sein</Cell>
+          <Cell>war</Cell>
+        </Row>
+        <Row>
+          <Cell>haben</Cell>
+          <Cell>hatte</Cell>
+        </Row>
+        <Row>
+          <Cell>werden</Cell>
+          <Cell>wurde</Cell>
+        </Row>
+        <Row>
+          <Cell>tun</Cell>
+          <Cell>tat</Cell>
+        </Row>
+      </Table>
       <p className={styles.paragraph}>
         8)&nbsp;
         {`${t('prefixes-verbs')}`}
       </p>
-      <table className="page-content--table">
-        <tbody>
-          <tr>
-            <th>{`${t('inseparable')}`}</th>
-            <th>{`${t('separable')}`}</th>
-            <th>{`${t('mixed-group')}`}</th>
-          </tr>
-          <tr>
-            <td className="top-cell centered-cell">
-              <span className="bold">
-                be- ge- er- ver- zer- ent- emp- miss-
-              </span>
-              <br />
-              <br />
-              <span>{`${t('prasens.special.6.1')}`}</span>
-              <br />
-              <br />
-              <span className="cursive">
-                Ich&nbsp;
-                <u>be</u>
-                komme eine Note. Er&nbsp;
-                <u>er</u>
-                zählte eine Geschichte. Wie&nbsp;
-                <u>ver</u>
-                standen den Inhalt.
-              </span>
-            </td>
-            <td className="top-cell centered-cell">
-              <span className="bold">
-                ab- an- auf- aus- bei- hin- her- mit- nach- vor- zu- usw.
-              </span>
-              <br />
-              <br />
-              <span>{`${t('prasens.special.6.2')}`}</span>
-              <br />
-              <span className="cursive">
-                <u>kennen</u>
-                lernen,&nbsp;
-                <u>spazieren</u>
-                gehen usw.
-              </span>
-              <br />
-              <br />
-              <span>{`${t('prasens.special.6.3')}`}</span>
-              <br />
-              <span className={styles.cursive}>
-                Er&nbsp;
-                <u>kam mit</u>
-                ;&nbsp;sie&nbsp;
-                <u>sahen</u>
-                &nbsp;gut&nbsp;
-                <u>aus</u>
-                .&nbsp;
-              </span>
-            </td>
-            <td className="top-cell centered-cell">
-              <span className="bold">durch- über- unter- um- wieder-</span>
-              <br />
-              <br />
-              <span>{`${t('prasens.special.6.4')}`}</span>
-              <br />
-              <span className="cursive">
-                Ich&nbsp;
-                <u>wiederholte</u>
-                &nbsp;den Stoff; Der Hund&nbsp;
-                <u>holte</u>
-                &nbsp;den Stock&nbsp;
-                <u>wieder</u>
-                .&nbsp;
-              </span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <Table>
+        <Row>
+          <HeaderCell>{`${t('inseparable')}`}</HeaderCell>
+          <HeaderCell>{`${t('separable')}`}</HeaderCell>
+          <HeaderCell>{`${t('mixed-group')}`}</HeaderCell>
+        </Row>
+        <Row>
+          <Cell top centered>
+            <span className={styles.bold}>
+              be- ge- er- ver- zer- ent- emp- miss-
+            </span>
+            <br />
+            <br />
+            <span>{`${t('prasens.special.6.1')}`}</span>
+            <br />
+            <br />
+            <span className={styles.cursive}>
+              Ich&nbsp;
+              <u>be</u>
+              komme eine Note. Er&nbsp;
+              <u>er</u>
+              zählte eine Geschichte. Wie&nbsp;
+              <u>ver</u>
+              standen den Inhalt.
+            </span>
+          </Cell>
+          <Cell top centered>
+            <span className={styles.bold}>
+              ab- an- auf- aus- bei- hin- her- mit- nach- vor- zu- usw.
+            </span>
+            <br />
+            <br />
+            <span>{`${t('prasens.special.6.2')}`}</span>
+            <br />
+            <span className={styles.cursive}>
+              <u>kennen</u>
+              lernen,&nbsp;
+              <u>spazieren</u>
+              gehen usw.
+            </span>
+            <br />
+            <br />
+            <span>{`${t('prasens.special.6.3')}`}</span>
+            <br />
+            <span className={styles.cursive}>
+              Er&nbsp;
+              <u>kam mit</u>
+              ;&nbsp;sie&nbsp;
+              <u>sahen</u>
+              &nbsp;gut&nbsp;
+              <u>aus</u>
+              .&nbsp;
+            </span>
+          </Cell>
+          <Cell top centered>
+            <span className={styles.bold}>durch- über- unter- um- wieder-</span>
+            <br />
+            <br />
+            <span>{`${t('prasens.special.6.4')}`}</span>
+            <br />
+            <span className={styles.cursive}>
+              Ich&nbsp;
+              <u>wiederholte</u>
+              &nbsp;den Stoff; Der Hund&nbsp;
+              <u>holte</u>
+              &nbsp;den Stock&nbsp;
+              <u>wieder</u>
+              .&nbsp;
+            </span>
+          </Cell>
+        </Row>
+      </Table>
       <p className={styles.paragraph}>
         9)&nbsp;
         {`${t('reflexiva')}`}
