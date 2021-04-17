@@ -12,9 +12,12 @@ const Cell = ({
   middle,
   big,
   gap,
+  equal,
   bold,
   top,
   centered,
+  cursive,
+  right,
 }) => (
   <td
     rowSpan={rowSpan}
@@ -23,9 +26,12 @@ const Cell = ({
       [styles.midCell]: middle,
       [styles.bigCell]: big,
       [styles.gapCell]: gap,
+      [styles.equCell]: equal,
       [styles.boldCell]: bold,
       [styles.topCell]: top,
       [styles.centeredCell]: centered,
+      [styles.cursive]: cursive,
+      [styles.right]: right,
     })}
   >
     {children}
@@ -39,9 +45,12 @@ Cell.defaultProps = {
   middle: undefined,
   big: undefined,
   gap: undefined,
+  equal: undefined,
   bold: undefined,
   top: undefined,
   centered: undefined,
+  cursive: undefined,
+  right: undefined,
 };
 
 Cell.propTypes = {
@@ -53,9 +62,12 @@ Cell.propTypes = {
   middle: PropTypes.bool,
   big: PropTypes.bool,
   gap: PropTypes.bool,
+  equal: PropTypes.bool,
   bold: PropTypes.bool,
   top: PropTypes.bool,
   centered: PropTypes.bool,
+  cursive: PropTypes.bool,
+  right: PropTypes.bool,
 };
 
 export default Cell;

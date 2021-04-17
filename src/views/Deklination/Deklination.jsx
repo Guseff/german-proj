@@ -68,8 +68,14 @@ const Deklination = () => {
           <Cell low bold>
             G
           </Cell>
-          <Cell middle>des Tisches</Cell>
-          <Cell middle>des Zimmers</Cell>
+          <Cell middle>
+            des Tisch
+            <span className={styles.red}>es</span>
+          </Cell>
+          <Cell middle>
+            des Zimmer
+            <span className={styles.red}>s</span>
+          </Cell>
           <Cell middle>{t('deklination.s.3')}</Cell>
         </Row>
         <Row>
@@ -120,27 +126,54 @@ const Deklination = () => {
           <Cell low bold>
             G
           </Cell>
-          <Cell middle>des Menschen</Cell>
-          <Cell middle>des Jungeen</Cell>
-          <Cell middle>des Aspiranten</Cell>
+          <Cell middle>
+            des Mensch
+            <span className={styles.red}>en</span>
+          </Cell>
+          <Cell middle>
+            des Junge
+            <span className={styles.red}>n</span>
+          </Cell>
+          <Cell middle>
+            des Aspirant
+            <span className={styles.red}>en</span>
+          </Cell>
           <Cell gap />
         </Row>
         <Row>
           <Cell low bold>
             D
           </Cell>
-          <Cell middle>dem Menschen</Cell>
-          <Cell middle>dem Jungeen</Cell>
-          <Cell middle>dem Aspiranten</Cell>
+          <Cell middle>
+            dem Mensch
+            <span className={styles.red}>en</span>
+          </Cell>
+          <Cell middle>
+            dem Junge
+            <span className={styles.red}>n</span>
+          </Cell>
+          <Cell middle>
+            dem Aspirant
+            <span className={styles.red}>en</span>
+          </Cell>
           <Cell gap />
         </Row>
         <Row>
           <Cell low bold>
             A
           </Cell>
-          <Cell middle>den Menschen</Cell>
-          <Cell middle>den Jungeen</Cell>
-          <Cell middle>den Aspiranten</Cell>
+          <Cell middle>
+            den Mensch
+            <span className={styles.red}>en</span>
+          </Cell>
+          <Cell middle>
+            den Junge
+            <span className={styles.red}>n</span>
+          </Cell>
+          <Cell middle>
+            der Aspirant
+            <span className={styles.red}>en</span>
+          </Cell>
           <Cell gap />
         </Row>
       </Table>
@@ -186,8 +219,14 @@ const Deklination = () => {
           <Cell low bold>
             G
           </Cell>
-          <Cell middle>des Namens</Cell>
-          <Cell middle>des Herzens</Cell>
+          <Cell middle>
+            des Nam
+            <span className={styles.red}>ens</span>
+          </Cell>
+          <Cell middle>
+            des Herz
+            <span className={styles.red}>ens</span>
+          </Cell>
           <Cell low bold>
             {t('deklination.mix.3')}
           </Cell>
@@ -197,8 +236,14 @@ const Deklination = () => {
           <Cell low bold>
             D
           </Cell>
-          <Cell middle>dem Namen</Cell>
-          <Cell middle>dem Herzen</Cell>
+          <Cell middle>
+            dem Nam
+            <span className={styles.red}>en</span>
+          </Cell>
+          <Cell middle>
+            dem Herz
+            <span className={styles.red}>en</span>
+          </Cell>
           <Cell low bold>
             {t('deklination.mix.4')}
           </Cell>
@@ -208,8 +253,14 @@ const Deklination = () => {
           <Cell low bold>
             A
           </Cell>
-          <Cell middle>den Namen</Cell>
-          <Cell middle>das Herz</Cell>
+          <Cell middle>
+            den Nam
+            <span className={styles.red}>en</span>
+          </Cell>
+          <Cell middle>
+            das Herz
+            <span className={styles.red}> !</span>
+          </Cell>
           <Cell low bold>
             {t('deklination.mix.5')}
           </Cell>
@@ -219,17 +270,203 @@ const Deklination = () => {
       <h3 className={styles.centered}>{t('deklination.name')}</h3>
       <Table>
         <Row>
-          <Cell low bold centered>
+          <Cell equal bold centered>
             {t('deklination.name.1')}
           </Cell>
-          <Cell low bold centered>
+          <Cell equal bold centered>
             {t('deklination.name.2')}
           </Cell>
         </Row>
+        <Row>
+          <Cell equal bold centered />
+          <Cell equal cursive right>
+            {t('deklination.name.3')}
+            <br />
+            {t('deklination.name.4')}
+          </Cell>
+        </Row>
+        <Row>
+          <Cell equal top>
+            <span className={cn(styles.bold, styles.tabula)}>
+              {t('deklination.name.5')}
+              &nbsp;(F/M) =
+            </span>
+            <br />
+            {t('deklination.name.6')}
+            <br />
+            <br />
+            <span className={styles.tabula}>
+              {`F - ${t('deklination.name.8')}`}
+            </span>
+            <br />
+            <span className={styles.cursive}>
+              <span className={styles.underline}>der</span>
+              &nbsp;Dohau
+              <span className={styles.red}>_</span>
+            </span>
+            <br />
+            <span className={styles.tabula}>
+              {`M - ${t('deklination.name.9')}`}
+            </span>
+            <br />
+            <span className={styles.cursive}>
+              <span className={styles.underline}>des</span>
+              &nbsp;Main(
+              <span className={styles.red}>s</span>
+              <span>),</span>
+            </span>
+            <span className={styles.cursive}>
+              &nbsp;
+              <span className={styles.underline}>des</span>
+              &nbsp;Mississippi(s),
+            </span>
+            <span className={styles.cursive}>
+              &nbsp;
+              <span className={styles.underline}>des</span>
+              &nbsp;Amazona
+              <span className={styles.red}>s</span>
+            </span>
+            <br />
+            <br />
+            <span className={styles.tabula}>{t('deklination.name.12')}</span>
+            <span>: </span>
+            <br />
+            <span className={styles.cursive}>
+              <span className={styles.underline}>der</span>
+              <span> Jemen(</span>
+              <span className={styles.red}>s</span>
+              <span>)</span>
+            </span>
+          </Cell>
+          <Cell equal top>
+            <span className={styles.tabula}>&lArr; </span>
+            {t('deklination.name.7')}
+            <br />
+            <br />
+            <br />
+            <span className={cn(styles.bold, styles.tabula)}>
+              {t('deklination.name.5')}
+              &nbsp;(N) -
+            </span>
+            <br />
+            {t('deklination.name.10')}
+            <span className={styles.cursive}>
+              <span>s, ss, z, sch </span>
+              &rarr;
+              <span> „von D“ </span>
+            </span>
+            {t('deklination.name.11')}
+            <span> (&#8863;)</span>
+            <br />
+            <span className={cn(styles.cursive, styles.tabula)}>
+              <span>Deutschland</span>
+              <span className={styles.red}>s</span>
+              <span>, </span>
+            </span>
+            <span className={styles.cursive}>
+              <span>Berlin</span>
+              <span className={styles.red}>s</span>
+              <span>, </span>
+            </span>
+            <span className={styles.cursive}>
+              <span>Bern</span>
+              <span className={styles.red}>s</span>
+              <span>, </span>
+            </span>
+            <span className={styles.cursive}>
+              <span className={styles.red}>von </span>
+              <span>Belaru</span>
+              <span className={styles.underline}>s</span>
+            </span>
+            <br />
+            <br />
+            <span className={cn(styles.bold, styles.tabula)}>
+              {t('deklination.name.13')}
+            </span>
+            <br />
+            <span className={styles.tabula}>
+              &bull;&nbsp;
+              {t('deklination.name.14')}
+            </span>
+            <br />
+            <span className={cn(styles.cursive, styles.tabula)}>
+              <span>Karl</span>
+              <span className={styles.red}>s</span>
+              <span> Auto, </span>
+              <span>Schiller</span>
+              <span className={styles.red}>s</span>
+              <span> Stück, </span>
+              <span>Marku</span>
+              <span className={styles.underline}>s</span>
+              <span className={styles.red}>&rsquo;</span>
+              <span> Hut = Hut </span>
+              <span className={styles.red}>von </span>
+              Markus
+            </span>
+            <br />
+            <br />
+            <span className={styles.tabula}>
+              &bull;&nbsp;
+              {t('deklination.name.15')}
+            </span>
+            <br />
+            <span className={styles.cursive}>
+              &rarr;
+              <span> -s </span>
+            </span>
+            <span>{t('deklination.name.17')}</span>
+            <br />
+            <span className={cn(styles.cursive, styles.tabula)}>
+              <span>Doktor</span>
+              <span className={styles.red}>_</span>
+              <span> Peter</span>
+              <span className={styles.red}>s</span>
+              <span> Ratschlag, </span>
+            </span>
+            <br />
+            <span className={styles.cursive}>
+              <span className={cn(styles.bold, styles.underline)}>
+                {t('deklination.name.18')}
+              </span>
+              <span> Herr</span>
+              <span className={styles.red}>n</span>
+              <span> Kioschi</span>
+              <span className={styles.red}>s</span>
+              <span>Unterschrift (= </span>
+              {t('deklination.name.19')}
+              <span>), Angestellte</span>
+              <span className={styles.red}>en</span>
+              <span> Hell</span>
+              <span className={styles.red}>s</span>
+              <span> Büro (= </span>
+              {t('deklination.name.20')}
+              <span className={styles.sup}>{t('deklination.name.21')}</span>
+              <span>)</span>
+            </span>
+            <br />
+            <br />
+            <span className={styles.tabula}>
+              &bull;&nbsp;
+              {t('deklination.name.22')}
+            </span>
+            <span> &rarr; </span>
+            <span>{t('deklination.name.23')}</span>
+            <br />
+            <span className={cn(styles.cursive, styles.tabula)}>
+              <span>Erfindung von Peter</span>
+              <span className={styles.red}>_ dem </span>
+              <span> Erste</span>
+              <span className={styles.red}>n</span>
+              <span>, Gesetz Karl</span>
+              <span className={styles.red}>s des </span>
+              <span>Dritte</span>
+              <span className={styles.red}>n</span>
+            </span>
+            <br />
+            <br />
+          </Cell>
+        </Row>
       </Table>
-      <p className={cn(styles.centered, styles.cursive)}>
-        {t('deklination.name.3')}
-      </p>
       <h3 className={styles.centered}>{t('deklination.pl.titel')}</h3>
       <p className={styles.centered}>{t('deklination.pl.1')}</p>
       <Table>
@@ -237,10 +474,10 @@ const Deklination = () => {
           <Cell low bold>
             N
           </Cell>
-          <Cell middle>die Becher</Cell>
-          <Cell middle>die Flagen</Cell>
-          <Cell middle>die Fans</Cell>
-          <Cell rowSpan="3" colSpan="3" low bold centered>
+          <Cell low>die Becher</Cell>
+          <Cell low>die Flagen</Cell>
+          <Cell low>die Fans</Cell>
+          <Cell rowSpan="3" colSpan="3" bold centered>
             {t('deklination.pl.2')}
           </Cell>
         </Row>
@@ -248,27 +485,36 @@ const Deklination = () => {
           <Cell low bold>
             G
           </Cell>
-          <Cell middle>der Becher</Cell>
-          <Cell middle>der Flagen</Cell>
-          <Cell middle>der Fans</Cell>
+          <Cell low>der Becher</Cell>
+          <Cell low>der Flagen</Cell>
+          <Cell low>der Fans</Cell>
         </Row>
         <Row>
           <Cell low bold>
             D
           </Cell>
-          <Cell middle>den Bechern</Cell>
-          <Cell middle>den Flagen</Cell>
-          <Cell middle>den Fans</Cell>
+          <Cell low>
+            den Becher
+            <span className={styles.red}>n</span>
+          </Cell>
+          <Cell low>
+            den Flage
+            <span className={styles.bold}>n</span>
+          </Cell>
+          <Cell low>
+            den Fans
+            <span className={styles.red}>_</span>
+          </Cell>
           <Cell rowSpan="3" gap />
         </Row>
         <Row>
           <Cell low bold>
             N
           </Cell>
-          <Cell middle>die Becher</Cell>
-          <Cell middle>die Flagen</Cell>
-          <Cell middle>die Fans</Cell>
-          <Cell low centered>
+          <Cell low>die Becher</Cell>
+          <Cell low>die Flagen</Cell>
+          <Cell low>die Fans</Cell>
+          <Cell centered>
             <span className={styles.cursive}>
               Fans, Autos, Wagen, Frauen, Visa
             </span>

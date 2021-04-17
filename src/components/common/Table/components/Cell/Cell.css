@@ -10,6 +10,9 @@
 .gapCell {
   width: 10%;
 }
+.equCell {
+  width: 50%;
+}
 .boldCell {
   font-weight: bold;
 }
@@ -18,4 +21,10 @@
 }
 .centeredCell {
   text-align: center;
+}
+.cursive {
+  font-style: italic;
+}
+.right {
+  text-align: right;
 }
