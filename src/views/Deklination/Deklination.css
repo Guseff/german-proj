@@ -18,3 +18,16 @@
 .red {
   color: red;
 }
+
+.underline {
+  text-decoration: underline;
+}
+
+.tabula {
+  margin-left: 25px;
+}
+
+.sup {
+  vertical-align: super;
+  font-size: smaller;
+}
