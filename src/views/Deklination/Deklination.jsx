@@ -220,8 +220,8 @@ const Deklination = () => {
             G
           </Cell>
           <Cell middle>
-            des Nam
-            <span className={styles.red}>ens</span>
+            des Name
+            <span className={styles.red}>ns</span>
           </Cell>
           <Cell middle>
             des Herz
@@ -237,8 +237,8 @@ const Deklination = () => {
             D
           </Cell>
           <Cell middle>
-            dem Nam
-            <span className={styles.red}>en</span>
+            dem Name
+            <span className={styles.red}>n</span>
           </Cell>
           <Cell middle>
             dem Herz
@@ -254,8 +254,8 @@ const Deklination = () => {
             A
           </Cell>
           <Cell middle>
-            den Nam
-            <span className={styles.red}>en</span>
+            den Name
+            <span className={styles.red}>n</span>
           </Cell>
           <Cell middle>
             das Herz
@@ -301,7 +301,7 @@ const Deklination = () => {
             <br />
             <span className={styles.cursive}>
               <span className={styles.underline}>der</span>
-              &nbsp;Dohau
+              &nbsp;Donau
               <span className={styles.red}>_</span>
             </span>
             <br />
@@ -332,7 +332,7 @@ const Deklination = () => {
             <span>: </span>
             <br />
             <span className={styles.cursive}>
-              <span className={styles.underline}>der</span>
+              <span className={styles.underline}>des</span>
               <span> Jemen(</span>
               <span className={styles.red}>s</span>
               <span>)</span>
@@ -432,10 +432,10 @@ const Deklination = () => {
               <span className={styles.red}>n</span>
               <span> Kioschi</span>
               <span className={styles.red}>s</span>
-              <span>Unterschrift (= </span>
+              <span> Unterschrift (= </span>
               {t('deklination.name.19')}
               <span>), Angestellte</span>
-              <span className={styles.red}>en</span>
+              <span className={styles.red}>n</span>
               <span> Hell</span>
               <span className={styles.red}>s</span>
               <span> Büro (= </span>
