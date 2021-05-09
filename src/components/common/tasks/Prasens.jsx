@@ -1,138 +1,265 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import cn from 'classnames';
+
+import Table, { Cell, Row } from '../Table';
+import Input from '../Table/components/Input/Input';
 
 const PrasensTest = () => {
+  const refH1 = useRef();
+  const [result, setResult] = useState({
+    red: false,
+    green: false,
+  });
+
+  const handleResult = () => {
+    if (refH1.current.value === '') {
+      setResult({
+        red: false,
+        green: false,
+      });
+
+      return;
+    }
+
+    if (refH1.current.value === 'hoere' || refH1.current.value === 'höre') {
+      setResult({
+        red: false,
+        green: true,
+      });
+
+      return;
+    }
+
+    setResult({
+      red: true,
+      green: false,
+    });
+  };
+
   return (
     <section>
       <h4>
         1) Bitte ergänzen Sie in den leeren Feldern die richtigen Verbformen.
         Die bereits eingetragenen Verbformen helfen Ihnen dabei:
       </h4>
-      <table width="625">
-        <tbody>
-          <tr>
-            <td width="14%">Infinitiv</td>
-            <td width="14%">ich</td>
-            <td width="14%">du</td>
-            <td width="14%">er/sie/es</td>
-            <td width="14%">wir</td>
-            <td width="14%">ihr</td>
-            <td width="14%">sie/Sie</td>
-          </tr>
-          <tr>
-            <td width="14%">hören</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">hören</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-          </tr>
-          <tr>
-            <td width="14%">kochen</td>
-            <td width="14%">koche</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-          </tr>
-          <tr>
-            <td width="14%">lügen</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">lügt</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-          </tr>
-          <tr>
-            <td width="14%">trinken</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">trinken</td>
-          </tr>
-          <tr>
-            <td width="14%">wohnen</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">wohnst</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-          </tr>
-          <tr>
-            <td width="14%">zeigen</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">&nbsp;</td>
-            <td width="14%">zeigt</td>
-            <td width="14%">&nbsp;</td>
-          </tr>
-        </tbody>
-      </table>
+      <Table>
+        <Row>
+          <Cell>Infinitiv</Cell>
+          <Cell leftBorder centered>
+            ich
+          </Cell>
+          <Cell leftBorder centered>
+            du
+          </Cell>
+          <Cell leftBorder centered>
+            er/sie/es
+          </Cell>
+          <Cell leftBorder centered>
+            wir
+          </Cell>
+          <Cell leftBorder centered>
+            ihr
+          </Cell>
+          <Cell leftBorder centered>
+            sie/Sie
+          </Cell>
+        </Row>
+        <Row>
+          <Cell>hören</Cell>
+          <Cell leftBorder centered low>
+            <Input
+              id="h1"
+              ref={refH1}
+              className={cn({
+                red: result.red,
+                green: result.green,
+              })}
+            />
+          </Cell>
+          <Cell leftBorder centered low>
+            <Input id="h2" />
+          </Cell>
+          <Cell leftBorder centered low>
+            <Input id="h3" />
+          </Cell>
+          <Cell leftBorder centered low>
+            hören
+          </Cell>
+          <Cell leftBorder centered low>
+            <Input id="h4" />
+          </Cell>
+          <Cell leftBorder centered low>
+            <Input id="h5" />
+          </Cell>
+        </Row>
+        <Row>
+          <Cell>kochen</Cell>
+          <Cell leftBorder centered>
+            koche
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+        </Row>
+        <Row>
+          <Cell>lügen</Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            lügt
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+        </Row>
+        <Row>
+          <Cell>trinken</Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            trinken
+          </Cell>
+        </Row>
+        <Row>
+          <Cell>wohnen</Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            wohnst
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+        </Row>
+        <Row>
+          <Cell>zeigen</Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+          <Cell leftBorder centered>
+            zeigt
+          </Cell>
+          <Cell leftBorder centered>
+            &nbsp;
+          </Cell>
+        </Row>
+      </Table>
+      <button type="button" onClick={handleResult}>
+        Check
+      </button>
       <h4>2) Wählen Sie die richtige Variante:</h4>
       <table width="688">
         <tbody>
-          <tr>
-            <td colSpan="4" width="688">
+          <Row>
+            <Cell colSpan="4" width="688">
               1) Seinen Lehrer ... er nie, er macht alles allein.
-            </td>
-          </tr>
-          <tr>
-            <td width="172">а) fragt</td>
-            <td width="172">b) frage</td>
-            <td width="172">c) fragen</td>
-            <td width="172">d) fragst</td>
-          </tr>
-          <tr>
-            <td colSpan="4" width="688">
+            </Cell>
+          </Row>
+          <Row>
+            <Cell width="172">а) fragt</Cell>
+            <Cell width="172">b) frage</Cell>
+            <Cell width="172">c) fragen</Cell>
+            <Cell width="172">d) fragst</Cell>
+          </Row>
+          <Row>
+            <Cell colSpan="4" width="688">
               2) Ihr ... das immer, aber ich kann das nie verstehen. Was
               bedeutet dieses Wort?
-            </td>
-          </tr>
-          <tr>
-            <td width="172">а) wiederholen</td>
-            <td width="172">b) wiederholt</td>
-            <td width="172">c)wiederhole</td>
-            <td width="172">d) wiederholst</td>
-          </tr>
-          <tr>
-            <td colSpan="4" width="688">
+            </Cell>
+          </Row>
+          <Row>
+            <Cell width="172">а) wiederholen</Cell>
+            <Cell width="172">b) wiederholt</Cell>
+            <Cell width="172">c)wiederhole</Cell>
+            <Cell width="172">d) wiederholst</Cell>
+          </Row>
+          <Row>
+            <Cell colSpan="4" width="688">
               3) Ich …… ihm, sogar wenn er lügt.
-            </td>
-          </tr>
-          <tr>
-            <td width="172">а) glaube</td>
-            <td width="172">b) glauben</td>
-            <td width="172">c) glaubst</td>
-            <td width="172">d) glaubt</td>
-          </tr>
-          <tr>
-            <td colSpan="4" width="688">
+            </Cell>
+          </Row>
+          <Row>
+            <Cell width="172">а) glaube</Cell>
+            <Cell width="172">b) glauben</Cell>
+            <Cell width="172">c) glaubst</Cell>
+            <Cell width="172">d) glaubt</Cell>
+          </Row>
+          <Row>
+            <Cell colSpan="4" width="688">
               4) Wann …….? – Nach der Uni
-            </td>
-          </tr>
-          <tr>
-            <td width="172">а) kaufe du ein</td>
-            <td width="172">b) kaufst du ein</td>
-            <td width="172">c) kaufest du ein</td>
-            <td width="172">d) kauft du ein</td>
-          </tr>
-          <tr>
-            <td colSpan="4" width="688">
+            </Cell>
+          </Row>
+          <Row>
+            <Cell width="172">а) kaufe du ein</Cell>
+            <Cell width="172">b) kaufst du ein</Cell>
+            <Cell width="172">c) kaufest du ein</Cell>
+            <Cell width="172">d) kauft du ein</Cell>
+          </Row>
+          <Row>
+            <Cell colSpan="4" width="688">
               5) Mein Freund … in Argentina
-            </td>
-          </tr>
-          <tr>
-            <td width="172">а)  leben</td>
-            <td width="172">b) lebe</td>
-            <td width="172">c) lebt</td>
-            <td width="172">d) lebst</td>
-          </tr>
+            </Cell>
+          </Row>
+          <Row>
+            <Cell width="172">а) leben</Cell>
+            <Cell width="172">b) lebe</Cell>
+            <Cell width="172">c) lebt</Cell>
+            <Cell width="172">d) lebst</Cell>
+          </Row>
         </tbody>
       </table>
       <h4>3) Wählen Sie die richtige Variante:</h4>

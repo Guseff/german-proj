@@ -18,6 +18,7 @@ const Cell = ({
   centered,
   cursive,
   right,
+  leftBorder,
 }) => (
   <td
     rowSpan={rowSpan}
@@ -32,6 +33,7 @@ const Cell = ({
       [styles.centeredCell]: centered,
       [styles.cursive]: cursive,
       [styles.right]: right,
+      [styles.withLeftBorder]: leftBorder,
     })}
   >
     {children}
@@ -51,6 +53,7 @@ Cell.defaultProps = {
   centered: undefined,
   cursive: undefined,
   right: undefined,
+  leftBorder: undefined,
 };
 
 Cell.propTypes = {
@@ -68,6 +71,7 @@ Cell.propTypes = {
   centered: PropTypes.bool,
   cursive: PropTypes.bool,
   right: PropTypes.bool,
+  leftBorder: PropTypes.bool,
 };
 
 export default Cell;
