@@ -1,4 +1,4 @@
-export { default as DeklinationTest } from './Deklination';
-export { default as PerfectTest } from './Perfect';
-export { default as PrasensTest } from './Prasens';
-export { default as PreterTest } from './Preter';
+export { default as Deklination } from './Deklination/Deklination';
+export { default as Perfect } from './Perfect/Perfect';
+export { default as Prasens } from './Prasens/Prasens';
+export { default as Preter } from './Preter/Preter';

@@ -1,4 +1,4 @@
-import { ETestResult } from '../types';
+import { ETestResult } from '../../types';
 
 export const rightAnswers = {
   h1: /^h(oe|ö)re$/,
