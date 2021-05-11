@@ -9,27 +9,4 @@ module.exports = merge(common, {
     historyApiFallback: true,
     hot: true,
   },
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader',
-            options: {
-              injectType: 'singletonStyleTag',
-            },
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: {
-                localIdentName: '[name]__[local]',
-              },
-            },
-          },
-        ],
-      },
-    ],
-  },
 });

@@ -3,10 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
+const { compilerOptions } = require('../../tsconfig');
+
 const rootDir = path.resolve(__dirname, '../../');
 
 module.exports = {
-  entry: path.join(rootDir, 'src/index.jsx'),
+  entry: path.join(rootDir, 'src/index.tsx'),
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -30,10 +32,29 @@ module.exports = {
   module: {
     rules: [
       {
-        enforce: 'pre',
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        loader: 'eslint-loader',
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: [/node_modules/],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              injectType: 'singletonStyleTag',
+            },
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                localIdentName: '[name]__[local]',
+              },
+              importLoaders: 1,
+            },
+          },
+        ],
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -41,23 +62,11 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader',
-        ],
-      },
-      {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-        }
+        use: ['file-loader'],
       },
     ],
   },
   resolve: {
-    extensions: [
-      '.js',
-      '.jsx',
-    ],
+    extensions: ['.tsx', '.ts', '.js'],
   },
 };

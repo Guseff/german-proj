@@ -1,0 +1,4 @@
+configs/*
+coverage/*
+dist/*
+utils/*
