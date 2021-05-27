@@ -3,31 +3,12 @@ import { useFormik } from 'formik';
 
 import Table, { Cell, Row } from '../../../Table';
 import Input from '../../../Table/components/Input/Input';
-import { initialValues, rightAnswers } from '../consts/prasens';
 import {
-  ETestResult,
-  TTestQuestions,
-  TTestAnswers,
-  TTestResult,
-} from '../../types';
-
-const checkInputAnswerHandle = (
-  test: TTestQuestions,
-  answers: TTestAnswers
-): TTestResult => {
-  return Object.keys(test).reduce(
-    (acc, key) => ({
-      ...acc,
-      [key]:
-        test[key] === ''
-          ? ETestResult.Panding
-          : answers[key].test(test[key].trim())
-          ? ETestResult.Right
-          : ETestResult.Wrong,
-    }),
-    {}
-  );
-};
+  initialValues1 as initialValues,
+  rightAnswers1 as rightAnswers,
+} from '../consts/prasens';
+import { TTestResult } from '../../types';
+import { checkInputAnswerHandle } from '../../utils/checkInputAnswerHandle';
 
 const Test1 = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>(initialValues);

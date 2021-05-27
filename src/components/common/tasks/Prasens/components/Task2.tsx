@@ -1,63 +1,87 @@
-import React from 'react';
-// import { useFormik } from 'formik';
+import React, { useState } from 'react';
+import { useFormik } from 'formik';
 
-import Table, { Cell, Row } from '../../../Table';
-// import Input from '../../../Table/components/Input/Input';
+import {
+  initialValues2 as initialValues,
+  rightAnswers2 as rightAnswers,
+} from '../consts/prasens';
+import Select from '../../../Table/components/Select/Select';
+import { TTestResult } from '../../types';
+import { checkInputAnswerHandle } from '../../utils/checkInputAnswerHandle';
+
+const optionsList = {
+  s1: ['fragt', 'frage', 'fragen', 'fragst'],
+  s2: ['wiederholen', 'wiederholt', 'wiederhole', 'wiederholst'],
+  s3: ['glaube', 'glauben', 'glaubst', 'glaubt'],
+  s4: ['kaufe du ein', 'kaufst du ein', 'kaufest du ein', 'kauft du ein'],
+  s5: ['leben', 'lebe', 'lebt', 'lebst'],
+};
 
 const Task2 = (): JSX.Element => {
+  const [matches, setMatches] = useState<TTestResult>(initialValues);
+
+  const formik = useFormik({
+    initialValues,
+    onSubmit: values => {
+      setMatches(checkInputAnswerHandle(values, rightAnswers));
+    },
+  });
+
   return (
-    <Table>
-      <Row>
-        <Cell rowSpan={4}>
-          1) Seinen Lehrer ... er nie, er macht alles allein.
-        </Cell>
-      </Row>
-      <Row>
-        <Cell>а) fragt</Cell>
-        <Cell>b) frage</Cell>
-        <Cell>c) fragen</Cell>
-        <Cell>d) fragst</Cell>
-      </Row>
-      <Row>
-        <Cell>
-          2) Ihr ... das immer, aber ich kann das nie verstehen. Was bedeutet
-          dieses Wort?
-        </Cell>
-      </Row>
-      <Row>
-        <Cell>а) wiederholen</Cell>
-        <Cell>b) wiederholt</Cell>
-        <Cell>c)wiederhole</Cell>
-        <Cell>d) wiederholst</Cell>
-      </Row>
-      <Row>
-        <Cell>3) Ich …… ihm, sogar wenn er lügt.</Cell>
-      </Row>
-      <Row>
-        <Cell>а) glaube</Cell>
-        <Cell>b) glauben</Cell>
-        <Cell>c) glaubst</Cell>
-        <Cell>d) glaubt</Cell>
-      </Row>
-      <Row>
-        <Cell>4) Wann …….? – Nach der Uni</Cell>
-      </Row>
-      <Row>
-        <Cell>а) kaufe du ein</Cell>
-        <Cell>b) kaufst du ein</Cell>
-        <Cell>c) kaufest du ein</Cell>
-        <Cell>d) kauft du ein</Cell>
-      </Row>
-      <Row>
-        <Cell>5) Mein Freund … in Argentina</Cell>
-      </Row>
-      <Row>
-        <Cell>а) leben</Cell>
-        <Cell>b) lebe</Cell>
-        <Cell>c) lebt</Cell>
-        <Cell>d) lebst</Cell>
-      </Row>
-    </Table>
+    <form onSubmit={formik.handleSubmit}>
+      <p>
+        1) Seinen Lehrer&nbsp;
+        <Select
+          id="s1"
+          onChange={formik.handleChange}
+          options={optionsList.s1}
+          className={matches.s1}
+        />
+        &nbsp;er nie, er macht alles allein.
+      </p>
+      <p>
+        2) Ihr&nbsp;
+        <Select
+          id="s2"
+          onChange={formik.handleChange}
+          options={optionsList.s2}
+          className={matches.s2}
+        />
+        &nbsp;das immer, aber ich kann das nie verstehen. Was bedeutet dieses
+        Wort?
+      </p>
+      <p>
+        3) Ich&nbsp;
+        <Select
+          id="s3"
+          onChange={formik.handleChange}
+          options={optionsList.s3}
+          className={matches.s3}
+        />
+        &nbsp;ihm, sogar wenn er lügt.
+      </p>
+      <p>
+        4) Wann&nbsp;
+        <Select
+          id="s4"
+          onChange={formik.handleChange}
+          options={optionsList.s4}
+          className={matches.s4}
+        />
+        &nbsp;? – Nach der Uni
+      </p>
+      <p>
+        5) Mein Freund&nbsp;
+        <Select
+          id="s5"
+          onChange={formik.handleChange}
+          options={optionsList.s5}
+          className={matches.s5}
+        />
+        &nbsp;in Argentina
+      </p>
+      <button type="submit">Check</button>
+    </form>
   );
 };
 
