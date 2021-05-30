@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
-import { rightAnswers2 as rightAnswers } from '../consts/answers';
+import { rightAnswers3 as rightAnswers } from '../consts/answers';
 import Select from '../../../Select/Select';
 import Button from '../../../Button/Button';
 import { TTestResult } from '../../types';
