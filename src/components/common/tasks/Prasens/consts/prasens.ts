@@ -34,7 +34,82 @@ export const rightAnswers1 = {
 export const rightAnswers2 = {
   s1: /^fragt$/,
   s2: /^wiederholt$/,
-  s3: /^glaubst$/,
-  s4: /^kaufe du ein$/,
-  s5: /^lebst$/,
+  s3: /^glaube$/,
+  s4: /^kaufst du ein$/,
+  s5: /^lebt$/,
+};
+
+export const rightAnswers3 = {
+  s1: /^redest$/,
+  s2: /^hei(ss|ß)t$/,
+  s3: /^sammle$/,
+  s4: /^zeichnet$/,
+  s5: /^tanzt$/,
+  s6: /^angle$/,
+};
+
+export const rightAnswers4 = {
+  s1: /^liest$/,
+  s2: /^isst$/,
+  s3: /^hilfst$/,
+  s4: /^siehst$/,
+  s5: /^f(ä|ae)hrst$/,
+  s6: /^l(ä|ae)uft$/,
+};
+
+export const rightAnswers5 = {
+  s1: /^rettet$/,
+  s2: /^regnet$/,
+  s3: /^redest$/,
+  s4: /^Öffnest$/,
+  s5: /^atmet$/,
+};
+
+export const rightAnswers6 = {
+  s1: /^isst du immer so viel Gem(ü|ue)se$/,
+  s2: /^du zerrei(ss|ß)t meine Seele, was (kommt als nächstes|kommt weiter|weiter)? Scheidung?$/,
+  s3: /^liest du (deinen|den) Vortrag einfach (vom|von dem| veon einem) Blatt ab? Das kann nicht sein!$/,
+  s4: /^Sitzen Sie oft hier? (Ich habe dich nie in Vorlesungen gesehen|ich sah dich nie in Vorlesung)$/,
+  s5: /^Du hei(ss|ß)t Andre, das ist dein (echter|realer|richtiger) Name$/,
+};
+
+export const rightAnswers7 = {
+  s1: /^fahre$/,
+  s2: /^spreche$/,
+  s3: /^kann$/,
+  s4: /^versuche$/,
+  s5: /^finde$/,
+  s6: /^besuche$/,
+  s7: /^wohnt$/,
+  s8: /^arbeitet$/,
+  s9: /^hat$/,
+  s10: /^trifft$/,
+  s11: /^gehen$/,
+  s12: /^sitzt$/,
+  s13: /^isst$/,
+  s14: /^w(ae|ä)hle$/,
+  s15: /^ist$/,
+  s16: /^gibt$/,
+  s17: /^besuchen$/,
+  s18: /^mag$/,
+  s19: /^fahre$/,
+  s20: /^dauert$/,
+  s21: /^ist$/,
+  s22: /^liegt$/,
+  s23: /^bietet$/,
+  s24: /^stehe auf$/,
+  s25: /^gehe spazieren$/,
+  s26: /^besichtige$/,
+  s27: /^genie(ss|ß)e$/,
+  s28: /^habe$/,
+  s29: /^bleibe$/,
+  s30: /^kehre zur(ue|ü)ck$/,
+  t1: /^will$/,
+  t2: /^(ue|ü)berlege$/,
+  t3: /^sind$/,
+  t4: /^ist$/,
+  t5: /^verlocken$/,
+  t6: /^erhole mich$/,
+  t7: /^ist$/,
+  t8: /^denke nach$/,
 };
