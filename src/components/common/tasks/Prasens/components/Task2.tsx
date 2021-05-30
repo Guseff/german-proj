@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
-import {
-  initialValues2 as initialValues,
-  rightAnswers2 as rightAnswers,
-} from '../consts/prasens';
-import Select from '../../../Table/components/Select/Select';
+import { rightAnswers2 as rightAnswers } from '../consts/prasens';
+import Select from '../../../Select/Select';
+import Button from '../../../Button/Button';
 import { TTestResult } from '../../types';
-import { checkInputAnswerHandle } from '../../utils/checkInputAnswerHandle';
+import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
+
+const initialValues = getAnswersInitialValues(rightAnswers);
 
 const optionsList = {
   s1: ['fragt', 'frage', 'fragen', 'fragst'],
@@ -80,7 +80,7 @@ const Task2 = (): JSX.Element => {
         />
         &nbsp;in Argentina
       </p>
-      <button type="submit">Check</button>
+      <Button type="submit">Check</Button>
     </form>
   );
 };

@@ -15,7 +15,7 @@ export const checkInputAnswerHandle = (
       [key]:
         !answers[key] || test[key] === '' || test[key] === '...'
           ? ETestResult.Panding
-          : answers[key].test(test[key].trim())
+          : answers[key].test(test[key].toLowerCase().trim())
           ? ETestResult.Right
           : ETestResult.Wrong,
     }),

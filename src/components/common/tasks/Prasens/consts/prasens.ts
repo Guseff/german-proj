@@ -1,5 +1,3 @@
-import { ETestResult } from '../../types';
-
 export const rightAnswers1 = {
   h1: /^h(oe|ö)re$/,
   h2: /^h(oe|ö)rst$/,
@@ -40,19 +38,3 @@ export const rightAnswers2 = {
   s4: /^kaufe du ein$/,
   s5: /^lebst$/,
 };
-
-export const initialValues1 = Object.keys(rightAnswers1).reduce(
-  (acc, key) => ({
-    ...acc,
-    [key]: ETestResult.Panding,
-  }),
-  {}
-);
-
-export const initialValues2 = Object.keys(rightAnswers2).reduce(
-  (acc, key) => ({
-    ...acc,
-    [key]: ETestResult.Panding,
-  }),
-  {}
-);

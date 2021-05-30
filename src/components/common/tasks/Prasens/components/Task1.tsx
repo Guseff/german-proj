@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
 import Table, { Cell, Row } from '../../../Table';
-import Input from '../../../Table/components/Input/Input';
-import {
-  initialValues1 as initialValues,
-  rightAnswers1 as rightAnswers,
-} from '../consts/prasens';
+import Input from '../../../Input/Input';
+import Button from '../../../Button/Button';
+import { rightAnswers1 as rightAnswers } from '../consts/prasens';
 import { TTestResult } from '../../types';
-import { checkInputAnswerHandle } from '../../utils/checkInputAnswerHandle';
+import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
+
+const initialValues = getAnswersInitialValues(rightAnswers);
 
 const Test1 = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>(initialValues);
@@ -291,7 +291,7 @@ const Test1 = (): JSX.Element => {
           </Cell>
         </Row>
       </Table>
-      <button type="submit">Check</button>
+      <Button type="submit">Check</Button>
     </form>
   );
 };
