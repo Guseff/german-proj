@@ -36,7 +36,8 @@ export const rightAnswers2 = {
   s2: /^regnete$/,
   s3: /^redeten$/,
   s4: /^(ö|oe)ffnete$/,
-  s5: /^atmete aus$/,
+  s5: /^atmete$/,
+  s5a: /^aus$/,
 };
 
 export const rightAnswers3 = {
@@ -51,7 +52,8 @@ export const rightAnswers3 = {
 export const rightAnswers4 = {
   s1: /^aßest$/,
   s2: /^fandet$/,
-  s3: /^sahen an$/,
+  s3: /^sahen$/,
+  s3a: /^an$/,
   s4: /^sa(ß|ss)est$/,
   s5: /^galtet$/,
 };

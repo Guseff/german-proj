@@ -21,31 +21,53 @@ const Task6 = (): JSX.Element => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <p>
-        Ты всегда ешь так много овощей? (essen)
-        <br />
-        <Input id="s1" onChange={formik.handleChange} className={matches.s1} />
-      </p>
-      <p>
-        Ты разрываешь мне душу, что дальше? Развод? (zerreißen)
-        <br />
-        <Input id="s2" onChange={formik.handleChange} className={matches.s2} />
-      </p>
-      <p>
-        Ты просто читаешь твой доклад с листа? Не может быть! (ablesen)
-        <br />
-        <Input id="s3" onChange={formik.handleChange} className={matches.s3} />
-      </p>
-      <p>
-        Ты часто здесь сидишь? Я ни разу не видела тебе на лекциях. (sitzen)
-        <br />
-        <Input id="s4" onChange={formik.handleChange} className={matches.s4} />
-      </p>
-      <p>
-        Тебя зовут Андре, это твоё настоящее имя. (heißen)
-        <br />
-        <Input id="s5" onChange={formik.handleChange} className={matches.s5} />
-      </p>
+      <ol>
+        <li>
+          Ты пил и пил, без конца (trinken)
+          <br />
+          <Input
+            id="s1"
+            onChange={formik.handleChange}
+            className={matches.s1}
+          />
+        </li>
+        <li>
+          Вчера у нас было всё, сегодня – ничего (haben)
+          <br />
+          <Input
+            id="s2"
+            onChange={formik.handleChange}
+            className={matches.s2}
+          />
+        </li>
+        <li>
+          Я был тогда учителем (sein)
+          <br />
+          <Input
+            id="s3"
+            onChange={formik.handleChange}
+            className={matches.s3}
+          />
+        </li>
+        <li>
+          Дети, вы должны были прийти раньше (müssen)
+          <br />
+          <Input
+            id="s4"
+            onChange={formik.handleChange}
+            className={matches.s4}
+          />
+        </li>
+        <li>
+          Они долго шли через лес (gehen)
+          <br />
+          <Input
+            id="s5"
+            onChange={formik.handleChange}
+            className={matches.s5}
+          />
+        </li>
+      </ol>
       <Button type="submit">Check</Button>
     </form>
   );
