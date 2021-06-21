@@ -1,10 +1,8 @@
 import { ETenses } from '../../../constants';
-import {
-  Deklination,
-  Perfect,
-  Prasens,
-  Preter,
-} from '../../../components/common/Tasks';
+import Deklination from '../../../components/common/Tasks/Deklination/Deklination';
+import Perfect from '../../../components/common/Tasks/Perfect/Perfect';
+import Prasens from '../../../components/common/Tasks/Prasens/Prasens';
+import Preter from '../../../components/common/Tasks/Preter/Preter';
 
 export const getTaskComponent = (tense: ETenses): (() => JSX.Element) => {
   if (tense === ETenses.PERFECT) {
