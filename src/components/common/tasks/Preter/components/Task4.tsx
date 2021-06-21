@@ -23,62 +23,61 @@ const Task4 = (): JSX.Element => {
     <form onSubmit={formik.handleSubmit}>
       <ol>
         <li>
-          Man&nbsp;
+          Du&nbsp;
           <Input
             id="s1"
             onChange={formik.handleChange}
             className={matches.s1}
             small
           />
-          &nbsp;viel in der Schule. (lesen)
+          &nbsp;gestern fast nichts, war alles okay? (essen)
         </li>
         <li>
-          Du&nbsp;
           <Input
             id="s2"
             onChange={formik.handleChange}
             className={matches.s2}
             small
           />
-          &nbsp;nur Chips! (essen)
+          &nbsp;ihr den Brief also langweilig? (finden)
         </li>
         <li>
+          Früher&nbsp;
           <Input
             id="s3"
             onChange={formik.handleChange}
             className={matches.s3}
             small
           />
-          &nbsp;du mir? Ich schaffe das alleine nicht (helfen)
+          &nbsp;wir uns die neuen Filme immer zusammen&nbsp;
+          <Input
+            id="s3a"
+            onChange={formik.handleChange}
+            className={matches.s3a}
+            small
+          />
+          &nbsp;. (sich ansehen)
         </li>
         <li>
+          Du&nbsp;
           <Input
             id="s4"
             onChange={formik.handleChange}
             className={matches.s4}
             small
           />
-          &nbsp;du das auch? (sehen)
+          &nbsp;in der Halle so stumm und traurig. Was ist los? (sitzen)
         </li>
         <li>
-          Ich fahre heute nach Hause. –&nbsp;
+          Ihr&nbsp;
           <Input
             id="s5"
             onChange={formik.handleChange}
             className={matches.s5}
             small
           />
-          &nbsp;du mit dem Auto? (fahren)
-        </li>
-        <li>
-          Alles&nbsp;
-          <Input
-            id="s6"
-            onChange={formik.handleChange}
-            className={matches.s6}
-            small
-          />
-          &nbsp;zu schnell in dieser Welt. (laufen)
+          &nbsp;als das schönste Paar in der Schule, warum seid ihr nicht mehr
+          zusammen? (gelten)
         </li>
       </ol>
       <Button type="submit">Check</Button>

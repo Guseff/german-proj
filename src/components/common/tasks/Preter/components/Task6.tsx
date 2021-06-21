@@ -3,13 +3,13 @@ import { useFormik } from 'formik';
 
 import Input from '../../../Input/Input';
 import Button from '../../../Button/Button';
-import { rightAnswers4 as rightAnswers } from '../consts/answers';
+import { rightAnswers2 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
 const initialValues = getAnswersInitialValues(rightAnswers);
 
-const Task4 = (): JSX.Element => {
+const Task6 = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>(initialValues);
 
   const formik = useFormik({
@@ -23,62 +23,49 @@ const Task4 = (): JSX.Element => {
     <form onSubmit={formik.handleSubmit}>
       <ol>
         <li>
-          Man&nbsp;
+          Ты пил и пил, без конца (trinken)
+          <br />
           <Input
             id="s1"
             onChange={formik.handleChange}
             className={matches.s1}
-            small
           />
-          &nbsp;viel in der Schule. (lesen)
         </li>
         <li>
-          Du&nbsp;
+          Вчера у нас было всё, сегодня – ничего (haben)
+          <br />
           <Input
             id="s2"
             onChange={formik.handleChange}
             className={matches.s2}
-            small
           />
-          &nbsp;nur Chips! (essen)
         </li>
         <li>
+          Я был тогда учителем (sein)
+          <br />
           <Input
             id="s3"
             onChange={formik.handleChange}
             className={matches.s3}
-            small
           />
-          &nbsp;du mir? Ich schaffe das alleine nicht (helfen)
         </li>
         <li>
+          Дети, вы должны были прийти раньше (müssen)
+          <br />
           <Input
             id="s4"
             onChange={formik.handleChange}
             className={matches.s4}
-            small
           />
-          &nbsp;du das auch? (sehen)
         </li>
         <li>
-          Ich fahre heute nach Hause. –&nbsp;
+          Они долго шли через лес (gehen)
+          <br />
           <Input
             id="s5"
             onChange={formik.handleChange}
             className={matches.s5}
-            small
           />
-          &nbsp;du mit dem Auto? (fahren)
-        </li>
-        <li>
-          Alles&nbsp;
-          <Input
-            id="s6"
-            onChange={formik.handleChange}
-            className={matches.s6}
-            small
-          />
-          &nbsp;zu schnell in dieser Welt. (laufen)
         </li>
       </ol>
       <Button type="submit">Check</Button>
@@ -86,4 +73,4 @@ const Task4 = (): JSX.Element => {
   );
 };
 
-export default Task4;
+export default Task6;

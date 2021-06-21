@@ -1,5 +1,3 @@
-import { ETestResult } from '../../types';
-
 export const rightAnswers1 = {
   h1: /^legte$/,
   h2: /^legtest$/,
@@ -8,7 +6,6 @@ export const rightAnswers1 = {
   h6: /^legten$/,
   k2: /^wohnte$/,
   k3: /^wohnte$/,
-  
 };
 
 export const rightAnswers2 = {
@@ -20,16 +17,16 @@ export const rightAnswers2 = {
 };
 
 export const rightAnswers3 = {
-    s1: /^gebremst$/,
-    s2: /^gemalt$/,
-    s3: /^geh(ö|oe)rt$/,
-    s4: /^gebastelt$/,
-    s5: /^gebellt$/,
-    s6: /^gezeigt$/,
-    s7: /^gepr(ü|ue)ft$/,
-    s8: /^gekocht$/,
-    s9: /^gelegt$/,
-    s10: /^gemeint$/,
+  s1: /^gebremst$/,
+  s2: /^gemalt$/,
+  s3: /^geh(ö|oe)rt$/,
+  s4: /^gebastelt$/,
+  s5: /^gebellt$/,
+  s6: /^gezeigt$/,
+  s7: /^gepr(ü|ue)ft$/,
+  s8: /^gekocht$/,
+  s9: /^gelegt$/,
+  s10: /^gemeint$/,
 };
 
 export const rightAnswers4 = {
@@ -62,52 +59,36 @@ export const rightAnswers7 = {
   s1: /^Hast du die Suppe gegessen? Ja, gestern$/,
   s2: /^Ich habe den Vertrag zerrissen$/,
   s3: /^Der Professor hat seinen Vortrag vorgelesen$/,
-  s4: /^Wir haben schweigend am Tisch  gesessen, im leeren Haus$/,
+  s4: /^Wir haben schweigend am Tisch {2}gesessen, im leeren Haus$/,
   s5: /^Lara und Dan sind nach Paris geflogen, ohne Tsch(ü|ue)(ß|ss) zu sagen$/,
 };
 
 export const rightAnswers8 = {
-    s1: /^ist schiefgelaufen$/,
-    s2: /^hat gemerkt$/,
-    s3: /^hat verschlafen$/,
-    s4: /^hat angezogen$/,
-    s5: /^hat gefunden$/,
-    s6: /^verloren$/,
-    s7: /^hat festgestellt$/,
-    s8: /^weggefahren ist$/,
-    s9: /^hat angerufen$/,
-    s10: /^hat abgeholt$/,
-    s11: /^haben gestanden$/,
-    s12: /^hat angefangen$/,
-    s13: /^ist gekommen$/,
-    s14: /^hat gesehen$/,
-    s15: /^hat versp(ae|ä)tet$/,
-    s16: /^gestritten$/,
-    s17: /^hat getrunken$/,
-    s18: /^hat gedacht$/,
-    s19: /^ge(oe|ö)ffnet hat$/,
-    s20: /^hat bestimmt$/,
-    s21: /^hat probiert$/,
-    s22: /^gegessen$/,
-    s23: /^hat gerettet$/,
-    s24: /^hat geklappt$/,
-    s25: /^hat beeindruckt$/,
-    s26: /^verbracht$/,
-    s27: /^gehabt$/,
+  s1: /^ist schiefgelaufen$/,
+  s2: /^hat gemerkt$/,
+  s3: /^hat verschlafen$/,
+  s4: /^hat angezogen$/,
+  s5: /^hat gefunden$/,
+  s6: /^verloren$/,
+  s7: /^hat festgestellt$/,
+  s8: /^weggefahren ist$/,
+  s9: /^hat angerufen$/,
+  s10: /^hat abgeholt$/,
+  s11: /^haben gestanden$/,
+  s12: /^hat angefangen$/,
+  s13: /^ist gekommen$/,
+  s14: /^hat gesehen$/,
+  s15: /^hat versp(ae|ä)tet$/,
+  s16: /^gestritten$/,
+  s17: /^hat getrunken$/,
+  s18: /^hat gedacht$/,
+  s19: /^ge(oe|ö)ffnet hat$/,
+  s20: /^hat bestimmt$/,
+  s21: /^hat probiert$/,
+  s22: /^gegessen$/,
+  s23: /^hat gerettet$/,
+  s24: /^hat geklappt$/,
+  s25: /^hat beeindruckt$/,
+  s26: /^verbracht$/,
+  s27: /^gehabt$/,
 };
-
-export const initialValues1 = Object.keys(rightAnswers1).reduce(
-  (acc, key) => ({
-    ...acc,
-    [key]: ETestResult.Panding,
-  }),
-  {}
-);
-
-export const initialValues2 = Object.keys(rightAnswers2).reduce(
-  (acc, key) => ({
-    ...acc,
-    [key]: ETestResult.Panding,
-  }),
-  {}
-);

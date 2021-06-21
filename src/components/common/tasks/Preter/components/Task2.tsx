@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
+import { rightAnswers2 as rightAnswers } from '../consts/answers';
 import Input from '../../../Input/Input';
 import Button from '../../../Button/Button';
-import { rightAnswers4 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
 const initialValues = getAnswersInitialValues(rightAnswers);
 
-const Task4 = (): JSX.Element => {
+const Task2 = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>(initialValues);
 
   const formik = useFormik({
@@ -23,62 +23,61 @@ const Task4 = (): JSX.Element => {
     <form onSubmit={formik.handleSubmit}>
       <ol>
         <li>
-          Man&nbsp;
+          Er&nbsp;
           <Input
             id="s1"
             onChange={formik.handleChange}
             className={matches.s1}
             small
           />
-          &nbsp;viel in der Schule. (lesen)
+          &nbsp;die Stadt, wie Batman. (retten)
         </li>
         <li>
-          Du&nbsp;
+          Er&nbsp;
           <Input
             id="s2"
             onChange={formik.handleChange}
             className={matches.s2}
             small
           />
-          &nbsp;nur Chips! (essen)
+          &nbsp;gestern den ganzen Tag. (regnen)
         </li>
         <li>
+          Monika und Karl&nbsp;
           <Input
             id="s3"
             onChange={formik.handleChange}
             className={matches.s3}
             small
           />
-          &nbsp;du mir? Ich schaffe das alleine nicht (helfen)
+          &nbsp;von ihm nur mit mir. (reden)
         </li>
         <li>
+          Lila&nbsp;
           <Input
             id="s4"
             onChange={formik.handleChange}
             className={matches.s4}
             small
           />
-          &nbsp;du das auch? (sehen)
+          &nbsp;das Fenster. (öffnen)
         </li>
         <li>
-          Ich fahre heute nach Hause. –&nbsp;
+          Stefan&nbsp;
           <Input
             id="s5"
             onChange={formik.handleChange}
             className={matches.s5}
             small
           />
-          &nbsp;du mit dem Auto? (fahren)
-        </li>
-        <li>
-          Alles&nbsp;
+          &nbsp;erleichtert&nbsp;
           <Input
-            id="s6"
+            id="s5a"
             onChange={formik.handleChange}
-            className={matches.s6}
+            className={matches.s5a}
             small
           />
-          &nbsp;zu schnell in dieser Welt. (laufen)
+          &nbsp;. (ausatmen)
         </li>
       </ol>
       <Button type="submit">Check</Button>
@@ -86,4 +85,4 @@ const Task4 = (): JSX.Element => {
   );
 };
 
-export default Task4;
+export default Task2;

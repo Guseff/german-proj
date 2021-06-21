@@ -45,7 +45,7 @@ const Test1 = (): JSX.Element => {
           </Cell>
         </Row>
         <Row>
-          <Cell>hören</Cell>
+          <Cell>legen</Cell>
           <Cell leftBorder centered low>
             <Input
               id="h1"
@@ -61,14 +61,14 @@ const Test1 = (): JSX.Element => {
             />
           </Cell>
           <Cell leftBorder centered low>
-            <Input
-              id="h3"
-              onChange={formik.handleChange}
-              className={matches.h3}
-            />
+            legte
           </Cell>
           <Cell leftBorder centered low>
-            hören
+            <Input
+              id="h4"
+              onChange={formik.handleChange}
+              className={matches.h4}
+            />
           </Cell>
           <Cell leftBorder centered low>
             <Input
@@ -86,16 +86,16 @@ const Test1 = (): JSX.Element => {
           </Cell>
         </Row>
         <Row>
-          <Cell>kochen</Cell>
-          <Cell leftBorder centered>
-            koche
-          </Cell>
+          <Cell>wohnen</Cell>
           <Cell leftBorder centered>
             <Input
-              id="k2"
+              id="k1"
               onChange={formik.handleChange}
-              className={matches.k2}
+              className={matches.k1}
             />
+          </Cell>
+          <Cell leftBorder centered>
+            wohntest
           </Cell>
           <Cell leftBorder centered>
             <Input
@@ -127,7 +127,7 @@ const Test1 = (): JSX.Element => {
           </Cell>
         </Row>
         <Row>
-          <Cell>lügen</Cell>
+          <Cell>kochen</Cell>
           <Cell leftBorder centered>
             <Input
               id="l1"
@@ -143,32 +143,32 @@ const Test1 = (): JSX.Element => {
             />
           </Cell>
           <Cell leftBorder centered>
-            lügt
-          </Cell>
-          <Cell leftBorder centered>
             <Input
-              id="l4"
+              id="l3"
               onChange={formik.handleChange}
               className={matches.l4}
             />
           </Cell>
           <Cell leftBorder centered>
             <Input
-              id="l5"
+              id="l4"
               onChange={formik.handleChange}
               className={matches.l5}
             />
           </Cell>
           <Cell leftBorder centered>
             <Input
-              id="l6"
+              id="l5"
               onChange={formik.handleChange}
               className={matches.l6}
             />
           </Cell>
+          <Cell leftBorder centered>
+            kochten
+          </Cell>
         </Row>
         <Row>
-          <Cell>trinken</Cell>
+          <Cell>holen</Cell>
           <Cell leftBorder centered>
             <Input
               id="t1"
@@ -191,11 +191,7 @@ const Test1 = (): JSX.Element => {
             />
           </Cell>
           <Cell leftBorder centered>
-            <Input
-              id="t4"
-              onChange={formik.handleChange}
-              className={matches.t4}
-            />
+            trinken
           </Cell>
           <Cell leftBorder centered>
             <Input
@@ -205,11 +201,15 @@ const Test1 = (): JSX.Element => {
             />
           </Cell>
           <Cell leftBorder centered>
-            trinken
+            <Input
+              id="t6"
+              onChange={formik.handleChange}
+              className={matches.t6}
+            />
           </Cell>
         </Row>
         <Row>
-          <Cell>wohnen</Cell>
+          <Cell>küssen</Cell>
           <Cell leftBorder centered>
             <Input
               id="w1"
@@ -218,7 +218,11 @@ const Test1 = (): JSX.Element => {
             />
           </Cell>
           <Cell leftBorder centered>
-            wohnst
+            <Input
+              id="w2"
+              onChange={formik.handleChange}
+              className={matches.w2}
+            />
           </Cell>
           <Cell leftBorder centered>
             <Input
@@ -235,11 +239,7 @@ const Test1 = (): JSX.Element => {
             />
           </Cell>
           <Cell leftBorder centered>
-            <Input
-              id="w5"
-              onChange={formik.handleChange}
-              className={matches.w5}
-            />
+            küsstet
           </Cell>
           <Cell leftBorder centered>
             <Input
@@ -250,13 +250,9 @@ const Test1 = (): JSX.Element => {
           </Cell>
         </Row>
         <Row>
-          <Cell>zeigen</Cell>
+          <Cell>fragen</Cell>
           <Cell leftBorder centered>
-            <Input
-              id="z1"
-              onChange={formik.handleChange}
-              className={matches.z1}
-            />
+            fragte
           </Cell>
           <Cell leftBorder centered>
             <Input
@@ -280,7 +276,11 @@ const Test1 = (): JSX.Element => {
             />
           </Cell>
           <Cell leftBorder centered>
-            zeigt
+            <Input
+              id="z5"
+              onChange={formik.handleChange}
+              className={matches.z5}
+            />
           </Cell>
           <Cell leftBorder centered>
             <Input

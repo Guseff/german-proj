@@ -1,8 +1,5 @@
 import React from 'react';
-import { Task1, Task2, Task6, Task7 } from './components';
-import Task3 from './components/Task3';
-import Task4 from './components/Task4';
-import Task5 from './components/Task5';
+import { Task1, Task2, Task3, Task4, Task5, Task6, Task7 } from './components';
 
 const PrasensTest = (): JSX.Element => {
   return (

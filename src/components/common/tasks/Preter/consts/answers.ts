@@ -1,5 +1,3 @@
-import { ETestResult } from '../../types';
-
 export const rightAnswers1 = {
   h1: /^legte$/,
   h2: /^legtest$/,
@@ -38,7 +36,8 @@ export const rightAnswers2 = {
   s2: /^regnete$/,
   s3: /^redeten$/,
   s4: /^(ö|oe)ffnete$/,
-  s5: /^atmete aus$/,
+  s5: /^atmete$/,
+  s5a: /^aus$/,
 };
 
 export const rightAnswers3 = {
@@ -53,7 +52,8 @@ export const rightAnswers3 = {
 export const rightAnswers4 = {
   s1: /^aßest$/,
   s2: /^fandet$/,
-  s3: /^sahen an$/,
+  s3: /^sahen$/,
+  s3a: /^an$/,
   s4: /^sa(ß|ss)est$/,
   s5: /^galtet$/,
 };
@@ -100,19 +100,3 @@ export const rightAnswers7 = {
   s18: /^liebte$/,
   s19: /^liebte$/,
 };
-
-export const initialValues1 = Object.keys(rightAnswers1).reduce(
-  (acc, key) => ({
-    ...acc,
-    [key]: ETestResult.Panding,
-  }),
-  {}
-);
-
-export const initialValues2 = Object.keys(rightAnswers2).reduce(
-  (acc, key) => ({
-    ...acc,
-    [key]: ETestResult.Panding,
-  }),
-  {}
-);

@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 
 import Input from '../../../Input/Input';
 import Button from '../../../Button/Button';
-import { rightAnswers7 as rightAnswers } from '../consts/answers';
+import { rightAnswers2 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
@@ -31,220 +31,214 @@ const Task7 = (): JSX.Element => {
         />
         &nbsp;ich nach Deutschland (fahren). Das&nbsp;
         <Input
-          id="s2"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s2}
+          className={matches.s1}
           small
         />
         &nbsp;mein Lieblingsland für Tourismus! (sein) Leider&nbsp;
         <Input
-          id="s3"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s3}
+          className={matches.s1}
           small
         />
         &nbsp;ich kein Wort Deutsch (sprechen), aber&nbsp;
         <Input
-          id="s4"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s4}
+          className={matches.s1}
           small
         />
         &nbsp; etwas verstehen (können). Deshalb&nbsp;
         <Input
-          id="s5"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s5}
+          className={matches.s1}
           small
         />
         &nbsp;ich meistens mit den Leuten Englisch zu sprechen (versuchen).
         Ich&nbsp;
         <Input
-          id="s6"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s6}
+          className={matches.s1}
           small
         />
         &nbsp;immer ein tolles Hotel und auch ein Restaurant (finden). Oft&nbsp;
         <Input
-          id="s7"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s7}
+          className={matches.s1}
           small
         />
-        &nbsp;ich Berlin (besuchen). Dort&nbsp;
+        &nbsp;ich Berlin (besuchen). Dort&nbsp;&nbsp;mein guter Freund (wohnen).
+        Er&nbsp;
         <Input
-          id="s71"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s71}
-          small
-        />
-        &nbsp;mein guter Freund (wohnen). Er&nbsp;
-        <Input
-          id="s8"
-          onChange={formik.handleChange}
-          className={matches.s8}
+          className={matches.s1}
           small
         />
         &nbsp;bei einer IT-Firma und&nbsp;
         <Input
-          id="s9"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s9}
+          className={matches.s1}
           small
         />
         &nbsp;sehr wenig Zeit (arbeiten, haben). Er&nbsp;
         <Input
-          id="s10"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s10}
+          className={matches.s1}
           small
         />
         &nbsp;mich am Alexander Platz und wir&nbsp;
         <Input
-          id="s11"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s11}
+          className={matches.s1}
           small
         />
         &nbsp;in ein Café (treffen, gehen). Er&nbsp;
         <Input
-          id="s12"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s12}
+          className={matches.s1}
           small
         />
         &nbsp;immer am Fenster und&nbsp;
         <Input
-          id="s13"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s13}
+          className={matches.s1}
           small
         />
         &nbsp;ein Stück Torte (sitzen, essen). Ich&nbsp;
         <Input
-          id="s14"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s14}
+          className={matches.s1}
           small
         />
         &nbsp;eher schwarzen Kaffee und Kuchen (wählen). Der Ausblick&nbsp;
         <Input
-          id="s15"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s15}
+          className={matches.s1}
           small
         />
         &nbsp; (sein) toll, doch es&nbsp;
         <Input
-          id="s16"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s16}
+          className={matches.s1}
           small
         />
         &nbsp;zu viele Menschen (geben). Die Hauptstadt&nbsp;
         <Input
-          id="s17"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s17}
+          className={matches.s1}
           small
         />
         &nbsp; jährlich Millionen Touristen (besuchen). Aber ich&nbsp;
         <Input
-          id="s18"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s18}
+          className={matches.s1}
           small
         />
         &nbsp;Großstädte nicht besonders, deswegen&nbsp;
         <Input
-          id="s19"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s19}
+          className={matches.s1}
           small
         />
         &nbsp;ich nach ein paar Tagen weiter (mögen, fahren). Die Fahrt&nbsp;
         <Input
-          id="s20"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s20}
+          className={matches.s1}
           small
         />
         &nbsp;nur etwa 40 Minuten, mein Ziel&nbsp;
         <Input
-          id="s21"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s21}
+          className={matches.s1}
           small
         />
         &nbsp;Potsdam (dauern, sein). Diese schöne kleine Stadt&nbsp;
         <Input
-          id="s22"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s22}
+          className={matches.s1}
           small
         />
         &nbsp;nicht weit von Berlin und&nbsp;
         <Input
-          id="s23"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s23}
+          className={matches.s1}
           small
         />
         &nbsp;so viel zu sehen (liegen, bieten)! Ich&nbsp;
         <Input
-          id="s24"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s24}
+          className={matches.s1}
           small
         />
         &nbsp;früh und&nbsp;
         <Input
-          id="s25"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s25}
+          className={matches.s1}
           small
         />
         &nbsp;durch den Park (aufstehen, spazieren gehen). Ich&nbsp;
         <Input
-          id="s26"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s26}
+          className={matches.s1}
           small
         />
         &nbsp;danach das Schloss Sanssouci,&nbsp;
         <Input
-          id="s27"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s27}
+          className={matches.s1}
           small
         />
         &nbsp;tolles Wetter und&nbsp;
         <Input
-          id="s28"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s28}
+          className={matches.s1}
           small
         />
         &nbsp;mein Mittagessen (besichtigen, genießen, haben). Ich&nbsp;
         <Input
-          id="s29"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s29}
+          className={matches.s1}
           small
         />
         &nbsp;in Potsdam bis Ende der Woche und&nbsp;
         <Input
-          id="s30"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.s30}
+          className={matches.s1}
           small
         />
         &nbsp;nach Berlin (bleiben, zurückkehren). Dort&nbsp;
         <Input
-          id="s31"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.t1}
+          className={matches.s1}
           small
         />
         &nbsp;mein Zug nach Hause (warten).
@@ -252,62 +246,90 @@ const Task7 = (): JSX.Element => {
       <p>
         Nächstes Jahr&nbsp;
         <Input
-          id="t1"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.t1}
+          className={matches.s1}
           small
         />
         &nbsp;ich nach München fahren, aber ich&nbsp;
         <Input
-          id="t2"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.t2}
+          className={matches.s1}
           small
         />
         &nbsp;mir das noch (wollen, überlegen). Dort&nbsp;
         <Input
-          id="t3"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.t3}
+          className={matches.s1}
           small
         />
         &nbsp;zu viele Touristen und die Stadt&nbsp;
         <Input
-          id="t4"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.t4}
+          className={matches.s1}
           small
         />
         &nbsp;sehr teuer (sein). Andererseits&nbsp;
         <Input
-          id="t5"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.t5}
+          className={matches.s1}
           small
         />
-        &nbsp;mich die Sehenswürdigkeiten ... (verlocken) Die Altstadt mit ihren
-        bunten Märkten, die Museen und Bildergalerien. Vielleicht besser&nbsp;
+        &nbsp;mich die Sehenswürdigkeiten&nbsp;
         <Input
-          id="t6"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.t6}
+          className={matches.s1}
           small
         />
-        &nbsp;ich am Meer und das was (sich erholen) Oh Gott! Wieso&nbsp;
+        &nbsp;(verlocken) Die Altstadt mit ihren bunten Märkten, die Museen und
+        Bildergalerien&nbsp;
         <Input
-          id="t7"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.t7}
+          className={matches.s1}
+          small
+        />
+        &nbsp; Vielleicht besser&nbsp;
+        <Input
+          id="s1"
+          onChange={formik.handleChange}
+          className={matches.s1}
+          small
+        />
+        &nbsp;ich am Meer und das was&nbsp;
+        <Input
+          id="s1"
+          onChange={formik.handleChange}
+          className={matches.s1}
+          small
+        />
+        &nbsp;(sich erholen) Oh Gott! Wieso&nbsp;
+        <Input
+          id="s1"
+          onChange={formik.handleChange}
+          className={matches.s1}
           small
         />
         &nbsp;es so kompliziert (sein)? Ich&nbsp;
         <Input
-          id="t8"
+          id="s1"
           onChange={formik.handleChange}
-          className={matches.t8}
+          className={matches.s1}
           small
         />
-        &nbsp;noch mal darüber (nachdenken)
+        &nbsp;noch mal darüber&nbsp;
+        <Input
+          id="s1"
+          onChange={formik.handleChange}
+          className={matches.s1}
+          small
+        />
+        &nbsp;(nachdenken)
       </p>
       <Button type="submit">Check</Button>
     </form>
