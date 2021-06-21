@@ -1,7 +1,7 @@
 import React from 'react';
 import { Task1, Task2, Task3, Task4, Task5, Task6, Task7 } from './components';
 
-const PrasensTest = (): JSX.Element => {
+const Prasens = (): JSX.Element => {
   return (
     <section>
       <h4>
@@ -31,4 +31,4 @@ const PrasensTest = (): JSX.Element => {
   );
 };
 
-export default PrasensTest;
+export default Prasens;
