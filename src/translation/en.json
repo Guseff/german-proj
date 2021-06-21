@@ -2,6 +2,8 @@
   "translation": {
     "prasens": "präsens",
     "preter": "präteritum",
+    "deklination": "deklination",
+    "perfect": "perfect",
     "tests": "übungen",
     "use": "Use",
     "prasens.use.1": "To talk about the present",
