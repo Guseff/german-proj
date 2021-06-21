@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PerfectTest = (): JSX.Element => {
+const Perfect = (): JSX.Element => {
   return (
     <section>
       <h4>
@@ -88,4 +88,4 @@ const PerfectTest = (): JSX.Element => {
   );
 };
 
-export default PerfectTest;
+export default Perfect;

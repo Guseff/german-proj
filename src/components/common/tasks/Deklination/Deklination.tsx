@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DeklinationTest = (): JSX.Element => {
+const Deklination = (): JSX.Element => {
   return (
     <section>
       <h4>Deklination tests are under construction yet</h4>
@@ -257,4 +257,4 @@ const DeklinationTest = (): JSX.Element => {
   );
 };
 
-export default DeklinationTest;
+export default Deklination;

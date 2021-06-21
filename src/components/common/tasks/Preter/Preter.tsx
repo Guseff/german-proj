@@ -2,7 +2,7 @@
 import React from 'react';
 import { Task1, Task2, Task3, Task4, Task5, Task6, Task7 } from './components';
 
-const PreterTest = (): JSX.Element => {
+const Preter = (): JSX.Element => {
   return (
     <section>
       <h4>
@@ -32,4 +32,4 @@ const PreterTest = (): JSX.Element => {
   );
 };
 
-export default PreterTest;
+export default Preter;
