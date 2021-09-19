@@ -22,7 +22,7 @@ const Task5 = (): JSX.Element => {
   return (
     <form onSubmit={formik.handleSubmit}>
       <ol>
-      {Object.entries(tests).map((test, i) => (
+      {Object.entries(tests).map((test) => (
         <li key={test[0]}>
           <span>{test[1].question}</span>&nbsp;
           <Input id={test[0]} onChange={formik.handleChange} className={matches[test[0]]} small />

@@ -4,8 +4,14 @@ export enum ETestResult {
   Wrong = 'red',
 }
 
+// remove after refactor
 export type TTestQuestions = {
   [index: string]: string;
+};
+
+// remove after refactor
+export type TTestAnswers = {
+  [index: string]: RegExp;
 };
 
 export type TAnswers = {
@@ -23,10 +29,6 @@ export type TQuestion = {
 
 export type TQuestions = {
   [index: string]: TQuestion;
-};
-
-export type TTestAnswers = {
-  [index: string]: RegExp;
 };
 
 export type TTestResult = {

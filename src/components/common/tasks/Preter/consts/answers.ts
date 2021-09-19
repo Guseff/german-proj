@@ -51,13 +51,34 @@ export const rightAnswers3 = {
   s6: /^brachtest$/,
 };
 
-export const rightAnswers4 = {
-  s1: /^aßest$/,
-  s2: /^fandet$/,
-  s3: /^sahen$/,
-  s3a: /^an$/,
-  s4: /^sa(ß|ss)est$/,
-  s5: /^galtet$/,
+export const preterTests4: TQuestions = {
+  pt4t1: {
+    question: 'Du',
+    answer: /^a(ß|ss)est$/,
+    extention: 'gestern fast nichts, war alles okay? (essen)',
+  },
+  pt4t2: {
+    question: '',
+    answer: /^fandet$/,
+    extention: 'ihr den Brief also langweilig? (finden)',
+  },
+  pt4t3: {
+    question: 'Früher',
+    answer: /^sahen$/,
+    extQuestion: 'wir uns die neuen Filme immer zusammen',
+    extAnswer: /^an$/,
+    extention: '. (sich ansehen)',
+  },
+  pt4t4: {
+    question: 'Du',
+    answer: /^sa(ß|ss)est$/,
+    extention: 'in der Halle so stumm und traurig. Was ist los? (sitzen)',
+  },
+  pt4t5: {
+    question: 'Ihr',
+    answer: /^galtet$/,
+    extention: 'als das schönste Paar in der Schule, warum seid ihr nicht mehr zusammen? (gelten)',
+  },
 };
 
 export const preterTests5: TQuestions = {
