@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
 import Input from '../../../Input/Input';
-import Button from '../../../Button/Button';
+import CheckButton from '../../../CheckButton/CheckButton';
 import { rightAnswers4 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
@@ -80,7 +80,7 @@ const Task4 = (): JSX.Element => {
           zusammen? (gelten)
         </li>
       </ol>
-      <Button type="submit">Check</Button>
+      <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };

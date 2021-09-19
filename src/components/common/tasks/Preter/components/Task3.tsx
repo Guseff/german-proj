@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 
 import { rightAnswers3 as rightAnswers } from '../consts/answers';
 import Select from '../../../Select/Select';
-import Button from '../../../Button/Button';
+import CheckButton from '../../../CheckButton/CheckButton';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
@@ -92,7 +92,7 @@ const Task3 = (): JSX.Element => {
           &nbsp;mir diese Nachricht in der Nacht, warum?
         </li>
       </ol>
-      <Button type="submit">Check</Button>
+      <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };

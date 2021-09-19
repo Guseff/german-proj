@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
 import Input from '../../../Input/Input';
-import Button from '../../../Button/Button';
-import { rightAnswers2 as rightAnswers } from '../consts/answers';
+import CheckButton from '../../../CheckButton/CheckButton';
+import { rightAnswers7 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
@@ -15,6 +15,7 @@ const Task7 = (): JSX.Element => {
   const formik = useFormik({
     initialValues,
     onSubmit: values => {
+      console.log(values);
       setMatches(checkInputAnswerHandle(values, rightAnswers));
     },
   });
@@ -29,307 +30,138 @@ const Task7 = (): JSX.Element => {
           className={matches.s1}
           small
         />
-        &nbsp;, &nbsp;
+        &nbsp;, … Friedrich August (heißen). Und er&nbsp;
         <Input
-          id="s1"
+          id="s2"
           onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;Friedrich August (heißen). Und er&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s2}
           small
         />
         &nbsp;der letzte sächsische König (sein). Doch das&nbsp;
         <Input
-          id="s1"
+          id="s3"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s3}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;er damals noch nicht (wissen). Manchmal&nbsp;
         <Input
-          id="s1"
+          id="s4"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s4}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;er mit seinen Kindern durch die Residenzstadt (fahren). Neben dem Kutscher&nbsp;
         <Input
-          id="s1"
+          id="s5"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s5}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;, mit verschränkten Armen und einem schillernden Federhut, der Leibjäger (sitzen). Und aus dem offenen Wagen&nbsp;
         <Input
-          id="s1"
+          id="s6"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s6}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;die kleinen Prinzen und Prinzessinnen uns anderen Kindern (zuwinken). Der König&nbsp;
         <Input
-          id="s1"
+          id="s7"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s7}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;auch (winken). Und er&nbsp;
         <Input
-          id="s1"
+          id="s8"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s8}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;freundlich (lächeln). …
+        <br/><br/>
+        Um die Weihnachtszeit&nbsp;
         <Input
-          id="s1"
+          id="s9"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s9}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;er manchmal, ganz allein und mit hochgestelltem Mantelkragen, wie andere Offiziere auch, durch die abendlich funkelnde Prager Straße und&nbsp;
         <Input
-          id="s1"
+          id="s10"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s10}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;nachdenklich vor den schimmernden Schaufenstern (spazieren, stehen bleiben). Für Kinderkleider und Spielwaren&nbsp;
         <Input
-          id="s1"
+          id="s11"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s11}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;er am meisten (sich interessieren). Es&nbsp;
         <Input
-          id="s1"
+          id="s12"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s12}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;(schneien). In den Läden&nbsp;
         <Input
-          id="s1"
+          id="s13"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s13}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;die Christbäume (glitzern). Die Passanten&nbsp;
         <Input
-          id="s1"
+          id="s14"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s14}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;(sich anstoßen),&nbsp;
         <Input
-          id="s1"
+          id="s15"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s15}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;(flüstern): «Der König!» und&nbsp;
         <Input
-          id="s1"
+          id="s16"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s16}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;eilig (weitergehen), um ihn nicht zu stören. Er&nbsp;
         <Input
-          id="s1"
+          id="s17"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s17}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;einsam (sein). Er&nbsp;
         <Input
-          id="s1"
+          id="s18"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s18}
           small
         />
-        &nbsp;&nbsp;
+        &nbsp;seine Kinder (lieben). Und deshalb&nbsp;
         <Input
-          id="s1"
+          id="s19"
           onChange={formik.handleChange}
-          className={matches.s1}
+          className={matches.s19}
           small
         />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;
-      </p>
-      <p>
-        &nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;
+        &nbsp;ihn die Bevölkerung (lieben). …&nbsp;
       </p>
       <p>(Erich Kästner „Als ich ein kleiner Junge war“)</p>
-      <Button type="submit">Check</Button>
+      <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };

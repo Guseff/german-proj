@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 
 import { rightAnswers2 as rightAnswers } from '../consts/answers';
 import Input from '../../../Input/Input';
-import Button from '../../../Button/Button';
+import CheckButton from '../../../CheckButton/CheckButton';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
@@ -80,7 +80,7 @@ const Task2 = (): JSX.Element => {
           &nbsp;. (ausatmen)
         </li>
       </ol>
-      <Button type="submit">Check</Button>
+      <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };

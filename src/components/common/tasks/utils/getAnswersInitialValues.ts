@@ -4,7 +4,7 @@ export const getAnswersInitialValues = (answers: TTestAnswers): TTestResult => {
   return Object.keys(answers).reduce(
     (acc, key) => ({
       ...acc,
-      [key]: ETestResult.Panding,
+      [key]: ETestResult.Pending,
     }),
     {}
   );

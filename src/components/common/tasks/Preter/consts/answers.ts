@@ -1,3 +1,5 @@
+import { TQuestions } from "../../types";
+
 export const rightAnswers1 = {
   h1: /^legte$/,
   h2: /^legtest$/,
@@ -58,17 +60,17 @@ export const rightAnswers4 = {
   s5: /^galtet$/,
 };
 
-export const rightAnswers5 = {
-  s1: /^gab$/,
-  s2: /^befahl$/,
-  s3: /^ging$/,
-  s4: /^fuhr$/,
-  s5: /^gewann$/,
-  s6: /^rief$/,
-  s7: /^schwamm$/,
-  s8: /^sprang$/,
-  s9: /^stand$/,
-  s10: /^trug$/,
+export const preterTests5: TQuestions = {
+  pt5t1: { question: 'давать', answer: /^gab$/ },
+  pt5t2: { question: 'приказывать', answer: /^befahl$/ },
+  pt5t3: { question: 'идти', answer: /^ging$/ },
+  pt5t4: { question: 'ехать', answer: /^fuhr$/ },
+  pt5t5: { question: 'побеждать', answer: /^gewann$/ },
+  pt5t6: { question: 'звать/кричать', answer: /^rief$/ },
+  pt5t7: { question: 'плавать', answer: /^schwamm$/ },
+  pt5t8: { question: 'прыгать', answer: /^sprang$/ },
+  pt5t9: { question: 'стоять', answer: /^stand$/ },
+  pt5t10: { question: 'носить', answer: /^trug$/ },
 };
 
 export const rightAnswers6 = {

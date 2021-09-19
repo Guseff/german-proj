@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
 import Input from '../../../Input/Input';
-import Button from '../../../Button/Button';
+import CheckButton from '../../../CheckButton/CheckButton';
 import { rightAnswers7 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
@@ -309,7 +309,7 @@ const Task7 = (): JSX.Element => {
         />
         &nbsp;noch mal darüber (nachdenken)
       </p>
-      <Button type="submit">Check</Button>
+      <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };
