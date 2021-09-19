@@ -14,7 +14,6 @@ Currently, no mobile version is supported.
 
 * `npm run start` - runs application in development mode via *webpack-dev-server*
 * `npm run build` - builds application in production mode (artifacts will be placed in `/dist` folder)
-* `npm run test` - runs tests
 * `npm run lint:scripts` - runs linter checks for JS, TS, TSX scripts using *eslint*
 * `npm run lint:scripts:fix` - makes attempt to fix linter issues in JS, TS, TSX scripts using *eslint*
 * `npm run lint:styles` - runs linter checks for CSS styles using *stylelint*
@@ -29,20 +28,12 @@ Current project will be built on top of *[TypeScript](https://www.typescriptlang
 Following tools and utils are used additionally:
 
 * *[React Router 5](https://reacttraining.com/react-router/web)* - as an application router
-* *[React Testing Library](https://testing-library.com/docs/react-testing-library/intro)* - utils for testing React components
-* *[Jest](https://jestjs.io/)* - as a testing framework
 * *[Webpack 4](https://webpack.js.org/)* - as an application builder/bundler
 * *[PostCSS](https://postcss.org/)* - as a CSS processor
 * *[ESLint](https://eslint.org/)* - as a TS/JS linter
 * *[Stylelint](https://stylelint.io/)* - as a CSS linter
-* *[Husky](https://github.com/typicode/husky)* - as a git hook manager
 
 But some of this is under construction or needs refactoring
-
-### Git Hooks
-
-* `pre-commit` - runs `lint` script before any commit
-* `pre-push` - runs `lint` + `test` scripts for checking linting rules and tests passing
 
 ### Linting rules
 
