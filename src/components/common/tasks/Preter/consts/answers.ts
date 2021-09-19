@@ -42,6 +42,36 @@ export const rightAnswers2 = {
   s5a: /^aus$/,
 };
 
+export const preterTests2: TQuestions = {
+  pt2t1: {
+    question: 'Er',
+    answer: /^rettete$/,
+    extention: 'die Stadt, wie Batman. (retten)',
+  },
+  pt2t2: {
+    question: 'Er',
+    answer: /^regnete$/,
+    extention: 'gestern den ganzen Tag. (regnen)',
+  },
+  pt2t3: {
+    question: 'Monika und Karl',
+    answer: /^redeten$/,
+    extention: 'von ihm nur mit mir. (reden)',
+  },
+  pt2t4: {
+    question: 'Lila',
+    answer: /^(ö|oe)ffnete$/,
+    extention: 'das Fenster. (öffnen)',
+  },
+  pt2t5: {
+    question: 'Stefan',
+    answer: /^atmete$/,
+    extQuestion: 'erleichtert',
+    extAnswer: /^aus$/,
+    extention: '. (ausatmen)',
+  },
+};
+
 export const rightAnswers3 = {
   s1: /^redete$/,
   s2: /^ordnete$/,
@@ -49,6 +79,45 @@ export const rightAnswers3 = {
   s4: /^wusste$/,
   s5: /^zeichnetest$/,
   s6: /^brachtest$/,
+};
+
+export const preterTests3: TQuestions = {
+  pt3t1: {
+    question: 'Er',
+    answer: /^redete$/,
+    options: ['redetet', 'redete'],
+    extention: 'stundenlang über seine Erfahrung und konnte nicht aufhören.',
+  },
+  pt3t2: {
+    question: 'Damals',
+    answer: /^ordnete$/,
+    options: ['ordnte', 'ordnete'],
+    extention: 'ich die Bücher immer, jetzt habe ich nicht genug Zeit.',
+  },
+  pt3t3: {
+    question: 'Die Menschen',
+    answer: /^atmeten$/,
+    options: ['atmeten', 'atmten'],
+    extention: 'ruhig und sahen zu.',
+  },
+  pt3t4: {
+    question: 'Ich',
+    answer: /^wusste$/,
+    options: ['wusste', 'wisste'],
+    extention: 'das! Wie kannst du nur so offenbar lügen?',
+  },
+  pt3t5: {
+    question: 'Früher',
+    answer: /^zeichnetest$/,
+    options: ['zeichnetest', 'zeichnetst'],
+    extention: 'du gern, was ist passiert?',
+  },
+  pt3t6: {
+    question: 'Du',
+    answer: /^brachtest$/,
+    options: ['brachtest', 'bringtest'],
+    extention: 'mir diese Nachricht in der Nacht, warum?',
+  },
 };
 
 export const preterTests4: TQuestions = {
@@ -101,6 +170,29 @@ export const rightAnswers6 = {
   s4: /^Kinder, Ihr musstet früher kommen!$/,
   s5: /^sie gingen lange durch den Wald$/,
 };
+
+export const preterTests6: TQuestions = {
+  pt6t1: {
+    question: 'Ты пил и пил, без конца (trinken)',
+    answer: /^du trankst und trankst, ohne Ende$/,
+  },
+  pt6t2: {
+    question: 'Вчера у нас было всё, сегодня – ничего (haben)',
+    answer: /^gestern hatten wir alles. Heute - nichts.$/,
+  },
+  pt6t3: {
+    question: 'Я был тогда учителем (sein)',
+    answer: /^Ich war damals Lehrer$/,
+  },
+  pt6t4: {
+    question: 'Дети, вы должны были прийти раньше (müssen)',
+    answer: /^Kinder, Ihr musstet früher kommen!$/,
+  },
+  pt6t5: {
+    question: 'Они долго шли через лес (gehen)',
+    answer: /^sie gingen lange durch den Wald$/,
+  },
+}; 
 
 export const rightAnswers7 = {
   s1: /^hie(ß|ss)$/,
