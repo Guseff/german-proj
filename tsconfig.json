@@ -12,8 +12,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "jsx": "react",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "Common/*": ["src/components/common/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["dist"]
+  "exclude": ["dist"],
 }
