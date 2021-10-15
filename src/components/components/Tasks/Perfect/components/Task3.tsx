@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
-import { Input } from 'Common/Input';
-import { CheckButton } from 'Common/CheckButton';
+import { Input } from 'src/components/components/Input';
+import { CheckButton } from 'src/components/components/CheckButton';
 import { test3 as tests } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkTasksHandle, getInitialValues } from '../../utils';

@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 
 import schem from '../../assets/images/sh5.jpg';
-import PageTemplate from '../../components/common/PageTemplate';
-import Table, { Row, Cell, HeaderCell } from '../../components/common/Table';
+import PageTemplate from '../../components/components/PageTemplate';
+import Table, { Row, Cell, HeaderCell } from '../../components/components/Table';
 
 import styles from './Preter.css';
 

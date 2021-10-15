@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
-import { Input } from 'Common/Input';
-import { CheckButton } from 'Common/CheckButton';
-import { rightAnswers2 as rightAnswers } from '../consts/answers';
+import { CheckButton } from 'src/components/components/CheckButton';
+import { rightAnswers1 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
 const initialValues = getAnswersInitialValues(rightAnswers);
 
-const Task6 = (): JSX.Element => {
+const Test1 = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>(initialValues);
 
   const formik = useFormik({
@@ -22,15 +21,12 @@ const Task6 = (): JSX.Element => {
   return (
     <form onSubmit={formik.handleSubmit}>
       <p>
-        Die Wörter hast du gut gediktiert, aber wer hat sie aufschrieben? Deine
-        Schüler haben gar nicht zuhört. Viele sind von ferne hinfahren. Das lohnt
-        sich aber nicht. Ich habe nicht dafür 5 Jahre gestudiert! Okay, reden wir
-        über was anderes… Hat dir Uwe nicht geerzählt? Er hat begeschlossen, nach
-        Berlin zu ziehen. Seltsam!
+        gehen, machen, haben, werden, schwimmen, lesen, sein, sich kämen,
+        aufwachen, können
       </p>
       <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };
 
-export default Task6;
+export default Test1;

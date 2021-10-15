@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams, Redirect } from 'react-router-dom';
 
-import PageTemplate from '../../components/common/PageTemplate';
-import TenseMenu from '../../components/common/TenseMenu';
-import IdMenu from '../../components/common/IdMenu';
+import PageTemplate from '../../components/components/PageTemplate';
+import TenseMenu from '../../components/components/TenseMenu';
+import IdMenu from '../../components/components/IdMenu';
 import { useLanguangesContext } from '../../context';
 import { ELanguages, ETenses, VIDEO_SRC } from '../../constants';
 

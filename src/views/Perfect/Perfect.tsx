@@ -7,8 +7,8 @@ import schem2 from '../../assets/images/perfi2.jpg';
 import schem3 from '../../assets/images/perfi3.jpg';
 import schem4 from '../../assets/images/perfi4.jpg';
 import schem5 from '../../assets/images/habensein.png';
-import PageTemplate from '../../components/common/PageTemplate';
-import Table, { Cell, Row } from '../../components/common/Table';
+import PageTemplate from '../../components/components/PageTemplate';
+import Table, { Cell, Row } from '../../components/components/Table';
 
 import styles from './Perfect.css';
 

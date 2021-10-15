@@ -2,8 +2,8 @@ import React from 'react';
 import cn from 'classnames';
 import { useTranslation } from 'react-i18next';
 
-import PageTemplate from '../../components/common/PageTemplate';
-import Table, { Cell, Row } from '../../components/common/Table';
+import PageTemplate from 'Common/PageTemplate';
+import Table, { Cell, Row } from '../../components/components/Table';
 
 import styles from './Deklination.css';
 

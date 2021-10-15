@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
-import { Input } from 'Common/Input';
-import { CheckButton } from 'Common/CheckButton';
-import { rightAnswers4 as rightAnswers } from '../consts/answers';
+import { Input } from 'src/components/components/Input';
+import { CheckButton } from 'src/components/components/CheckButton';
+import { rightAnswers5 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
 const initialValues = getAnswersInitialValues(rightAnswers);
 
-const Task4 = (): JSX.Element => {
+const Task5 = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>(initialValues);
 
   const formik = useFormik({
@@ -23,54 +23,50 @@ const Task4 = (): JSX.Element => {
     <form onSubmit={formik.handleSubmit}>
       <ol>
         <li>
-          Ich habe wieder alles&nbsp;
-          <Input 
+          Wir studieren zusammen Philosophie in Berlin (vor 5 Jahren)
+          <br />
+          <Input
             id="s1"
             onChange={formik.handleChange}
             className={matches.s1}
-            small
           />
-          &nbsp;. Nichts zu danken! (retten)
         </li>
         <li>
-          Es hat&nbsp;
-          <Input 
+          Eine peinliche Pause entsteht jedes Mal, wenn wir uns sehen (…, wenn
+          wir uns im Korridor gesehen haben)
+          <br />
+          <Input
             id="s2"
             onChange={formik.handleChange}
             className={matches.s2}
-            small
           />
-          &nbsp;, danach geschneit. Was für Winter! (regnen)
         </li>
         <li>
-          Wir haben schon mit ihr&nbsp;
-          <Input 
+          Das Bild beeindruckt mich sehr (damals im Museum)
+          <br />
+          <Input
             id="s3"
             onChange={formik.handleChange}
             className={matches.s3}
-            small
           />
-          &nbsp;. (reden)
         </li>
         <li>
-          Ich habe das Buch&nbsp;
-          <Input 
+          Sie kommen um 20 Uhr an. (schon längst)
+          <br />
+          <Input
             id="s4"
             onChange={formik.handleChange}
             className={matches.s4}
-            small
           />
-          &nbsp;, aber es war sinnlos. (öffnen)
         </li>
         <li>
-          Du hast zu Laut&nbsp;
-          <Input 
+          Die Vorlesung findet im Raum 229 statt (am Donnerstag)
+          <br />
+          <Input
             id="s5"
             onChange={formik.handleChange}
             className={matches.s5}
-            small
           />
-          &nbsp;! Sie haben uns erwischt! (atmen)
         </li>
       </ol>
       <CheckButton type="submit">Check</CheckButton>
@@ -78,4 +74,4 @@ const Task4 = (): JSX.Element => {
   );
 };
 
-export default Task4;
+export default Task5;

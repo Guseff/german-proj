@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
-import { CheckButton } from 'Common/CheckButton';
+import { Input } from 'src/components/components/Input';
+import { CheckButton } from 'src/components/components/CheckButton';
 import { rightAnswers2 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
 const initialValues = getAnswersInitialValues(rightAnswers);
 
-const Task2 = (): JSX.Element => {
+const Task6 = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>(initialValues);
 
   const formik = useFormik({
@@ -20,16 +21,16 @@ const Task2 = (): JSX.Element => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <ol>
-        <li>Der Witz, super toll, hat, geklappt.</li>
-        <li>Habt, den Film, ihr, schon, gesehen, gestern.</li>
-        <li>Wir, dir, geglaubt, haben, umsonst.</li>
-        <li>über deine Lüge, meine Freundin, gesagt, hat, mir.</li>
-        <li>Erika, selbst, das Bild, in der Schule, gemacht, hat.</li>
-      </ol>
+      <p>
+        Die Wörter hast du gut gediktiert, aber wer hat sie aufschrieben? Deine
+        Schüler haben gar nicht zuhört. Viele sind von ferne hinfahren. Das lohnt
+        sich aber nicht. Ich habe nicht dafür 5 Jahre gestudiert! Okay, reden wir
+        über was anderes… Hat dir Uwe nicht geerzählt? Er hat begeschlossen, nach
+        Berlin zu ziehen. Seltsam!
+      </p>
       <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };
 
-export default Task2;
+export default Task6;

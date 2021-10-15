@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import LanguageProvider from './components/providers/LanguageProvider';
-import Footer from './components/common/Footer';
+import Footer from './components/components/Footer';
 import Start from './views/Start';
 import Media from './views/Media';
 import NoMatch from './views/NoMatch/NoMatch';
