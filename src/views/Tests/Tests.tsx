@@ -1,8 +1,8 @@
 import React from 'react';
 import { useParams, Redirect } from 'react-router-dom';
 
-import PageTemplate from '../../components/components/PageTemplate';
-import TenseMenu from '../../components/components/TenseMenu';
+import PageTemplate from '../../common/components/PageTemplate';
+import TenseMenu from '../../common/components/TenseMenu';
 import { ETenses } from '../../constants';
 import { getTaskComponent } from './utils/getTaskComponent';
 

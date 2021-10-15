@@ -4,7 +4,7 @@ import {
   Perfect,
   Prasens,
   Preter,
-} from '../../../components/components/Tasks';
+} from '../../../common/components/Tasks';
 
 export const getTaskComponent = (tense: ETenses): (() => JSX.Element) => {
   if (tense === ETenses.PERFECT) {

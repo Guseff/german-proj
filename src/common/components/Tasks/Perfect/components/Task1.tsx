@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
-import { CheckButton } from 'src/components/components/CheckButton';
-import { rightAnswers2 as rightAnswers } from '../consts/answers';
+import { CheckButton } from 'src/common/components/CheckButton';
+import { rightAnswers1 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
 const initialValues = getAnswersInitialValues(rightAnswers);
 
-const Task2 = (): JSX.Element => {
+const Test1 = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>(initialValues);
 
   const formik = useFormik({
@@ -20,16 +20,13 @@ const Task2 = (): JSX.Element => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <ol>
-        <li>Der Witz, super toll, hat, geklappt.</li>
-        <li>Habt, den Film, ihr, schon, gesehen, gestern.</li>
-        <li>Wir, dir, geglaubt, haben, umsonst.</li>
-        <li>über deine Lüge, meine Freundin, gesagt, hat, mir.</li>
-        <li>Erika, selbst, das Bild, in der Schule, gemacht, hat.</li>
-      </ol>
+      <p>
+        gehen, machen, haben, werden, schwimmen, lesen, sein, sich kämen,
+        aufwachen, können
+      </p>
       <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };
 
-export default Task2;
+export default Test1;
