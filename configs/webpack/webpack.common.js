@@ -4,8 +4,10 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 const { compilerOptions } = require('../../tsconfig');
+const { getWebpackPathAliases } = require('../../utils/pathAliases');
 
 const rootDir = path.resolve(__dirname, '../../');
+const pathAliases = getWebpackPathAliases(compilerOptions.paths, rootDir);
 
 module.exports = {
   entry: path.join(rootDir, 'src/index.tsx'),
@@ -67,6 +69,7 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: pathAliases,
     extensions: ['.tsx', '.ts', '.js'],
   },
 };
