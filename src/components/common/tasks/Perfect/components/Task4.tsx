@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
 import Input from '../../../Input/Input';
-import Button from '../../../Button/Button';
-import { rightAnswers2 as rightAnswers } from '../consts/answers';
+import CheckButton from '../../../CheckButton/CheckButton';
+import { rightAnswers4 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
@@ -21,65 +21,59 @@ const Task4 = (): JSX.Element => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <p>
-        Man&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-        &nbsp;viel in der Schule. (lesen)
-      </p>
-      <p>
-        Du&nbsp;
-        <Input
-          id="s2"
-          onChange={formik.handleChange}
-          className={matches.s2}
-          small
-        />
-        &nbsp;nur Chips! (essen)
-      </p>
-      <p>
-        <Input
-          id="s3"
-          onChange={formik.handleChange}
-          className={matches.s3}
-          small
-        />
-        &nbsp;du mir? Ich schaffe das alleine nicht (helfen)
-      </p>
-      <p>
-        <Input
-          id="s4"
-          onChange={formik.handleChange}
-          className={matches.s4}
-          small
-        />
-        &nbsp;du das auch? (sehen)
-      </p>
-      <p>
-        Ich fahre heute nach Hause. –&nbsp;
-        <Input
-          id="s5"
-          onChange={formik.handleChange}
-          className={matches.s5}
-          small
-        />
-        &nbsp;du mit dem Auto? (fahren)
-      </p>
-      <p>
-        Alles&nbsp;
-        <Input
-          id="s6"
-          onChange={formik.handleChange}
-          className={matches.s6}
-          small
-        />
-        &nbsp;zu schnell in dieser Welt. (laufen)
-      </p>
-      <Button type="submit">Check</Button>
+      <ol>
+        <li>
+          Ich habe wieder alles&nbsp;
+          <Input 
+            id="s1"
+            onChange={formik.handleChange}
+            className={matches.s1}
+            small
+          />
+          &nbsp;. Nichts zu danken! (retten)
+        </li>
+        <li>
+          Es hat&nbsp;
+          <Input 
+            id="s2"
+            onChange={formik.handleChange}
+            className={matches.s2}
+            small
+          />
+          &nbsp;, danach geschneit. Was für Winter! (regnen)
+        </li>
+        <li>
+          Wir haben schon mit ihr&nbsp;
+          <Input 
+            id="s3"
+            onChange={formik.handleChange}
+            className={matches.s3}
+            small
+          />
+          &nbsp;. (reden)
+        </li>
+        <li>
+          Ich habe das Buch&nbsp;
+          <Input 
+            id="s4"
+            onChange={formik.handleChange}
+            className={matches.s4}
+            small
+          />
+          &nbsp;, aber es war sinnlos. (öffnen)
+        </li>
+        <li>
+          Du hast zu Laut&nbsp;
+          <Input 
+            id="s5"
+            onChange={formik.handleChange}
+            className={matches.s5}
+            small
+          />
+          &nbsp;! Sie haben uns erwischt! (atmen)
+        </li>
+      </ol>
+      <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };

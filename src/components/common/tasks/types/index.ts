@@ -24,7 +24,7 @@ export type TQuestion = {
   extQuestion?: string;
   extAnswer?: RegExp;
   options?: string[];
-  extention?: string;
+  extension?: string;
 };
 
 export type TQuestions = {

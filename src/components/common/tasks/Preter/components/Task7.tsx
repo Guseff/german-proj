@@ -15,7 +15,6 @@ const Task7 = (): JSX.Element => {
   const formik = useFormik({
     initialValues,
     onSubmit: values => {
-      console.log(values);
       setMatches(checkInputAnswerHandle(values, rightAnswers));
     },
   });
@@ -23,14 +22,14 @@ const Task7 = (): JSX.Element => {
   return (
     <form onSubmit={formik.handleSubmit}>
       <p>
-        Der Monarch,&nbsp;
+        Der Monarch, … ,&nbsp;
         <Input
           id="s1"
           onChange={formik.handleChange}
           className={matches.s1}
           small
         />
-        &nbsp;, … Friedrich August (heißen). Und er&nbsp;
+        &nbsp;Friedrich August (heißen). Und er&nbsp;
         <Input
           id="s2"
           onChange={formik.handleChange}

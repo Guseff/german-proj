@@ -46,29 +46,29 @@ export const preterTests2: TQuestions = {
   pt2t1: {
     question: 'Er',
     answer: /^rettete$/,
-    extention: 'die Stadt, wie Batman. (retten)',
+    extension: 'die Stadt, wie Batman. (retten)',
   },
   pt2t2: {
     question: 'Er',
     answer: /^regnete$/,
-    extention: 'gestern den ganzen Tag. (regnen)',
+    extension: 'gestern den ganzen Tag. (regnen)',
   },
   pt2t3: {
     question: 'Monika und Karl',
     answer: /^redeten$/,
-    extention: 'von ihm nur mit mir. (reden)',
+    extension: 'von ihm nur mit mir. (reden)',
   },
   pt2t4: {
     question: 'Lila',
     answer: /^(ö|oe)ffnete$/,
-    extention: 'das Fenster. (öffnen)',
+    extension: 'das Fenster. (öffnen)',
   },
   pt2t5: {
     question: 'Stefan',
     answer: /^atmete$/,
     extQuestion: 'erleichtert',
     extAnswer: /^aus$/,
-    extention: '. (ausatmen)',
+    extension: '. (ausatmen)',
   },
 };
 
@@ -86,37 +86,37 @@ export const preterTests3: TQuestions = {
     question: 'Er',
     answer: /^redete$/,
     options: ['redetet', 'redete'],
-    extention: 'stundenlang über seine Erfahrung und konnte nicht aufhören.',
+    extension: 'stundenlang über seine Erfahrung und konnte nicht aufhören.',
   },
   pt3t2: {
     question: 'Damals',
     answer: /^ordnete$/,
     options: ['ordnte', 'ordnete'],
-    extention: 'ich die Bücher immer, jetzt habe ich nicht genug Zeit.',
+    extension: 'ich die Bücher immer, jetzt habe ich nicht genug Zeit.',
   },
   pt3t3: {
     question: 'Die Menschen',
     answer: /^atmeten$/,
     options: ['atmeten', 'atmten'],
-    extention: 'ruhig und sahen zu.',
+    extension: 'ruhig und sahen zu.',
   },
   pt3t4: {
     question: 'Ich',
     answer: /^wusste$/,
     options: ['wusste', 'wisste'],
-    extention: 'das! Wie kannst du nur so offenbar lügen?',
+    extension: 'das! Wie kannst du nur so offenbar lügen?',
   },
   pt3t5: {
     question: 'Früher',
     answer: /^zeichnetest$/,
     options: ['zeichnetest', 'zeichnetst'],
-    extention: 'du gern, was ist passiert?',
+    extension: 'du gern, was ist passiert?',
   },
   pt3t6: {
     question: 'Du',
     answer: /^brachtest$/,
     options: ['brachtest', 'bringtest'],
-    extention: 'mir diese Nachricht in der Nacht, warum?',
+    extension: 'mir diese Nachricht in der Nacht, warum?',
   },
 };
 
@@ -124,29 +124,29 @@ export const preterTests4: TQuestions = {
   pt4t1: {
     question: 'Du',
     answer: /^a(ß|ss)est$/,
-    extention: 'gestern fast nichts, war alles okay? (essen)',
+    extension: 'gestern fast nichts, war alles okay? (essen)',
   },
   pt4t2: {
     question: '',
     answer: /^fandet$/,
-    extention: 'ihr den Brief also langweilig? (finden)',
+    extension: 'ihr den Brief also langweilig? (finden)',
   },
   pt4t3: {
     question: 'Früher',
     answer: /^sahen$/,
     extQuestion: 'wir uns die neuen Filme immer zusammen',
     extAnswer: /^an$/,
-    extention: '. (sich ansehen)',
+    extension: '. (sich ansehen)',
   },
   pt4t4: {
     question: 'Du',
     answer: /^sa(ß|ss)est$/,
-    extention: 'in der Halle so stumm und traurig. Was ist los? (sitzen)',
+    extension: 'in der Halle so stumm und traurig. Was ist los? (sitzen)',
   },
   pt4t5: {
     question: 'Ihr',
     answer: /^galtet$/,
-    extention: 'als das schönste Paar in der Schule, warum seid ihr nicht mehr zusammen? (gelten)',
+    extension: 'als das schönste Paar in der Schule, warum seid ihr nicht mehr zusammen? (gelten)',
   },
 };
 

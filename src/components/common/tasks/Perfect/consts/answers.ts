@@ -16,17 +16,17 @@ export const rightAnswers2 = {
   s5: /^(Erika hat das Bild selbst in der Schule gamacht|Das Bild hat Erika selbst in der Schule gemacht|In der Schule hat Erika selbst das Bild gemacht)$/,
 };
 
-export const rightAnswers3 = {
-  s1: /^gebremst$/,
-  s2: /^gemalt$/,
-  s3: /^geh(ö|oe)rt$/,
-  s4: /^gebastelt$/,
-  s5: /^gebellt$/,
-  s6: /^gezeigt$/,
-  s7: /^gepr(ü|ue)ft$/,
-  s8: /^gekocht$/,
-  s9: /^gelegt$/,
-  s10: /^gemeint$/,
+export const test3 = {
+  s1: { question: 'bremsen', answer: /^gebremst$/},
+  s2: { question: 'malen', answer: /^gemalt$/},
+  s3: { question: 'hören', answer: /^geh(ö|oe)rt$/},
+  s4: { question: 'basteln', answer: /^gebastelt$/},
+  s5: { question: 'bellen', answer: /^gebellt$/},
+  s6: { question: 'zeigen', answer: /^gezeigt$/},
+  s7: { question: 'prüfen', answer: /^gepr(ü|ue)ft$/},
+  s8: { question: 'kochen', answer: /^gekocht$/},
+  s9: { question: 'legen', answer: /^gelegt$/},
+  s10: { question: 'meinen', answer: /^gemeint$/},
 };
 
 export const rightAnswers4 = {
@@ -38,11 +38,11 @@ export const rightAnswers4 = {
 };
 
 export const rightAnswers5 = {
-  s1: /^Wir haben vor 5 Jahren zusammen Philosophie in Berlin studiert$/,
-  s2: /^eine peinliche Pause ist jedes Mal entstanden, wenn wir uns im Koridor gesehen haben$/,
-  s3: /^Das Bild hat micht damals im Museum beeindruckt$/,
-  s4: /^Sie sind schon längst angekommen$/,
-  s5: /^Die Vorlesung hat am Donnerstag stattgefunden$/,
+  s1: /^(W|w)ir haben vor 5 (J|j)ahren zusammen (P|p)hilosophie in (B|b)erlin studiert.?$/,
+  s2: /^eine peinliche pause ist jedes mal entstanden, wenn wir uns im koridor gesehen haben.?$/,
+  s3: /^(D|d)as bild hat micht damals im (M|m)useum beeindruckt.?$/,
+  s4: /^sie sind schon längst angekommen.?$/,
+  s5: /^die vorlesung hat am donnerstag stattgefunden.?$/,
 };
 
 export const rightAnswers6 = {
@@ -56,11 +56,11 @@ export const rightAnswers6 = {
 };
 
 export const rightAnswers7 = {
-  s1: /^Hast du die Suppe gegessen? Ja, gestern$/,
-  s2: /^Ich habe den Vertrag zerrissen$/,
-  s3: /^Der Professor hat seinen Vortrag vorgelesen$/,
-  s4: /^Wir haben schweigend am Tisch {2}gesessen, im leeren Haus$/,
-  s5: /^Lara und Dan sind nach Paris geflogen, ohne Tsch(ü|ue)(ß|ss) zu sagen$/,
+  s1: /^(H|h)ast du die (S|s)uppe gegessen\? (J|j)a, gestern.?$/,
+  s2: /^Ich habe den Vertrag zerrissen.?$/,
+  s3: /^Der Professor hat seinen Vortrag vorgelesen.?$/,
+  s4: /^Wir haben schweigend am Tisch {2}gesessen, im leeren Haus.?$/,
+  s5: /^Lara und Dan sind nach Paris geflogen, ohne Tsch(ü|ue)(ß|ss) zu sagen.?$/,
 };
 
 export const rightAnswers8 = {

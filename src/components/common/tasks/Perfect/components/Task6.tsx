@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
 import Input from '../../../Input/Input';
-import Button from '../../../Button/Button';
+import CheckButton from '../../../CheckButton/CheckButton';
 import { rightAnswers2 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
@@ -22,31 +22,13 @@ const Task6 = (): JSX.Element => {
   return (
     <form onSubmit={formik.handleSubmit}>
       <p>
-        Ты всегда ешь так много овощей? (essen)
-        <br />
-        <Input id="s1" onChange={formik.handleChange} className={matches.s1} />
+        Die Wörter hast du gut gediktiert, aber wer hat sie aufschrieben? Deine
+        Schüler haben gar nicht zuhört. Viele sind von ferne hinfahren. Das lohnt
+        sich aber nicht. Ich habe nicht dafür 5 Jahre gestudiert! Okay, reden wir
+        über was anderes… Hat dir Uwe nicht geerzählt? Er hat begeschlossen, nach
+        Berlin zu ziehen. Seltsam!
       </p>
-      <p>
-        Ты разрываешь мне душу, что дальше? Развод? (zerreißen)
-        <br />
-        <Input id="s2" onChange={formik.handleChange} className={matches.s2} />
-      </p>
-      <p>
-        Ты просто читаешь твой доклад с листа? Не может быть! (ablesen)
-        <br />
-        <Input id="s3" onChange={formik.handleChange} className={matches.s3} />
-      </p>
-      <p>
-        Ты часто здесь сидишь? Я ни разу не видела тебе на лекциях. (sitzen)
-        <br />
-        <Input id="s4" onChange={formik.handleChange} className={matches.s4} />
-      </p>
-      <p>
-        Тебя зовут Андре, это твоё настоящее имя. (heißen)
-        <br />
-        <Input id="s5" onChange={formik.handleChange} className={matches.s5} />
-      </p>
-      <Button type="submit">Check</Button>
+      <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };

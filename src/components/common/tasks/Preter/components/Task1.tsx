@@ -191,7 +191,7 @@ const Test1 = (): JSX.Element => {
             />
           </Cell>
           <Cell leftBorder centered>
-            trinken
+            holten
           </Cell>
           <Cell leftBorder centered>
             <Input
