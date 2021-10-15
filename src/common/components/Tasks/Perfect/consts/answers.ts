@@ -64,8 +64,12 @@ export const rightAnswers7 = {
 };
 
 export const rightAnswers8 = {
-  s1: /^ist schiefgelaufen$/,
-  s2: /^hat gemerkt$/,
+  s1: /^ist$/,
+  s1a: /^schiefgelaufen$/,
+  s2: /^ist$/,
+  s2a: /^gegangen$/,
+  s2z: /^hat$/,
+  s2az: /^gemerkt$/,
   s3: /^hat verschlafen$/,
   s4: /^hat angezogen$/,
   s5: /^hat gefunden$/,
