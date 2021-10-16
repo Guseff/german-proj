@@ -44,11 +44,11 @@ export const rightAnswers4 = {
 };
 
 export const rightAnswers5 = {
-  s1: /^des Vaters$/,
-  s2: /^des Studenten$/,
-  s3: /^der Nachbar$/,
-  s4: /^meiner Schwester$/,
-  s5: /^des K(ö|oe)nigs$/,
+  s1: /^des vaters$/,
+  s2: /^des studenten$/,
+  s3: /^der nachbar$/,
+  s4: /^meiner schwester$/,
+  s5: /^des k(ö|oe)nigs$/,
 };
 
 export const rightAnswers8 = {

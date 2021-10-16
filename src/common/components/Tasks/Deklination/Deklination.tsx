@@ -8,6 +8,7 @@ import {
   Task5,
   Task6,
   Task7,
+  Task8,
   Task9,
   Task10,
 } from './components';
@@ -28,13 +29,7 @@ const Deklination = (): JSX.Element => {
       <h4>
         5) Beantworten Sie die Fragen! Benutzen Sie die eingeklammerten Wörter:
       </h4>
-      <ol>
-        <li>Wessen Auto ist das? (dein Vater) </li>
-        <li>Wessen Lehrbuch ist das? (der Student)</li>
-        <li>Wessen Garage ist das? (die Nachbar)</li>
-        <li>Wessen Kleid ist das? (meine Schwester)</li>
-        <li>Wessen Schloss ist das? (der König)</li>
-      </ol>
+      <Task5 />
       <h4>6) Welche Substantive gehören zur schwachen Deklination? </h4>
       der Frosch, der Belarusse, der Bruder, der Doktor, der Neffe, der Fuchs,
       der Polyglott, die Gans, der Bär, der Hügel, der Tor, der Leutnant, der

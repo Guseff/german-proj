@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 
-import Input from '../../../Input/Input';
-import Button from '../../../Button/Button';
-import { rightAnswers2 as rightAnswers } from '../consts/answers';
+import { Input } from 'Common/components/Input';
+import { CheckButton } from 'Common/components/CheckButton';
+import { rightAnswers5 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
 const initialValues = getAnswersInitialValues(rightAnswers);
 
-const Task5 = (): JSX.Element => {
+const Task = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>(initialValues);
 
   const formik = useFormik({
@@ -21,54 +21,61 @@ const Task5 = (): JSX.Element => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      <p>
-        Wenn dich jemand rettst, sagt man „Danke“!&nbsp;
-        <Input
-          id="s1"
-          onChange={formik.handleChange}
-          className={matches.s1}
-          small
-        />
-      </p>
-      <p>
-        In Europa regnt es meistens im Frühling.&nbsp;
-        <Input
-          id="s2"
-          onChange={formik.handleChange}
-          className={matches.s2}
-          small
-        />
-      </p>
-      <p>
-        Du redst eigentlich viel zu oft darüber.&nbsp;
-        <Input
-          id="s3"
-          onChange={formik.handleChange}
-          className={matches.s3}
-          small
-        />
-      </p>
-      <p>
-        Öffnst du deinen Laden später heute?&nbsp;
-        <Input
-          id="s4"
-          onChange={formik.handleChange}
-          className={matches.s4}
-          small
-        />
-      </p>
-      <p>
-        Das Kind atmt ruhig.&nbsp;
-        <Input
-          id="s5"
-          onChange={formik.handleChange}
-          className={matches.s5}
-          small
-        />
-      </p>
-      <Button type="submit">Check</Button>
+      <ol>
+        <li>
+          Wessen Auto ist das? (dein Vater)
+          <br />
+          <Input
+            id="s1"
+            onChange={formik.handleChange}
+            className={matches.s1}
+            small
+          />
+        </li>
+        <li>
+          Wessen Lehrbuch ist das? (der Student)
+          <br />
+          <Input
+            id="s2"
+            onChange={formik.handleChange}
+            className={matches.s2}
+            small
+          />
+        </li>
+        <li>
+          Wessen Garage ist das? (die Nachbar)
+          <br />
+          <Input
+            id="s3"
+            onChange={formik.handleChange}
+            className={matches.s3}
+            small
+          />
+        </li>
+        <li>
+          Wessen Kleid ist das? (meine Schwester)
+          <br />
+          <Input
+            id="s4"
+            onChange={formik.handleChange}
+            className={matches.s4}
+            small
+          />
+        </li>
+        <li>
+          Wessen Schloss ist das? (der König)
+          <br />
+          <Input
+            id="s5"
+            onChange={formik.handleChange}
+            className={matches.s5}
+            small
+          />
+        </li>
+      </ol>
+      <CheckButton type="submit">Check</CheckButton>
     </form>
   );
 };
 
-export default Task5;
+export default Task;
