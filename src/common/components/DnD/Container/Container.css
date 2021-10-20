@@ -1,0 +1,30 @@
+.wrapper {
+  margin-top: 5px;
+}
+
+.title {
+  margin-left: 25px;
+  color: black;
+  font-weight: bold;
+}
+
+.container {
+  border: 2px solid lightgray;
+  margin: 5px;
+  padding: 2px 5px;
+  min-height: 38px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.half {
+  width: 50%;
+}
+
+.red {
+  border-color: red;
+}
+
+.green {
+  border-color: green;
+}

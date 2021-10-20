@@ -6,7 +6,7 @@ import { ETestResult } from 'Common/components/Tasks/types';
 
 import styles from './Item.css';
 
-type TContainer = {
+type TItem = {
   word: {
     id: string;
     content: string;
@@ -15,7 +15,7 @@ type TContainer = {
   testResult?: ETestResult;
 };
 
-const Item = ({testResult = ETestResult.Pending, word, index}: TContainer ): JSX.Element => (
+const Item = ({testResult = ETestResult.Pending, word, index}: TItem ): JSX.Element => (
   <Draggable draggableId={word.id} index={index}>
     {(provided) => (
       <div
