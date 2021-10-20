@@ -1,0 +1,14 @@
+.item {
+  display: inline-flex;
+  padding: 2px 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.red {
+  border-color: red;
+}
+
+.green {
+  border-color: green;
+}
