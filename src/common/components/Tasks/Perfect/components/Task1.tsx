@@ -12,16 +12,16 @@ import { ETestResult, TTestResult } from '../../types';
 
 const initialData: TDnDTestData = {
   words: {
-    w1: {id: 'w1', content: 'gehen' },
-    w2: {id: 'w2', content: 'machen' },
-    w3: {id: 'w3', content: 'haben' },
-    w4: {id: 'w4', content: 'werden' },
-    w5: {id: 'w5', content: 'schwimmen' },
-    w6: {id: 'w6', content: 'lesen' },
-    w7: {id: 'w7', content: 'sein' },
-    w8: {id: 'w8', content: 'sich kämen' },
-    w9: {id: 'w9', content: 'aufwachen' },
-    w10: {id: 'w10', content: 'können' },
+    w1: { id: 'w1', content: 'gehen' },
+    w2: { id: 'w2', content: 'machen' },
+    w3: { id: 'w3', content: 'haben' },
+    w4: { id: 'w4', content: 'werden' },
+    w5: { id: 'w5', content: 'schwimmen' },
+    w6: { id: 'w6', content: 'lesen' },
+    w7: { id: 'w7', content: 'sein' },
+    w8: { id: 'w8', content: 'sich kämen' },
+    w9: { id: 'w9', content: 'aufwachen' },
+    w10: { id: 'w10', content: 'können' },
   },
   containers: {
     init: { id: 'init', title: '', wordIds: [ 'w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8', 'w9', 'w10' ] },

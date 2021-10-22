@@ -12,6 +12,7 @@ type TContainer = {
   title?: string;
   testResult?: ETestResult;
   half?: boolean;
+  transparent?: boolean;
 };
 
 const Container = ({
@@ -20,15 +21,22 @@ const Container = ({
   title,
   testResult = ETestResult.Pending,
   half = false,
+  transparent = false,
 }: TContainer ): JSX.Element => (
   <Droppable droppableId={id} direction="horizontal">
     {(provided) => (
-      <div className={cn(styles.wrapper, { [styles.half]: half })}>
+      <div 
+        className={cn(styles.wrapper, {
+          [styles.half]: half,
+        })}
+      >
         {title && <div className={styles.title}>{`${title}:`}</div>}
         <div
           ref={provided.innerRef}
           {...provided.droppableProps}
-          className={cn(styles.container, styles[testResult])}
+          className={cn(styles.container, styles[testResult], {
+            [styles.transparent]: transparent,
+          })}
         >
           {children}
           {provided.placeholder}

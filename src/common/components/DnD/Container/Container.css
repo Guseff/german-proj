@@ -17,14 +17,19 @@
   flex-wrap: wrap;
 }
 
+.transparent {
+  margin: 0;
+  border-color: transparent;
+}
+
 .half {
   width: 50%;
 }
 
 .red {
-  border-color: red;
+  border-color: rgba(255,0,0,1);
 }
 
 .green {
-  border-color: green;
+  border-color: rgba(0,255,0,1);
 }
