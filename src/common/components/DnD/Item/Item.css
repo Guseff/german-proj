@@ -1,0 +1,15 @@
+.item {
+  display: inline-flex;
+  padding: 0 5px;
+  margin: 4px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.red {
+  border-color: rgba(255,0,0,1);
+}
+
+.green {
+  border-color: rgba(0,255,0,1);
+}

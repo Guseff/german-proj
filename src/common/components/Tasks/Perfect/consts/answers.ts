@@ -10,10 +10,10 @@ export const rightAnswers1 = {
 
 export const rightAnswers2 = {
   s1: /^der Witz hat super toll geklappt$/,
-  s2: /^(habt ihr den Film gestern schon gesehen?|habt ihr gestern den Film schon gesehen?)$/,
+  s2: /^(habt ihr den Film gestern schon gesehen)|(habt ihr gestern den Film schon gesehen)\?$/,
   s3: /^wir haben dir umsonst geglaubt$/,
-  s4: /^(meine Freundin hat mir (ü|ue)ber deine L(ü|ue)ge gesagt|(ü|ue)ber deine L(ü|ue)ge hat mir meine Freundin gesagt)$/,
-  s5: /^(Erika hat das Bild selbst in der Schule gamacht|Das Bild hat Erika selbst in der Schule gemacht|In der Schule hat Erika selbst das Bild gemacht)$/,
+  s4: /^(meine Freundin hat mir (ü|ue)ber deine L(ü|ue)ge gesagt)|((ü|ue)ber deine L(ü|ue)ge hat mir meine Freundin gesagt)$/,
+  s5: /^(Erika hat das Bild selbst in der Schule gamacht)|(Das Bild hat Erika selbst in der Schule gemacht)|(In der Schule hat Erika selbst das Bild gemacht)$/,
 };
 
 export const test3 = {

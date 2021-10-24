@@ -50,21 +50,24 @@ const Task7 = (): JSX.Element => {
           className={matches.s4}
           small
         />
-        &nbsp;er mit seinen Kindern durch die Residenzstadt (fahren). Neben dem Kutscher&nbsp;
+        &nbsp;er mit seinen Kindern durch die Residenzstadt (fahren). Neben dem
+        Kutscher&nbsp;
         <Input
           id="s5"
           onChange={formik.handleChange}
           className={matches.s5}
           small
         />
-        &nbsp;, mit verschränkten Armen und einem schillernden Federhut, der Leibjäger (sitzen). Und aus dem offenen Wagen&nbsp;
+        &nbsp;, mit verschränkten Armen und einem schillernden Federhut, der
+        Leibjäger (sitzen). Und aus dem offenen Wagen&nbsp;
         <Input
           id="s6"
           onChange={formik.handleChange}
           className={matches.s6}
           small
         />
-        &nbsp;die kleinen Prinzen und Prinzessinnen uns anderen Kindern (zuwinken). Der König&nbsp;
+        &nbsp;die kleinen Prinzen und Prinzessinnen uns anderen Kindern
+        (zuwinken). Der König&nbsp;
         <Input
           id="s7"
           onChange={formik.handleChange}
@@ -79,7 +82,8 @@ const Task7 = (): JSX.Element => {
           small
         />
         &nbsp;freundlich (lächeln). …
-        <br/><br/>
+        <br />
+        <br />
         Um die Weihnachtszeit&nbsp;
         <Input
           id="s9"
@@ -87,14 +91,17 @@ const Task7 = (): JSX.Element => {
           className={matches.s9}
           small
         />
-        &nbsp;er manchmal, ganz allein und mit hochgestelltem Mantelkragen, wie andere Offiziere auch, durch die abendlich funkelnde Prager Straße und&nbsp;
+        &nbsp;er manchmal, ganz allein und mit hochgestelltem Mantelkragen, wie
+        andere Offiziere auch, durch die abendlich funkelnde Prager Straße
+        und&nbsp;
         <Input
           id="s10"
           onChange={formik.handleChange}
           className={matches.s10}
           small
         />
-        &nbsp;nachdenklich vor den schimmernden Schaufenstern (spazieren, stehen bleiben). Für Kinderkleider und Spielwaren&nbsp;
+        &nbsp;nachdenklich vor den schimmernden Schaufenstern (spazieren, stehen
+        bleiben). Für Kinderkleider und Spielwaren&nbsp;
         <Input
           id="s11"
           onChange={formik.handleChange}

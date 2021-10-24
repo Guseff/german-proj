@@ -1,6 +1,15 @@
 import React from 'react';
 
-import { Task1, Task2, Task3, Task4, Task5, Task6, Task7, Task8 } from './components';
+import {
+  Task1,
+  Task2,
+  Task3,
+  Task4,
+  Task5,
+  Task6,
+  Task7,
+  Task8,
+} from './components';
 
 const Perfect = (): JSX.Element => {
   return (
