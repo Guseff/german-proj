@@ -73,30 +73,32 @@ const initialData: TInitData = {
 const Task = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>({});
   const [data, setData] = useState<{
-      [key: string]: string[],
-    }
-  >(initialData.initialOrder);
+    [key: string]: string[];
+  }>(initialData.initialOrder);
 
   const formik = useFormik({
     initialValues: {},
     onSubmit: () => {
       setMatches(
         checkReorderTask(
-          Object.keys(data).reduce((acc, key) => {
-            console.log();
-            return ({
+          Object.keys(data).reduce(
+            (acc, key) => ({
               ...acc,
               [key]: data[key].map(id => wordsBase[id].content),
-            });
-          }, {}),
-          initialData.rightAnswers,
-        ),
+            }),
+            {}
+          ),
+          initialData.rightAnswers
+        )
       );
     },
   });
 
   const dragEndHandle = (result: DropResult) => {
-    if (!result.destination || result.destination.droppableId !== result.source.droppableId) {
+    if (
+      !result.destination ||
+      result.destination.droppableId !== result.source.droppableId
+    ) {
       return;
     }
 
@@ -105,7 +107,7 @@ const Task = (): JSX.Element => {
       [result.source.droppableId]: reorderArray(
         data[result.source.droppableId],
         result.source.index,
-        result.destination.index,
+        result.destination.index
       ),
     });
 
@@ -117,21 +119,23 @@ const Task = (): JSX.Element => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-        <ol>
-          {Object.keys(data).map((key, i) =>(
+      <ol>
+        {Object.keys(data).map(key => (
           <li key={key}>
-            <DragDropContext onDragEnd={dragEndHandle} >
+            <DragDropContext onDragEnd={dragEndHandle}>
               <Container id={key} transparent testResult={matches[key]}>
-                {data[key].map(
-                  (id, j) => (
-                    <Item word={wordsBase[id]} key={`${wordsBase[id].id}${j}`} index={j} />
-                  ),
-                )}
+                {data[key].map((id, j) => (
+                  <Item
+                    word={wordsBase[id]}
+                    key={`${wordsBase[id].id}${j}`}
+                    index={j}
+                  />
+                ))}
               </Container>
             </DragDropContext>
           </li>
-          ))}
-        </ol>
+        ))}
+      </ol>
       <CheckButton type="submit">Check</CheckButton>
     </form>
   );

@@ -2,7 +2,6 @@ const path = require('path');
 
 const getWebpackPathAliases = (paths, rootDir) => Object.entries(paths).reduce(
   (acc, [key, [value]]) => {
-    console.log('fjhkfjhsdkfjhdkjs');
     const alias = key.replace('/*', '');
     const resolvedPath = path.resolve(rootDir, `${value.replace('/*', '/')}`);
 

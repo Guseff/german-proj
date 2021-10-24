@@ -31,13 +31,9 @@ const Deklination = (): JSX.Element => {
       </h4>
       <Task5 />
       <h4>6) Welche Substantive gehören zur schwachen Deklination? </h4>
-      der Frosch, der Belarusse, der Bruder, der Doktor, der Neffe, der Fuchs,
-      der Polyglott, die Gans, der Bär, der Hügel, der Tor, der Leutnant, der
-      Arzt
+      <Task6 />
       <h4>7) Welche Substantive gehören zur gemischten Deklination? </h4>
-      das Auto, der Buchstabe, der Garten, der Frieden, der Ritter, der Funke,
-      der Gedanke, die Bude, der Glaube, der Samen, die Schadenfreude, der
-      Willensstarke
+      <Task7 />
       <h4>8) Korrigieren Sie die Fehler!</h4>
       <ol>
         <li>Das Treffen mit dem Dekanen findet am Donnerstag statt.</li>

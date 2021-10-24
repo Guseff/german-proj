@@ -24,7 +24,7 @@ const Task4 = (): JSX.Element => {
       <ol>
         <li>
           Ich habe wieder alles&nbsp;
-          <Input 
+          <Input
             id="s1"
             onChange={formik.handleChange}
             className={matches.s1}
@@ -34,7 +34,7 @@ const Task4 = (): JSX.Element => {
         </li>
         <li>
           Es hat&nbsp;
-          <Input 
+          <Input
             id="s2"
             onChange={formik.handleChange}
             className={matches.s2}
@@ -44,7 +44,7 @@ const Task4 = (): JSX.Element => {
         </li>
         <li>
           Wir haben schon mit ihr&nbsp;
-          <Input 
+          <Input
             id="s3"
             onChange={formik.handleChange}
             className={matches.s3}
@@ -54,7 +54,7 @@ const Task4 = (): JSX.Element => {
         </li>
         <li>
           Ich habe das Buch&nbsp;
-          <Input 
+          <Input
             id="s4"
             onChange={formik.handleChange}
             className={matches.s4}
@@ -64,7 +64,7 @@ const Task4 = (): JSX.Element => {
         </li>
         <li>
           Du hast zu Laut&nbsp;
-          <Input 
+          <Input
             id="s5"
             onChange={formik.handleChange}
             className={matches.s5}

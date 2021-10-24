@@ -13,9 +13,13 @@ const optionsList = {
   s1: ['Berlins', 'des Berlins', 'von Berlins'],
   s2: ['der Elbe', 'des Elbes', 'von Elben'],
   s3: ['Rhein', 'die Rhein', 'den Rhein'],
-  s4: ['Auto des Karls', 'Karls Auto', 'Karl\'s Auto'],
+  s4: ['Auto des Karls', 'Karls Auto', "Karl's Auto"],
   s5: ['Professors Kühns', 'Professors Kühn', 'Professor Kühns'],
-  s6: ['Friedrich des Ersten', 'Friedrichs des Ersten', 'Friedrichs des Erstes'],
+  s6: [
+    'Friedrich des Ersten',
+    'Friedrichs des Ersten',
+    'Friedrichs des Erstes',
+  ],
   s7: ['Afrikas', 'vom Afrika', 'des Afrikas'],
   s8: ['Herr Gasanovs', 'Herrn Gasanovs', 'Herrn Gasanov'],
 };

@@ -24,7 +24,11 @@ const initialData: TDnDTestData = {
     w10: { id: 'w10', content: 'können' },
   },
   containers: {
-    init: { id: 'init', title: '', wordIds: [ 'w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8', 'w9', 'w10' ] },
+    init: {
+      id: 'init',
+      title: '',
+      wordIds: ['w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7', 'w8', 'w9', 'w10'],
+    },
     one: { id: 'one', title: 'Haben', wordIds: [] },
     two: { id: 'two', title: 'Sein', wordIds: [] },
   },
@@ -32,7 +36,7 @@ const initialData: TDnDTestData = {
     one: ['w2', 'w3', 'w6', 'w8', 'w10'],
     two: ['w1', 'w4', 'w5', 'w7', 'w9'],
   },
-}
+};
 
 const Test = (): JSX.Element => {
   const [matches, setMatches] = useState<TTestResult>({});
@@ -45,7 +49,9 @@ const Test = (): JSX.Element => {
   const formik = useFormik({
     initialValues: {},
     onSubmit: () => {
-      setMatches(checkOneTwoTask({ one: data.one, two: data.two }, initialData.answers));
+      setMatches(
+        checkOneTwoTask({ one: data.one, two: data.two }, initialData.answers)
+      );
     },
   });
 
@@ -53,14 +59,14 @@ const Test = (): JSX.Element => {
     if (!result.destination) {
       return;
     }
-    
+
     if (result.destination.droppableId === result.source.droppableId) {
       setData({
         ...data,
         [result.source.droppableId]: reorderArray(
           data[result.source.droppableId],
           result.source.index,
-          result.destination.index,
+          result.destination.index
         ),
       });
 
@@ -75,41 +81,57 @@ const Test = (): JSX.Element => {
     setData({
       ...data,
       [result.source.droppableId]: data[result.source.droppableId].filter(
-        (item) => item !== result.draggableId,
+        item => item !== result.draggableId
       ),
       [result.destination.droppableId]: insertInArray(
         data[result.destination.droppableId],
         result.draggableId,
-        result.destination.index,
+        result.destination.index
       ),
     });
   };
   return (
     <form onSubmit={formik.handleSubmit}>
-      <DragDropContext onDragEnd={dragEndHandle} >
+      <DragDropContext onDragEnd={dragEndHandle}>
         <Container id={initialData.containers.init.id}>
-          {data.init.map((id) => initialData.words[id]).map((word, i) => (
-            <Item word={word} key={word.id} index={i} />
-          ))}
+          {data.init
+            .map(id => initialData.words[id])
+            .map((word, i) => (
+              <Item word={word} key={word.id} index={i} />
+            ))}
         </Container>
-        <div style={{display: 'flex', marginBottom: '20px'}}>
+        <div style={{ display: 'flex', marginBottom: '20px' }}>
           <Container
             id={initialData.containers.one.id}
             title={initialData.containers.one.title}
             half
           >
-            {data.one.map((id) => initialData.words[id]).map((word, i) => (
-              <Item word={word} key={word.id} index={i} testResult={matches[word.id]} />
-            ))}
+            {data.one
+              .map(id => initialData.words[id])
+              .map((word, i) => (
+                <Item
+                  word={word}
+                  key={word.id}
+                  index={i}
+                  testResult={matches[word.id]}
+                />
+              ))}
           </Container>
           <Container
             id={initialData.containers.two.id}
             title={initialData.containers.two.title}
             half
           >
-            {data.two.map((id) => initialData.words[id]).map((word, i) => (
-              <Item word={word} key={word.id} index={i} testResult={matches[word.id]} />
-            ))}
+            {data.two
+              .map(id => initialData.words[id])
+              .map((word, i) => (
+                <Item
+                  word={word}
+                  key={word.id}
+                  index={i}
+                  testResult={matches[word.id]}
+                />
+              ))}
           </Container>
         </div>
       </DragDropContext>

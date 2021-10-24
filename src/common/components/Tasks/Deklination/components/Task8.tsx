@@ -20,7 +20,6 @@ const Task = (): JSX.Element => {
 
   return (
     <form onSubmit={formik.handleSubmit}>
-      
       <CheckButton type="submit">Check</CheckButton>
     </form>
   );

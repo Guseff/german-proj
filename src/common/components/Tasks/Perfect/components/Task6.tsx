@@ -23,10 +23,10 @@ const Task6 = (): JSX.Element => {
     <form onSubmit={formik.handleSubmit}>
       <p>
         Die Wörter hast du gut gediktiert, aber wer hat sie aufschrieben? Deine
-        Schüler haben gar nicht zuhört. Viele sind von ferne hinfahren. Das lohnt
-        sich aber nicht. Ich habe nicht dafür 5 Jahre gestudiert! Okay, reden wir
-        über was anderes… Hat dir Uwe nicht geerzählt? Er hat begeschlossen, nach
-        Berlin zu ziehen. Seltsam!
+        Schüler haben gar nicht zuhört. Viele sind von ferne hinfahren. Das
+        lohnt sich aber nicht. Ich habe nicht dafür 5 Jahre gestudiert! Okay,
+        reden wir über was anderes… Hat dir Uwe nicht geerzählt? Er hat
+        begeschlossen, nach Berlin zu ziehen. Seltsam!
       </p>
       <CheckButton type="submit">Check</CheckButton>
     </form>

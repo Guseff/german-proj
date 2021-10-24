@@ -24,7 +24,9 @@ const Test1 = (): JSX.Element => {
     <form onSubmit={formik.handleSubmit}>
       <Table>
         <Row>
-          <Cell low centered>N</Cell>
+          <Cell low centered>
+            N
+          </Cell>
           <Cell leftBorder centered>
             die Lampe
           </Cell>
@@ -45,7 +47,9 @@ const Test1 = (): JSX.Element => {
           </Cell>
         </Row>
         <Row>
-          <Cell low centered>G</Cell>
+          <Cell low centered>
+            G
+          </Cell>
           <Cell leftBorder centered low>
             <Input
               id="l1"
@@ -90,7 +94,9 @@ const Test1 = (): JSX.Element => {
           </Cell>
         </Row>
         <Row>
-          <Cell low centered>D</Cell>
+          <Cell low centered>
+            D
+          </Cell>
           <Cell leftBorder centered low>
             <Input
               id="l2"
@@ -135,7 +141,9 @@ const Test1 = (): JSX.Element => {
           </Cell>
         </Row>
         <Row>
-          <Cell low centered>A</Cell>
+          <Cell low centered>
+            A
+          </Cell>
           <Cell leftBorder centered low>
             <Input
               id="l3"

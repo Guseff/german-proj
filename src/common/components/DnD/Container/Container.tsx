@@ -22,10 +22,10 @@ const Container = ({
   testResult = ETestResult.Pending,
   half = false,
   transparent = false,
-}: TContainer ): JSX.Element => (
+}: TContainer): JSX.Element => (
   <Droppable droppableId={id} direction="horizontal">
-    {(provided) => (
-      <div 
+    {provided => (
+      <div
         className={cn(styles.wrapper, {
           [styles.half]: half,
         })}

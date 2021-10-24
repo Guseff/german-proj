@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import cn from 'classnames';
 import { Draggable } from 'react-beautiful-dnd';
 
@@ -15,9 +15,13 @@ type TItem = {
   testResult?: ETestResult;
 };
 
-const Item = ({testResult = ETestResult.Pending, word, index}: TItem ): JSX.Element => (
+const Item = ({
+  testResult = ETestResult.Pending,
+  word,
+  index,
+}: TItem): JSX.Element => (
   <Draggable draggableId={word.id} index={index}>
-    {(provided) => (
+    {provided => (
       <div
         ref={provided.innerRef}
         {...provided.draggableProps}

@@ -50,7 +50,8 @@ const Task7 = (): JSX.Element => {
           className={matches.s4}
           small
         />
-        &nbsp;(Internet) werden diese genutzt und befinden sich in den meisten&nbsp;
+        &nbsp;(Internet) werden diese genutzt und befinden sich in den
+        meisten&nbsp;
         <Input
           id="s5"
           onChange={formik.handleChange}
@@ -71,8 +72,9 @@ const Task7 = (): JSX.Element => {
           className={matches.s7}
           small
         />
-        &nbsp;(Messenger) wie beispielsweise WhatsApp und Facebook gibt es auch noch viele
-        weitere, auf die man heute zurückgreifen kann und die zugleich verschiedene&nbsp;
+        &nbsp;(Messenger) wie beispielsweise WhatsApp und Facebook gibt es auch
+        noch viele weitere, auf die man heute zurückgreifen kann und die
+        zugleich verschiedene&nbsp;
         <Input
           id="s8"
           onChange={formik.handleChange}
@@ -103,7 +105,8 @@ const Task7 = (): JSX.Element => {
           className={matches.s11}
           small
         />
-        &nbsp;(Smartphones) heute beliebt sind. Schließlich bieten diese eine sehr gute&nbsp;
+        &nbsp;(Smartphones) heute beliebt sind. Schließlich bieten diese eine
+        sehr gute&nbsp;
         <Input
           id="s12"
           onChange={formik.handleChange}
@@ -138,15 +141,16 @@ const Task7 = (): JSX.Element => {
           className={matches.s16}
           small
         />
-        &nbsp;(Sekunden) schreiben zu können. Bis zu 90 Prozent der Menschen zwischen 16 und 45&nbsp;
+        &nbsp;(Sekunden) schreiben zu können. Bis zu 90 Prozent der Menschen
+        zwischen 16 und 45&nbsp;
         <Input
           id="s17"
           onChange={formik.handleChange}
           className={matches.s17}
           small
         />
-        &nbsp;(Jahre) nutzen heute Messenger, um zu kommunizieren. Menschen ab 75 Jahre
-        nutzen diese etwa nur zu 50 Prozent.
+        &nbsp;(Jahre) nutzen heute Messenger, um zu kommunizieren. Menschen ab
+        75 Jahre nutzen diese etwa nur zu 50 Prozent.
       </p>
       <p>
         Die absoluten Highlights bei den zahlreichen&nbsp;
@@ -184,8 +188,8 @@ const Task7 = (): JSX.Element => {
           className={matches.s22}
           small
         />
-        &nbsp;(Funktionen) kann man sich noch schneller austauschen und das völlig kostenlos.
-        Beliebt sind beide Varianten heute bei den&nbsp;
+        &nbsp;(Funktionen) kann man sich noch schneller austauschen und das
+        völlig kostenlos. Beliebt sind beide Varianten heute bei den&nbsp;
         <Input
           id="s23"
           onChange={formik.handleChange}
@@ -245,7 +249,8 @@ const Task7 = (): JSX.Element => {
           className={matches.s30}
           small
         />
-        &nbsp;(Europa) sind? Dass wir eine Stunde brauchten, um Internet zu finden und an&nbsp;
+        &nbsp;(Europa) sind? Dass wir eine Stunde brauchten, um Internet zu
+        finden und an&nbsp;
         <Input
           id="s31"
           onChange={formik.handleChange}
@@ -305,7 +310,8 @@ const Task7 = (): JSX.Element => {
           className={matches.s38}
           small
         />
-        &nbsp;(der Kapitän) rufen!“, sagte sie noch, während sie sich das Handy&nbsp;
+        &nbsp;(der Kapitän) rufen!“, sagte sie noch, während sie sich das
+        Handy&nbsp;
         <Input
           id="s39"
           onChange={formik.handleChange}
@@ -319,15 +325,16 @@ const Task7 = (): JSX.Element => {
           className={matches.s40}
           small
         />
-        &nbsp;(die Fotos) dort gleich persönlich löschte. Unser Denken. Das hat sich verändert.
-        In vielerlei Hinsicht. Zu&nbsp;
+        &nbsp;(die Fotos) dort gleich persönlich löschte. Unser Denken. Das hat
+        sich verändert. In vielerlei Hinsicht. Zu&nbsp;
         <Input
           id="s41"
           onChange={formik.handleChange}
           className={matches.s41}
           small
         />
-        &nbsp;(bestimmte Produkte), die wir sonst immer konsumiert haben. Zu&nbsp;
+        &nbsp;(bestimmte Produkte), die wir sonst immer konsumiert haben.
+        Zu&nbsp;
         <Input
           id="s42"
           onChange={formik.handleChange}
@@ -351,8 +358,9 @@ const Task7 = (): JSX.Element => {
           className={matches.s44}
           small
         />
-        &nbsp;(Fleischkonsum). Eine harte Einsicht besonders für mich, als Fleischliebhaberin.
-        Ich habe gelernt, dass dies der größte und schlimmste Faktor&nbsp;
+        &nbsp;(Fleischkonsum). Eine harte Einsicht besonders für mich, als
+        Fleischliebhaberin. Ich habe gelernt, dass dies der größte und
+        schlimmste Faktor&nbsp;
         <Input
           id="s45"
           onChange={formik.handleChange}
@@ -394,8 +402,9 @@ const Task7 = (): JSX.Element => {
           className={matches.s50}
           small
         />
-        &nbsp;(die absoluten Öko-Menschen) – aber als Menschen, die das Gefühl haben,
-        die Zusammenhänge besser zu verstehen und bei denen gerade viel in&nbsp;
+        &nbsp;(die absoluten Öko-Menschen) – aber als Menschen, die das Gefühl
+        haben, die Zusammenhänge besser zu verstehen und bei denen gerade viel
+        in&nbsp;
         <Input
           id="s51"
           onChange={formik.handleChange}
