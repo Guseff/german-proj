@@ -3,7 +3,7 @@ import { useFormik } from 'formik';
 
 import Input from '../../../Input/Input';
 import CheckButton from '../../../CheckButton/CheckButton';
-import { rightAnswers2 as rightAnswers } from '../consts/answers';
+import { rightAnswers6 as rightAnswers } from '../consts/answers';
 import { TTestResult } from '../../types';
 import { checkInputAnswerHandle, getAnswersInitialValues } from '../../utils';
 
