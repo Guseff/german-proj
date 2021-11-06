@@ -163,12 +163,13 @@ export const preterTests5: TQuestions = {
   pt5t10: { question: 'носить', answer: /^trug$/ },
 };
 
+// ToDo Define answer object variant 
 export const rightAnswers6 = {
-  s1: /^du trankst und trankst, ohne Ende$/,
-  s2: /^gestern hatten wir alles. Heute - nichts.$/,
-  s3: /^Ich war damals Lehrer$/,
-  s4: /^Kinder, Ihr musstet früher kommen!$/,
-  s5: /^sie gingen lange durch den Wald$/,
+  s1: /^du trankst und trankst, ohne ende.?$/,
+  s2: /^gestern hatten wir alles. heute - nichts.?$/,
+  s3: /^ich war damals lehrer.?$/,
+  s4: /^kinder, Ihr musstet früher kommen!?$/,
+  s5: /^sie gingen lange durch den wald.?$/,
 };
 
 export const preterTests6: TQuestions = {
