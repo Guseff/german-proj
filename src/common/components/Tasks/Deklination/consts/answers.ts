@@ -22,7 +22,7 @@ export const rightAnswers1 = {
 export const rightAnswers2 = {
   s1: /^eine postkarte$/,
   s2: /^dem chef$/,
-  s3: /^der eitrittskarte$/,
+  s3: /^der eintrittskarte$/,
   s4: /^meines bruders$/,
   s5: /^den g(ä|ae)sten$/,
 };
@@ -44,9 +44,9 @@ export const rightAnswers4 = {
 };
 
 export const rightAnswers5 = {
-  s1: /^des vaters$/,
+  s1: /^deines vaters$/,
   s2: /^des studenten$/,
-  s3: /^der nachbar$/,
+  s3: /^der nachbarn$/,
   s4: /^meiner schwester$/,
   s5: /^des k(ö|oe)nigs$/,
 };
@@ -125,6 +125,5 @@ export const rightAnswers10 = {
   s47: /^dem nachdenken$/,
   s48: /^vegetarier$/,
   s49: /^die absoluten (ö|oe)ko-menschen$/,
-  s50: /^den kapit(ä|ae)n$/,
-  s51: /^dem kopf$/,
+  s50: /^dem kopf$/,
 };

@@ -28,7 +28,7 @@ export const rightAnswers1 = {
   z2: /^zeigst$/,
   z3: /^zeigt$/,
   z4: /^zeigen$/,
-  z6: /^zeigt$/,
+  z6: /^zeigen$/,
 };
 
 export const rightAnswers2 = {
@@ -68,9 +68,9 @@ export const rightAnswers5 = {
 export const rightAnswers6 = {
   s1: /^isst du immer so viel gem(ü|ue)se$/,
   s2: /^du zerrei(ss|ß)t meine seele, was (kommt als nächstes|kommt weiter|weiter)\? scheidung\?$/,
-  s3: /^liest du (deinen|den) vortrag einfach (vom|von dem| veon einem) blatt ab\? das kann nicht sein!$/,
-  s4: /^sitzt du oft hier\? (ich habe dich nie in vorlesungen gesehen|ich sah dich nie in vorlesung).$/,
-  s5: /^du hei(ss|ß)t andre, das ist dein (echter|realer|richtiger) name.$/,
+  s3: /^liest du (deinen|den) vortrag einfach (vom|von dem| veon einem) blatt ab\? das kann nicht sein!?$/,
+  s4: /^sitzt du oft hier\? (ich habe dich nie in vorlesungen gesehen|ich sah dich nie in vorlesung).?$/,
+  s5: /^du hei(ss|ß)t andre, das ist dein (echter|realer|richtiger) name.?$/,
 };
 
 export const rightAnswers7 = {
@@ -98,20 +98,25 @@ export const rightAnswers7 = {
   s21: /^ist$/,
   s22: /^liegt$/,
   s23: /^bietet$/,
-  s24: /^stehe auf$/,
-  s25: /^gehe spazieren$/,
+  s24: /^stehe$/,
+  s24a: /^auf$/,
+  s25: /^gehe$/,
+  s25a: /^spazieren$/,
   s26: /^besichtige$/,
   s27: /^genie(ss|ß)e$/,
   s28: /^habe$/,
   s29: /^bleibe$/,
-  s30: /^kehre zur(ue|ü)ck$/,
+  s30: /^kehre$/,
+  s30a: /^zur(ue|ü)ck$/,
   s31: /^wartet$/,
   t1: /^will$/,
   t2: /^(ue|ü)berlege$/,
   t3: /^sind$/,
   t4: /^ist$/,
   t5: /^verlocken$/,
-  t6: /^erhole mich$/,
+  t6: /^erhole$/,
+  t6a: /^mich$/,
   t7: /^ist$/,
-  t8: /^denke nach$/,
+  t8: /^denke$/,
+  t8a: /^nach$/,
 };

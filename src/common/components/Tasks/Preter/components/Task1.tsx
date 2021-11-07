@@ -146,21 +146,21 @@ const Test1 = (): JSX.Element => {
             <Input
               id="l3"
               onChange={formik.handleChange}
-              className={matches.l4}
+              className={matches.l3}
             />
           </Cell>
           <Cell leftBorder centered>
             <Input
               id="l4"
               onChange={formik.handleChange}
-              className={matches.l5}
+              className={matches.l4}
             />
           </Cell>
           <Cell leftBorder centered>
             <Input
               id="l5"
               onChange={formik.handleChange}
-              className={matches.l6}
+              className={matches.l5}
             />
           </Cell>
           <Cell leftBorder centered>
