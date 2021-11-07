@@ -22,7 +22,7 @@ const list = {
   w12: { id: 'w12', content: 'der Willensstarke' },
 };
 
-const answer = ['w1', 'w4'];
+const answer = ['w2', 'w4', 'w6', 'w7', 'w9', 'w10'];
 
 const Task = (): JSX.Element => {
   const [match, setMatch] = useState<ETestResult>(ETestResult.Pending);
@@ -34,8 +34,8 @@ const Task = (): JSX.Element => {
         .entries(values)
         .filter((entry) => entry[1].length > 0)
         .map((entry) => entry[0]);
-
-      setMatch(temp.sort().toString() === answer.toString() ? ETestResult.Right : ETestResult.Wrong);
+console.log(temp)
+      setMatch(temp.sort().toString() === answer.sort().toString() ? ETestResult.Right : ETestResult.Wrong);
     },
   });
 

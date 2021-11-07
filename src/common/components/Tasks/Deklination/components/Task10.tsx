@@ -374,41 +374,34 @@ const Task7 = (): JSX.Element => {
           className={matches.s46}
           small
         />
-        &nbsp;(die heutige Zeit) ist&nbsp;
+        &nbsp;(die heutige Zeit) ist. Das bringt dich nun mal zu&nbsp;
         <Input
           id="s47"
           onChange={formik.handleChange}
           className={matches.s47}
           small
         />
-        &nbsp; das bringt dich nun mal zu&nbsp;
+        &nbsp;(das Nachdenken). Wir kommen nicht als&nbsp;
         <Input
           id="s48"
           onChange={formik.handleChange}
           className={matches.s48}
           small
         />
-        &nbsp;(das Nachdenken). Wir kommen nicht als&nbsp;
+        &nbsp;(Vegetarier) zurück, nicht als&nbsp;
         <Input
           id="s49"
           onChange={formik.handleChange}
           className={matches.s49}
           small
         />
-        &nbsp;(Vegetarier) zurück, nicht als&nbsp;
-        <Input
-          id="s50"
-          onChange={formik.handleChange}
-          className={matches.s50}
-          small
-        />
         &nbsp;(die absoluten Öko-Menschen) – aber als Menschen, die das Gefühl
         haben, die Zusammenhänge besser zu verstehen und bei denen gerade viel
         in&nbsp;
         <Input
-          id="s51"
+          id="s50"
           onChange={formik.handleChange}
-          className={matches.s51}
+          className={matches.s50}
           small
         />
         &nbsp;(der Kopf) rattert. ( Quelle )

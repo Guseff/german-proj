@@ -33,7 +33,7 @@ const Task2 = (): JSX.Element => {
           &nbsp;die Stadt, wie Batman. (retten)
         </li>
         <li>
-          Er&nbsp;
+          Es&nbsp;
           <Input
             id="s2"
             onChange={formik.handleChange}

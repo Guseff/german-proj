@@ -198,14 +198,28 @@ const Task7 = (): JSX.Element => {
           className={matches.s24}
           small
         />
-        &nbsp;früh und&nbsp;
+        &nbsp;früh&nbsp;
+        <Input
+          id="s24a"
+          onChange={formik.handleChange}
+          className={matches.s24a}
+          small
+        />
+        &nbsp;und&nbsp;
         <Input
           id="s25"
           onChange={formik.handleChange}
           className={matches.s25}
           small
         />
-        &nbsp;durch den Park (aufstehen, spazieren gehen). Ich&nbsp;
+        &nbsp;durch den Park&nbsp;
+        <Input
+          id="s25a"
+          onChange={formik.handleChange}
+          className={matches.s25a}
+          small
+        />
+        &nbsp;(aufstehen, spazieren gehen). Ich&nbsp;
         <Input
           id="s26"
           onChange={formik.handleChange}
@@ -240,7 +254,14 @@ const Task7 = (): JSX.Element => {
           className={matches.s30}
           small
         />
-        &nbsp;nach Berlin (bleiben, zurückkehren). Dort&nbsp;
+        &nbsp;nach Berlin&nbsp;
+        <Input
+          id="s30a"
+          onChange={formik.handleChange}
+          className={matches.s30a}
+          small
+        />
+        &nbsp;(bleiben, zurückkehren). Dort&nbsp;
         <Input
           id="s31"
           onChange={formik.handleChange}
@@ -293,7 +314,14 @@ const Task7 = (): JSX.Element => {
           className={matches.t6}
           small
         />
-        &nbsp;ich am Meer und das was (sich erholen) Oh Gott! Wieso&nbsp;
+        &nbsp;ich&nbsp;
+        <Input
+          id="t6a"
+          onChange={formik.handleChange}
+          className={matches.t6a}
+          small
+        />
+        &nbsp;am Meer und das was (sich erholen). Oh Gott! Wieso&nbsp;
         <Input
           id="t7"
           onChange={formik.handleChange}
@@ -307,7 +335,14 @@ const Task7 = (): JSX.Element => {
           className={matches.t8}
           small
         />
-        &nbsp;noch mal darüber (nachdenken)
+        &nbsp;noch mal darüber&nbsp;
+        <Input
+          id="t8a"
+          onChange={formik.handleChange}
+          className={matches.t8a}
+          small
+        />
+        &nbsp;(nachdenken).
       </p>
       <CheckButton type="submit">Check</CheckButton>
     </form>
