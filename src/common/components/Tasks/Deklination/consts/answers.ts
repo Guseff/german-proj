@@ -52,16 +52,16 @@ export const rightAnswers5 = {
 };
 
 export const rightAnswers8 = {
-  s1: /^Dekan$/,
-  s2: /^Gast$/,
-  s3: /^Planeten$/,
-  s4: /^Herzen$/,
-  s5: /^Eltern$/,
-  s6: /^Buchstaben$/,
-  s7: /^Professors$/,
-  s8: /^Studenten$/,
-  s9: /^Glauben$/,
-  s10: /^Franzosen$/,
+  s1: /^(D|d)ekan$/,
+  s2: /^(G|g)ast$/,
+  s3: /^(P|p)laneten$/,
+  s4: /^(H|h)erzen$/,
+  s5: /^(E|e)ltern$/,
+  s6: /^(B|b)uchstaben$/,
+  s7: /^(P|p)rofessors$/,
+  s8: /^(S|s)tudenten$/,
+  s9: /^(G|g)lauben$/,
+  s10: /^(F|f)ranzosen$/,
 };
 
 export const rightAnswers9 = {

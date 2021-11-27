@@ -39,10 +39,10 @@ export const rightAnswers4 = {
 
 export const rightAnswers5 = {
   s1: /^(W|w)ir haben vor 5 (J|j)ahren zusammen (P|p)hilosophie in (B|b)erlin studiert.?$/,
-  s2: /^eine peinliche pause ist jedes mal entstanden, wenn wir uns im korridor gesehen haben.?$/,
+  s2: /^(E|e)ine peinliche pause ist jedes mal entstanden, wenn wir uns im korridor gesehen haben.?$/,
   s3: /^(D|d)as bild hat micht damals im (M|m)useum beeindruckt.?$/,
-  s4: /^sie sind schon l(ä|ae)ngst angekommen.?$/,
-  s5: /^die vorlesung hat am donnerstag stattgefunden.?$/,
+  s4: /^(S|s)ie sind schon l(ä|ae)ngst angekommen.?$/,
+  s5: /^(D|d)ie vorlesung hat im raum 229 am donnerstag stattgefunden.?$/,
 };
 
 export const rightAnswers6 = {
@@ -56,7 +56,7 @@ export const rightAnswers6 = {
 };
 
 export const rightAnswers7 = {
-  s1: /^(H|h)ast du die (S|s)uppe gegessen\? (J|j)a, gestern.?$/,
+  s1: /^(H|h)ast du die (S|s)uppe gegessen\? - (J|j)a, gestern.?$/,
   s2: /^ich habe den vertrag zerrissen.?$/,
   s3: /^der professor hat seinen vortrag vorgelesen.?$/,
   s4: /^wir haben schweigend am tisch {2}gesessen, im leeren haus.?$/,
