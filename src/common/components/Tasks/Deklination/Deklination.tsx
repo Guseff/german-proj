@@ -35,18 +35,7 @@ const Deklination = (): JSX.Element => {
       <h4>7) Welche Substantive gehören zur gemischten Deklination? </h4>
       <Task7 />
       <h4>8) Korrigieren Sie die Fehler!</h4>
-      <ol>
-        <li>Das Treffen mit dem Dekanen findet am Donnerstag statt.</li>
-        <li>Hast du auf den Gasten gewartet?</li>
-        <li>Wir beobachteten den roten Planet die ganze Nacht.</li>
-        <li>Im Herz des Landes liegt diesen Schloss.</li>
-        <li>Wir bleiben diese Woche bei unseren Elternn.</li>
-        <li>Die Rechtschreibung dieses Buchstabe finden alle Kinder schwer.</li>
-        <li>Er hat die Rede eines Professoren nicht ganz gehört.</li>
-        <li>Die Prüfung des Students ist um 9:00.</li>
-        <li>Mit solchem Glaube an sich kann man alles schaffen!</li>
-        <li>Ich konnte die Worte dieses Franzoses kaum verstehen.</li>
-      </ol>
+      <Task8 />
       <h4>9) Wählen Sie die richtige Variante!</h4>
       <Task9 />
       <h4>

@@ -14,8 +14,9 @@ const Tests = (): JSX.Element => {
     tense !== ETenses.PRASENS &&
     tense !== ETenses.PRETER &&
     tense !== ETenses.DEKLINATION
-  )
+  ) {
     return <Redirect to="/404" />;
+  }
 
   const TestComponent = getTaskComponent(tense);
 
