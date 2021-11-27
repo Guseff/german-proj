@@ -66,8 +66,14 @@ const Task7 = (): JSX.Element => {
           className={matches.s6}
           small
         />
-        &nbsp;die kleinen Prinzen und Prinzessinnen uns anderen Kindern
-        (zuwinken). Der König&nbsp;
+        &nbsp;die kleinen Prinzen und Prinzessinnen uns anderen Kindern&nbsp;
+        <Input
+          id="s6a"
+          onChange={formik.handleChange}
+          className={matches.s6a}
+          small
+        />
+        &nbsp;(zuwinken). Der König&nbsp;
         <Input
           id="s7"
           onChange={formik.handleChange}
@@ -100,7 +106,14 @@ const Task7 = (): JSX.Element => {
           className={matches.s10}
           small
         />
-        &nbsp;nachdenklich vor den schimmernden Schaufenstern (spazieren, stehen
+        &nbsp;nachdenklich vor den schimmernden Schaufenstern&nbsp;
+        <Input
+          id="s10a"
+          onChange={formik.handleChange}
+          className={matches.s10a}
+          small
+        />
+        &nbsp;(spazieren, stehen
         bleiben). Für Kinderkleider und Spielwaren&nbsp;
         <Input
           id="s11"
@@ -108,7 +121,14 @@ const Task7 = (): JSX.Element => {
           className={matches.s11}
           small
         />
-        &nbsp;er am meisten (sich interessieren). Es&nbsp;
+        &nbsp;er&nbsp;
+        <Input
+          id="s11a"
+          onChange={formik.handleChange}
+          className={matches.s11a}
+          small
+        />
+        &nbsp;am meisten (sich interessieren). Es&nbsp;
         <Input
           id="s12"
           onChange={formik.handleChange}
@@ -143,7 +163,14 @@ const Task7 = (): JSX.Element => {
           className={matches.s16}
           small
         />
-        &nbsp;eilig (weitergehen), um ihn nicht zu stören. Er&nbsp;
+        &nbsp;eilig&nbsp;
+        <Input
+          id="s16a"
+          onChange={formik.handleChange}
+          className={matches.s16a}
+          small
+        />
+        &nbsp;(weitergehen), um ihn nicht zu stören. Er&nbsp;
         <Input
           id="s17"
           onChange={formik.handleChange}
